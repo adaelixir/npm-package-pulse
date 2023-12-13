@@ -1,0 +1,6493 @@
+[
+  {
+    "packageName": "@ampproject/remapping",
+    "dependencies": [
+      "@jridgewell/gen-mapping",
+      "@jridgewell/trace-mapping"
+    ],
+    "devDependencies": [
+      "@rollup/plugin-typescript",
+      "@types/jest",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "eslint",
+      "eslint-config-prettier",
+      "jest",
+      "jest-config",
+      "npm-run-all",
+      "prettier",
+      "rollup",
+      "ts-jest",
+      "tslib",
+      "typescript"
+    ],
+    "numDependencies": 16
+  },
+  {
+    "packageName": "@babel/code-frame",
+    "dependencies": [
+      "@babel/highlight",
+      "chalk"
+    ],
+    "devDependencies": [
+      "import-meta-resolve",
+      "strip-ansi"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "@babel/compat-data",
+    "dependencies": [],
+    "devDependencies": [
+      "@mdn/browser-compat-data",
+      "core-js-compat",
+      "electron-to-chromium"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "@babel/core",
+    "dependencies": [
+      "@ampproject/remapping",
+      "@babel/code-frame",
+      "@babel/generator",
+      "@babel/helper-compilation-targets",
+      "@babel/helper-module-transforms",
+      "@babel/helpers",
+      "@babel/parser",
+      "@babel/template",
+      "@babel/traverse",
+      "@babel/types",
+      "convert-source-map",
+      "debug",
+      "gensync",
+      "json5",
+      "semver"
+    ],
+    "devDependencies": [
+      "@babel/helper-transform-fixture-test-runner",
+      "@babel/plugin-syntax-flow",
+      "@babel/plugin-transform-flow-strip-types",
+      "@babel/plugin-transform-modules-commonjs",
+      "@babel/preset-env",
+      "@babel/preset-typescript",
+      "@jridgewell/trace-mapping",
+      "@types/convert-source-map",
+      "@types/debug",
+      "@types/gensync",
+      "@types/resolve",
+      "@types/semver",
+      "rimraf",
+      "ts-node"
+    ],
+    "numDependencies": 29
+  },
+  {
+    "packageName": "@babel/generator",
+    "dependencies": [
+      "@babel/types",
+      "@jridgewell/gen-mapping",
+      "@jridgewell/trace-mapping",
+      "jsesc"
+    ],
+    "devDependencies": [
+      "@babel/helper-fixtures",
+      "@babel/parser",
+      "@jridgewell/sourcemap-codec",
+      "@types/jsesc",
+      "charcodes"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "@babel/helper-annotate-as-pure",
+    "dependencies": [
+      "@babel/types"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@babel/helper-compilation-targets",
+    "dependencies": [
+      "@babel/compat-data",
+      "@babel/helper-validator-option",
+      "browserslist",
+      "lru-cache",
+      "semver"
+    ],
+    "devDependencies": [
+      "@babel/helper-plugin-test-runner",
+      "@types/lru-cache",
+      "@types/semver"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "@babel/helper-create-class-features-plugin",
+    "dependencies": [
+      "@babel/helper-annotate-as-pure",
+      "@babel/helper-environment-visitor",
+      "@babel/helper-function-name",
+      "@babel/helper-member-expression-to-functions",
+      "@babel/helper-optimise-call-expression",
+      "@babel/helper-replace-supers",
+      "@babel/helper-skip-transparent-expression-wrappers",
+      "@babel/helper-split-export-declaration",
+      "semver"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/helper-plugin-test-runner",
+      "@babel/preset-env"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "@babel/helper-environment-visitor",
+    "dependencies": [],
+    "devDependencies": [
+      "@babel/traverse",
+      "@babel/types"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@babel/helper-function-name",
+    "dependencies": [
+      "@babel/template",
+      "@babel/types"
+    ],
+    "devDependencies": [],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@babel/helper-hoist-variables",
+    "dependencies": [
+      "@babel/types"
+    ],
+    "devDependencies": [
+      "@babel/traverse"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@babel/helper-member-expression-to-functions",
+    "dependencies": [
+      "@babel/types"
+    ],
+    "devDependencies": [
+      "@babel/traverse"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@babel/helper-module-imports",
+    "dependencies": [
+      "@babel/types"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/traverse"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "@babel/helper-module-transforms",
+    "dependencies": [
+      "@babel/helper-environment-visitor",
+      "@babel/helper-module-imports",
+      "@babel/helper-simple-access",
+      "@babel/helper-split-export-declaration",
+      "@babel/helper-validator-identifier"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/traverse"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "@babel/helper-optimise-call-expression",
+    "dependencies": [
+      "@babel/types"
+    ],
+    "devDependencies": [
+      "@babel/generator",
+      "@babel/parser"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "@babel/helper-plugin-utils",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@babel/helper-replace-supers",
+    "dependencies": [
+      "@babel/helper-environment-visitor",
+      "@babel/helper-member-expression-to-functions",
+      "@babel/helper-optimise-call-expression"
+    ],
+    "devDependencies": [
+      "@babel/core"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "@babel/helper-simple-access",
+    "dependencies": [
+      "@babel/types"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/traverse"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "@babel/helper-skip-transparent-expression-wrappers",
+    "dependencies": [
+      "@babel/types"
+    ],
+    "devDependencies": [
+      "@babel/traverse"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@babel/helper-split-export-declaration",
+    "dependencies": [
+      "@babel/types"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@babel/helper-string-parser",
+    "dependencies": [],
+    "devDependencies": [
+      "charcodes"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@babel/helper-validator-identifier",
+    "dependencies": [],
+    "devDependencies": [
+      "@unicode/unicode-15.1.0",
+      "charcodes"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@babel/helper-validator-option",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@babel/helpers",
+    "dependencies": [
+      "@babel/template",
+      "@babel/traverse",
+      "@babel/types"
+    ],
+    "devDependencies": [
+      "@babel/generator",
+      "@babel/helper-plugin-test-runner",
+      "@babel/parser",
+      "regenerator-runtime"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "@babel/highlight",
+    "dependencies": [
+      "@babel/helper-validator-identifier",
+      "chalk",
+      "js-tokens"
+    ],
+    "devDependencies": [
+      "strip-ansi"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "@babel/parser",
+    "dependencies": [],
+    "devDependencies": [
+      "@babel/code-frame",
+      "@babel/helper-check-duplicate-nodes",
+      "@babel/helper-fixtures",
+      "@babel/helper-string-parser",
+      "@babel/helper-validator-identifier",
+      "charcodes"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "@babel/plugin-syntax-jsx",
+    "dependencies": [
+      "@babel/helper-plugin-utils"
+    ],
+    "devDependencies": [
+      "@babel/core"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@babel/plugin-syntax-typescript",
+    "dependencies": [
+      "@babel/helper-plugin-utils"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/helper-plugin-test-runner"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "@babel/plugin-transform-modules-commonjs",
+    "dependencies": [
+      "@babel/helper-module-transforms",
+      "@babel/helper-plugin-utils",
+      "@babel/helper-simple-access"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/helper-plugin-test-runner",
+      "@babel/plugin-external-helpers"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "@babel/plugin-transform-react-display-name",
+    "dependencies": [
+      "@babel/helper-plugin-utils"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/helper-plugin-test-runner"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "@babel/plugin-transform-react-jsx",
+    "dependencies": [
+      "@babel/helper-annotate-as-pure",
+      "@babel/helper-module-imports",
+      "@babel/helper-plugin-utils",
+      "@babel/plugin-syntax-jsx",
+      "@babel/types"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/helper-plugin-test-runner",
+      "@babel/traverse"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "@babel/plugin-transform-react-jsx-development",
+    "dependencies": [
+      "@babel/plugin-transform-react-jsx"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/helper-plugin-test-runner"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "@babel/plugin-transform-react-pure-annotations",
+    "dependencies": [
+      "@babel/helper-annotate-as-pure",
+      "@babel/helper-plugin-utils"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/helper-plugin-test-runner"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "@babel/plugin-transform-typescript",
+    "dependencies": [
+      "@babel/helper-annotate-as-pure",
+      "@babel/helper-create-class-features-plugin",
+      "@babel/helper-plugin-utils",
+      "@babel/plugin-syntax-typescript"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/helper-plugin-test-runner",
+      "@babel/traverse",
+      "@babel/types"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "@babel/preset-react",
+    "dependencies": [
+      "@babel/helper-plugin-utils",
+      "@babel/helper-validator-option",
+      "@babel/plugin-transform-react-display-name",
+      "@babel/plugin-transform-react-jsx",
+      "@babel/plugin-transform-react-jsx-development",
+      "@babel/plugin-transform-react-pure-annotations"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/helper-plugin-test-runner"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "@babel/preset-typescript",
+    "dependencies": [
+      "@babel/helper-plugin-utils",
+      "@babel/helper-validator-option",
+      "@babel/plugin-syntax-jsx",
+      "@babel/plugin-transform-modules-commonjs",
+      "@babel/plugin-transform-typescript"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/helper-plugin-test-runner"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "@babel/template",
+    "dependencies": [
+      "@babel/code-frame",
+      "@babel/parser",
+      "@babel/types"
+    ],
+    "devDependencies": [],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "@babel/traverse",
+    "dependencies": [
+      "@babel/code-frame",
+      "@babel/generator",
+      "@babel/helper-environment-visitor",
+      "@babel/helper-function-name",
+      "@babel/helper-hoist-variables",
+      "@babel/helper-split-export-declaration",
+      "@babel/parser",
+      "@babel/types",
+      "debug",
+      "globals"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/helper-plugin-test-runner"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "@babel/types",
+    "dependencies": [
+      "@babel/helper-string-parser",
+      "@babel/helper-validator-identifier",
+      "to-fast-properties"
+    ],
+    "devDependencies": [
+      "@babel/generator",
+      "@babel/parser",
+      "glob"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "@cspotcode/source-map-support",
+    "dependencies": [
+      "@jridgewell/trace-mapping"
+    ],
+    "devDependencies": [
+      "@types/lodash",
+      "browserify",
+      "coffeescript",
+      "http-server",
+      "lodash",
+      "mocha",
+      "semver",
+      "source-map",
+      "webpack"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "@discoveryjs/json-ext",
+    "dependencies": [],
+    "devDependencies": [
+      "@rollup/plugin-commonjs",
+      "@rollup/plugin-json",
+      "@rollup/plugin-node-resolve",
+      "c8",
+      "chalk",
+      "cross-env",
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "@jridgewell/gen-mapping",
+    "dependencies": [
+      "@jridgewell/set-array",
+      "@jridgewell/sourcemap-codec",
+      "@jridgewell/trace-mapping"
+    ],
+    "devDependencies": [
+      "@rollup/plugin-typescript",
+      "@types/mocha",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "benchmark",
+      "c8",
+      "eslint",
+      "eslint-config-prettier",
+      "mocha",
+      "npm-run-all",
+      "prettier",
+      "rollup",
+      "typescript"
+    ],
+    "numDependencies": 17
+  },
+  {
+    "packageName": "@jridgewell/resolve-uri",
+    "dependencies": [],
+    "devDependencies": [
+      "@jridgewell/resolve-uri-latest",
+      "@rollup/plugin-typescript",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "c8",
+      "eslint",
+      "eslint-config-prettier",
+      "mocha",
+      "npm-run-all",
+      "prettier",
+      "rollup",
+      "typescript"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "@jridgewell/set-array",
+    "dependencies": [],
+    "devDependencies": [
+      "@rollup/plugin-typescript",
+      "@types/mocha",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "c8",
+      "eslint",
+      "eslint-config-prettier",
+      "mocha",
+      "npm-run-all",
+      "prettier",
+      "rollup",
+      "typescript"
+    ],
+    "numDependencies": 13
+  },
+  {
+    "packageName": "@jridgewell/source-map",
+    "dependencies": [
+      "@jridgewell/gen-mapping",
+      "@jridgewell/trace-mapping"
+    ],
+    "devDependencies": [
+      "@rollup/plugin-node-resolve",
+      "@rollup/plugin-typescript",
+      "@types/mocha",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "c8",
+      "eslint",
+      "eslint-config-prettier",
+      "mocha",
+      "npm-run-all",
+      "prettier",
+      "rollup",
+      "typescript"
+    ],
+    "numDependencies": 16
+  },
+  {
+    "packageName": "@jridgewell/sourcemap-codec",
+    "dependencies": [],
+    "devDependencies": [
+      "@rollup/plugin-typescript",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "benchmark",
+      "c8",
+      "eslint",
+      "eslint-config-prettier",
+      "mocha",
+      "npm-run-all",
+      "prettier",
+      "rollup",
+      "source-map",
+      "source-map-js",
+      "sourcemap-codec",
+      "typescript"
+    ],
+    "numDependencies": 16
+  },
+  {
+    "packageName": "@jridgewell/trace-mapping",
+    "dependencies": [
+      "@jridgewell/resolve-uri",
+      "@jridgewell/sourcemap-codec"
+    ],
+    "devDependencies": [
+      "@rollup/plugin-typescript",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "ava",
+      "benchmark",
+      "c8",
+      "esbuild",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-no-only-tests",
+      "npm-run-all",
+      "prettier",
+      "rollup",
+      "tsx",
+      "typescript"
+    ],
+    "numDependencies": 17
+  },
+  {
+    "packageName": "@leichtgewicht/ip-codec",
+    "dependencies": [],
+    "devDependencies": [
+      "@definitelytyped/dtslint",
+      "c8",
+      "esm2umd",
+      "fresh-tape",
+      "standard",
+      "typescript"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "@pmmmwh/react-refresh-webpack-plugin",
+    "dependencies": [
+      "ansi-html-community",
+      "common-path-prefix",
+      "core-js-pure",
+      "error-stack-parser",
+      "find-up",
+      "html-entities",
+      "loader-utils",
+      "schema-utils",
+      "source-map"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/plugin-transform-modules-commonjs",
+      "@types/cross-spawn",
+      "@types/fs-extra",
+      "@types/jest",
+      "@types/json-schema",
+      "@types/module-alias",
+      "@types/node",
+      "@types/semver",
+      "@types/webpack",
+      "babel-loader",
+      "cross-env",
+      "cross-spawn",
+      "del-cli",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-prettier",
+      "fs-extra",
+      "get-port",
+      "jest",
+      "jest-environment-node",
+      "jest-junit",
+      "memfs",
+      "module-alias",
+      "nanoid",
+      "npm-run-all",
+      "prettier",
+      "puppeteer",
+      "react-refresh",
+      "semver",
+      "sourcemap-validator",
+      "type-fest",
+      "typescript",
+      "webpack",
+      "webpack-cli",
+      "webpack-cli.legacy",
+      "webpack-dev-server",
+      "webpack-dev-server.legacy",
+      "webpack-hot-middleware",
+      "webpack-plugin-serve",
+      "webpack.legacy",
+      "yalc",
+      "yn"
+    ],
+    "numDependencies": 52
+  },
+  {
+    "packageName": "@tsconfig/node10",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@tsconfig/node12",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@tsconfig/node14",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@tsconfig/node16",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/body-parser",
+    "dependencies": [
+      "@types/connect",
+      "@types/node"
+    ],
+    "devDependencies": [],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@types/bonjour",
+    "dependencies": [
+      "@types/node"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/connect",
+    "dependencies": [
+      "@types/node"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/connect-history-api-fallback",
+    "dependencies": [
+      "@types/express-serve-static-core",
+      "@types/node"
+    ],
+    "devDependencies": [],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@types/eslint",
+    "dependencies": [
+      "@types/estree",
+      "@types/json-schema"
+    ],
+    "devDependencies": [],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@types/eslint-scope",
+    "dependencies": [
+      "@types/eslint",
+      "@types/estree"
+    ],
+    "devDependencies": [],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@types/estree",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/express",
+    "dependencies": [
+      "@types/body-parser",
+      "@types/express-serve-static-core",
+      "@types/qs",
+      "@types/serve-static"
+    ],
+    "devDependencies": [],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "@types/express-serve-static-core",
+    "dependencies": [
+      "@types/node",
+      "@types/qs",
+      "@types/range-parser",
+      "@types/send"
+    ],
+    "devDependencies": [],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "@types/html-minifier-terser",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/http-errors",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/http-proxy",
+    "dependencies": [
+      "@types/node"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/json-schema",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/mime",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/node",
+    "dependencies": [
+      "undici-types"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/node-forge",
+    "dependencies": [
+      "@types/node"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/prop-types",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/qs",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/range-parser",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/react",
+    "dependencies": [
+      "@types/prop-types",
+      "@types/scheduler",
+      "csstype"
+    ],
+    "devDependencies": [],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "@types/react-dom",
+    "dependencies": [
+      "@types/react"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/retry",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/scheduler",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/send",
+    "dependencies": [
+      "@types/mime",
+      "@types/node"
+    ],
+    "devDependencies": [],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@types/serve-index",
+    "dependencies": [
+      "@types/express"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/serve-static",
+    "dependencies": [
+      "@types/http-errors",
+      "@types/mime",
+      "@types/node"
+    ],
+    "devDependencies": [],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "@types/sockjs",
+    "dependencies": [
+      "@types/node"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/ws",
+    "dependencies": [
+      "@types/node"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@webassemblyjs/ast",
+    "dependencies": [
+      "@webassemblyjs/helper-numbers",
+      "@webassemblyjs/helper-wasm-bytecode"
+    ],
+    "devDependencies": [
+      "@webassemblyjs/helper-test-framework",
+      "array.prototype.flatmap",
+      "dump-exports",
+      "mamacro"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "@webassemblyjs/floating-point-hex-parser",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@webassemblyjs/helper-api-error",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@webassemblyjs/helper-buffer",
+    "dependencies": [],
+    "devDependencies": [
+      "@webassemblyjs/wasm-parser",
+      "jest-diff"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@webassemblyjs/helper-numbers",
+    "dependencies": [
+      "@webassemblyjs/floating-point-hex-parser",
+      "@webassemblyjs/helper-api-error",
+      "@xtuc/long"
+    ],
+    "devDependencies": [],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "@webassemblyjs/helper-wasm-bytecode",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@webassemblyjs/helper-wasm-section",
+    "dependencies": [
+      "@webassemblyjs/ast",
+      "@webassemblyjs/helper-buffer",
+      "@webassemblyjs/helper-wasm-bytecode",
+      "@webassemblyjs/wasm-gen"
+    ],
+    "devDependencies": [
+      "@webassemblyjs/wasm-parser"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "@webassemblyjs/ieee754",
+    "dependencies": [
+      "@xtuc/ieee754"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@webassemblyjs/leb128",
+    "dependencies": [
+      "@xtuc/long"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@webassemblyjs/utf8",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@webassemblyjs/wasm-edit",
+    "dependencies": [
+      "@webassemblyjs/ast",
+      "@webassemblyjs/helper-buffer",
+      "@webassemblyjs/helper-wasm-bytecode",
+      "@webassemblyjs/helper-wasm-section",
+      "@webassemblyjs/wasm-gen",
+      "@webassemblyjs/wasm-opt",
+      "@webassemblyjs/wasm-parser",
+      "@webassemblyjs/wast-printer"
+    ],
+    "devDependencies": [
+      "@webassemblyjs/helper-test-framework"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "@webassemblyjs/wasm-gen",
+    "dependencies": [
+      "@webassemblyjs/ast",
+      "@webassemblyjs/helper-wasm-bytecode",
+      "@webassemblyjs/ieee754",
+      "@webassemblyjs/leb128",
+      "@webassemblyjs/utf8"
+    ],
+    "devDependencies": [],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "@webassemblyjs/wasm-opt",
+    "dependencies": [
+      "@webassemblyjs/ast",
+      "@webassemblyjs/helper-buffer",
+      "@webassemblyjs/wasm-gen",
+      "@webassemblyjs/wasm-parser"
+    ],
+    "devDependencies": [],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "@webassemblyjs/wasm-parser",
+    "dependencies": [
+      "@webassemblyjs/ast",
+      "@webassemblyjs/helper-api-error",
+      "@webassemblyjs/helper-wasm-bytecode",
+      "@webassemblyjs/ieee754",
+      "@webassemblyjs/leb128",
+      "@webassemblyjs/utf8"
+    ],
+    "devDependencies": [
+      "@webassemblyjs/helper-buffer",
+      "@webassemblyjs/helper-test-framework",
+      "@webassemblyjs/helper-wasm-bytecode",
+      "@webassemblyjs/wasm-gen",
+      "@webassemblyjs/wast-parser",
+      "mamacro",
+      "wabt"
+    ],
+    "numDependencies": 13
+  },
+  {
+    "packageName": "@webassemblyjs/wast-printer",
+    "dependencies": [
+      "@webassemblyjs/ast",
+      "@xtuc/long"
+    ],
+    "devDependencies": [
+      "@webassemblyjs/helper-test-framework",
+      "@webassemblyjs/wast-parser"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "@webpack-cli/configtest",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@webpack-cli/info",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@webpack-cli/serve",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@xtuc/ieee754",
+    "dependencies": [],
+    "devDependencies": [
+      "airtap",
+      "standard",
+      "tape",
+      "@babel/cli",
+      "@babel/core",
+      "@babel/plugin-transform-modules-commonjs"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "@xtuc/long",
+    "dependencies": [],
+    "devDependencies": [
+      "webpack"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "accepts",
+    "dependencies": [
+      "mime-types",
+      "negotiator"
+    ],
+    "devDependencies": [
+      "deep-equal",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "acorn",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "acorn-import-assertions",
+    "dependencies": [],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/preset-env",
+      "@babel/register",
+      "acorn",
+      "chai",
+      "mocha",
+      "test262",
+      "test262-parser-runner"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "acorn-walk",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "ajv",
+    "dependencies": [
+      "fast-deep-equal",
+      "fast-json-stable-stringify",
+      "json-schema-traverse",
+      "uri-js"
+    ],
+    "devDependencies": [
+      "ajv-async",
+      "bluebird",
+      "brfs",
+      "browserify",
+      "chai",
+      "coveralls",
+      "del-cli",
+      "dot",
+      "eslint",
+      "gh-pages-generator",
+      "glob",
+      "if-node-version",
+      "js-beautify",
+      "jshint",
+      "json-schema-test",
+      "karma",
+      "karma-chrome-launcher",
+      "karma-mocha",
+      "karma-sauce-launcher",
+      "mocha",
+      "nyc",
+      "pre-commit",
+      "require-globify",
+      "typescript",
+      "uglify-js",
+      "watch"
+    ],
+    "numDependencies": 30
+  },
+  {
+    "packageName": "ajv-formats",
+    "dependencies": [
+      "ajv"
+    ],
+    "devDependencies": [
+      "@ajv-validator/config",
+      "@types/jest",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "ajv",
+      "eslint",
+      "eslint-config-prettier",
+      "husky",
+      "jest",
+      "json-schema-test",
+      "lint-staged",
+      "prettier",
+      "ts-jest",
+      "typescript"
+    ],
+    "numDependencies": 16
+  },
+  {
+    "packageName": "ajv-keywords",
+    "dependencies": [],
+    "devDependencies": [
+      "ajv",
+      "ajv-pack",
+      "chai",
+      "coveralls",
+      "dot",
+      "eslint",
+      "glob",
+      "istanbul",
+      "js-beautify",
+      "json-schema-test",
+      "mocha",
+      "pre-commit",
+      "uuid"
+    ],
+    "numDependencies": 13
+  },
+  {
+    "packageName": "ansi-html-community",
+    "dependencies": [],
+    "devDependencies": [
+      "mocha",
+      "chai",
+      "chalk",
+      "lodash"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "ansi-regex",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "ansi-styles",
+    "dependencies": [
+      "color-convert"
+    ],
+    "devDependencies": [
+      "@types/color-convert",
+      "ava",
+      "svg-term-cli",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "anymatch",
+    "dependencies": [
+      "normalize-path",
+      "picomatch"
+    ],
+    "devDependencies": [
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "arg",
+    "dependencies": [],
+    "devDependencies": [
+      "chai",
+      "jest",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "array-flatten",
+    "dependencies": [],
+    "devDependencies": [
+      "benchmarked",
+      "istanbul",
+      "mocha",
+      "standard"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "babel-loader",
+    "dependencies": [
+      "find-cache-dir",
+      "schema-utils"
+    ],
+    "devDependencies": [
+      "@ava/babel",
+      "@babel/cli",
+      "@babel/core",
+      "@babel/preset-env",
+      "ava",
+      "babel-eslint",
+      "babel-plugin-istanbul",
+      "babel-plugin-react-intl",
+      "cross-env",
+      "eslint",
+      "eslint-config-babel",
+      "eslint-config-prettier",
+      "eslint-plugin-flowtype",
+      "eslint-plugin-prettier",
+      "husky",
+      "lint-staged",
+      "nyc",
+      "pnp-webpack-plugin",
+      "prettier",
+      "react",
+      "react-intl",
+      "react-intl-webpack-plugin",
+      "rimraf",
+      "semver",
+      "webpack"
+    ],
+    "numDependencies": 27
+  },
+  {
+    "packageName": "balanced-match",
+    "dependencies": [],
+    "devDependencies": [
+      "matcha",
+      "tape"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "batch",
+    "dependencies": [],
+    "devDependencies": [
+      "mocha",
+      "should"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "big.js",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "binary-extensions",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "body-parser",
+    "dependencies": [
+      "bytes",
+      "content-type",
+      "debug",
+      "depd",
+      "destroy",
+      "http-errors",
+      "iconv-lite",
+      "on-finished",
+      "qs",
+      "raw-body",
+      "type-is",
+      "unpipe"
+    ],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "methods",
+      "mocha",
+      "nyc",
+      "safe-buffer",
+      "supertest"
+    ],
+    "numDependencies": 24
+  },
+  {
+    "packageName": "bonjour-service",
+    "dependencies": [
+      "array-flatten",
+      "dns-equal",
+      "fast-deep-equal",
+      "multicast-dns"
+    ],
+    "devDependencies": [
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "after-all",
+      "eslint",
+      "standard",
+      "tape",
+      "ts-node-dev",
+      "typescript"
+    ],
+    "numDependencies": 13
+  },
+  {
+    "packageName": "boolbase",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "brace-expansion",
+    "dependencies": [
+      "balanced-match",
+      "concat-map"
+    ],
+    "devDependencies": [
+      "matcha",
+      "tape"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "braces",
+    "dependencies": [
+      "fill-range"
+    ],
+    "devDependencies": [
+      "ansi-colors",
+      "bash-path",
+      "gulp-format-md",
+      "mocha"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "browserslist",
+    "dependencies": [
+      "caniuse-lite",
+      "electron-to-chromium",
+      "node-releases",
+      "update-browserslist-db"
+    ],
+    "devDependencies": [],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "buffer-from",
+    "dependencies": [],
+    "devDependencies": [
+      "standard"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "bytes",
+    "dependencies": [],
+    "devDependencies": [
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "call-bind",
+    "dependencies": [
+      "function-bind",
+      "get-intrinsic",
+      "set-function-length"
+    ],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "auto-changelog",
+      "es-value-fixtures",
+      "eslint",
+      "evalmd",
+      "for-each",
+      "gopd",
+      "has-strict-mode",
+      "in-publish",
+      "npmignore",
+      "nyc",
+      "object-inspect",
+      "safe-publish-latest",
+      "tape"
+    ],
+    "numDependencies": 18
+  },
+  {
+    "packageName": "camel-case",
+    "dependencies": [
+      "pascal-case",
+      "tslib"
+    ],
+    "devDependencies": [
+      "@size-limit/preset-small-lib",
+      "@types/jest",
+      "@types/node",
+      "jest",
+      "rimraf",
+      "ts-jest",
+      "tslint",
+      "tslint-config-prettier",
+      "tslint-config-standard",
+      "typescript"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "caniuse-lite",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "chalk",
+    "dependencies": [
+      "ansi-styles",
+      "supports-color"
+    ],
+    "devDependencies": [
+      "ava",
+      "coveralls",
+      "execa",
+      "import-fresh",
+      "matcha",
+      "nyc",
+      "resolve-from",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "chokidar",
+    "dependencies": [
+      "anymatch",
+      "braces",
+      "glob-parent",
+      "is-binary-path",
+      "is-glob",
+      "normalize-path",
+      "readdirp"
+    ],
+    "devDependencies": [
+      "@types/node",
+      "chai",
+      "dtslint",
+      "eslint",
+      "mocha",
+      "nyc",
+      "rimraf",
+      "sinon",
+      "sinon-chai",
+      "typescript",
+      "upath"
+    ],
+    "numDependencies": 18
+  },
+  {
+    "packageName": "chrome-trace-event",
+    "dependencies": [],
+    "devDependencies": [
+      "@types/node",
+      "prettier",
+      "tape",
+      "typescript"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "clean-css",
+    "dependencies": [
+      "source-map"
+    ],
+    "devDependencies": [
+      "browserify",
+      "eslint",
+      "eslint-config-airbnb-base",
+      "http-proxy",
+      "nock",
+      "server-destroy",
+      "uglify-js",
+      "vows"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "clone-deep",
+    "dependencies": [
+      "is-plain-object",
+      "kind-of",
+      "shallow-clone"
+    ],
+    "devDependencies": [
+      "gulp-format-md",
+      "mocha"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "color-convert",
+    "dependencies": [
+      "color-name"
+    ],
+    "devDependencies": [
+      "chalk",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "color-name",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "colorette",
+    "dependencies": [],
+    "devDependencies": [
+      "c8",
+      "twist"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "commander",
+    "dependencies": [],
+    "devDependencies": [
+      "@types/node",
+      "eslint",
+      "should",
+      "sinon",
+      "standard",
+      "ts-node",
+      "typescript"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "common-path-prefix",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "nyc",
+      "standard"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "compressible",
+    "dependencies": [
+      "mime-db"
+    ],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "compression",
+    "dependencies": [
+      "accepts",
+      "bytes",
+      "compressible",
+      "debug",
+      "on-headers",
+      "safe-buffer",
+      "vary"
+    ],
+    "devDependencies": [
+      "after",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "istanbul",
+      "mocha",
+      "supertest"
+    ],
+    "numDependencies": 18
+  },
+  {
+    "packageName": "concat-map",
+    "dependencies": [],
+    "devDependencies": [
+      "tape"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "connect-history-api-fallback",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "jest",
+      "sinon"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "content-disposition",
+    "dependencies": [
+      "safe-buffer"
+    ],
+    "devDependencies": [
+      "deep-equal",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "istanbul",
+      "mocha"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "content-type",
+    "dependencies": [],
+    "devDependencies": [
+      "deep-equal",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "convert-source-map",
+    "dependencies": [],
+    "devDependencies": [
+      "inline-source-map",
+      "tap"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "cookie",
+    "dependencies": [],
+    "devDependencies": [
+      "beautify-benchmark",
+      "benchmark",
+      "eslint",
+      "eslint-plugin-markdown",
+      "mocha",
+      "nyc",
+      "safe-buffer",
+      "top-sites"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "cookie-signature",
+    "dependencies": [],
+    "devDependencies": [
+      "mocha",
+      "should"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "core-js-pure",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "core-util-is",
+    "dependencies": [],
+    "devDependencies": [
+      "tap"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "create-require",
+    "dependencies": [],
+    "devDependencies": [
+      "@nuxtjs/eslint-config",
+      "eslint",
+      "tap",
+      "standard-version"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "cross-spawn",
+    "dependencies": [
+      "path-key",
+      "shebang-command",
+      "which"
+    ],
+    "devDependencies": [
+      "@commitlint/cli",
+      "@commitlint/config-conventional",
+      "babel-core",
+      "babel-jest",
+      "babel-preset-moxy",
+      "eslint",
+      "eslint-config-moxy",
+      "husky",
+      "jest",
+      "lint-staged",
+      "mkdirp",
+      "rimraf",
+      "standard-version"
+    ],
+    "numDependencies": 16
+  },
+  {
+    "packageName": "css-loader",
+    "dependencies": [
+      "icss-utils",
+      "postcss",
+      "postcss-modules-extract-imports",
+      "postcss-modules-local-by-default",
+      "postcss-modules-scope",
+      "postcss-modules-values",
+      "postcss-value-parser",
+      "semver"
+    ],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/preset-env",
+      "@commitlint/cli",
+      "@commitlint/config-conventional",
+      "@webpack-contrib/eslint-config-webpack",
+      "babel-jest",
+      "cross-env",
+      "cspell",
+      "del",
+      "del-cli",
+      "es-check",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-import",
+      "file-loader",
+      "husky",
+      "jest",
+      "jest-environment-jsdom",
+      "less",
+      "less-loader",
+      "lint-staged",
+      "memfs",
+      "mini-css-extract-plugin",
+      "npm-run-all",
+      "postcss-loader",
+      "postcss-preset-env",
+      "prettier",
+      "sass",
+      "sass-loader",
+      "standard-version",
+      "strip-ansi",
+      "style-loader",
+      "stylus",
+      "stylus-loader",
+      "url-loader",
+      "webpack"
+    ],
+    "numDependencies": 45
+  },
+  {
+    "packageName": "css-select",
+    "dependencies": [
+      "boolbase",
+      "css-what",
+      "domhandler",
+      "domutils",
+      "nth-check"
+    ],
+    "devDependencies": [
+      "@types/boolbase",
+      "@types/jest",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "cheerio-soupselect",
+      "eslint",
+      "eslint-config-prettier",
+      "htmlparser2",
+      "jest",
+      "prettier",
+      "ts-jest",
+      "typescript"
+    ],
+    "numDependencies": 18
+  },
+  {
+    "packageName": "css-what",
+    "dependencies": [],
+    "devDependencies": [
+      "@types/jest",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-node",
+      "jest",
+      "prettier",
+      "ts-jest",
+      "typescript"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "cssesc",
+    "dependencies": [],
+    "devDependencies": [
+      "babel-cli",
+      "babel-preset-env",
+      "codecov",
+      "grunt",
+      "grunt-template",
+      "istanbul",
+      "mocha",
+      "regenerate",
+      "requirejs"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "csstype",
+    "dependencies": [],
+    "devDependencies": [
+      "@types/chokidar",
+      "@types/css-tree",
+      "@types/jest",
+      "@types/jsdom",
+      "@types/node",
+      "@types/prettier",
+      "@types/request",
+      "@types/turndown",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "chalk",
+      "chokidar",
+      "eslint",
+      "css-tree",
+      "eslint-config-prettier",
+      "eslint-plugin-prettier",
+      "fast-glob",
+      "flow-bin",
+      "jest",
+      "jsdom",
+      "mdn-browser-compat-data",
+      "mdn-data",
+      "prettier",
+      "request",
+      "ts-jest",
+      "ts-node",
+      "turndown",
+      "typescript"
+    ],
+    "numDependencies": 28
+  },
+  {
+    "packageName": "debug",
+    "dependencies": [
+      "ms"
+    ],
+    "devDependencies": [
+      "browserify",
+      "chai",
+      "concurrently",
+      "coveralls",
+      "eslint",
+      "istanbul",
+      "karma",
+      "karma-chai",
+      "karma-mocha",
+      "karma-phantomjs-launcher",
+      "karma-sinon",
+      "mocha",
+      "mocha-lcov-reporter",
+      "rimraf",
+      "sinon",
+      "sinon-chai"
+    ],
+    "numDependencies": 17
+  },
+  {
+    "packageName": "default-gateway",
+    "dependencies": [
+      "execa"
+    ],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-silverwind",
+      "jest",
+      "updates",
+      "versions"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "define-data-property",
+    "dependencies": [
+      "get-intrinsic",
+      "gopd",
+      "has-property-descriptors"
+    ],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "@types/es-value-fixtures",
+      "@types/for-each",
+      "@types/get-intrinsic",
+      "@types/gopd",
+      "@types/has",
+      "@types/has-property-descriptors",
+      "@types/object-inspect",
+      "@types/object.getownpropertydescriptors",
+      "@types/tape",
+      "aud",
+      "auto-changelog",
+      "es-value-fixtures",
+      "eslint",
+      "evalmd",
+      "for-each",
+      "has",
+      "in-publish",
+      "npmignore",
+      "nyc",
+      "object-inspect",
+      "object.getownpropertydescriptors",
+      "reflect.ownkeys",
+      "safe-publish-latest",
+      "tape",
+      "typescript"
+    ],
+    "numDependencies": 29
+  },
+  {
+    "packageName": "define-lazy-prop",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "depd",
+    "dependencies": [],
+    "devDependencies": [
+      "benchmark",
+      "beautify-benchmark",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "istanbul",
+      "mocha",
+      "safe-buffer",
+      "uid-safe"
+    ],
+    "numDependencies": 13
+  },
+  {
+    "packageName": "destroy",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "detect-node",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "diff",
+    "dependencies": [],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/plugin-transform-modules-commonjs",
+      "@babel/preset-env",
+      "@babel/register",
+      "babel-eslint",
+      "babel-loader",
+      "chai",
+      "colors",
+      "eslint",
+      "grunt",
+      "grunt-babel",
+      "grunt-clean",
+      "grunt-cli",
+      "grunt-contrib-clean",
+      "grunt-contrib-copy",
+      "grunt-contrib-uglify",
+      "grunt-contrib-watch",
+      "grunt-eslint",
+      "grunt-exec",
+      "grunt-karma",
+      "grunt-mocha-istanbul",
+      "grunt-mocha-test",
+      "grunt-webpack",
+      "istanbul",
+      "karma",
+      "karma-chrome-launcher",
+      "karma-mocha",
+      "karma-mocha-reporter",
+      "karma-sauce-launcher",
+      "karma-sourcemap-loader",
+      "karma-webpack",
+      "mocha",
+      "rollup",
+      "rollup-plugin-babel",
+      "semver",
+      "webpack",
+      "webpack-dev-server"
+    ],
+    "numDependencies": 38
+  },
+  {
+    "packageName": "dns-equal",
+    "dependencies": [],
+    "devDependencies": [
+      "standard"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "dns-packet",
+    "dependencies": [
+      "@leichtgewicht/ip-codec"
+    ],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "tape"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "dom-converter",
+    "dependencies": [
+      "utila"
+    ],
+    "devDependencies": [
+      "chai",
+      "chai-changes",
+      "chai-fuzzy",
+      "coffee-script",
+      "jitter",
+      "mocha",
+      "mocha-pretty-spec-reporter",
+      "sinon",
+      "sinon-chai"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "dom-serializer",
+    "dependencies": [
+      "domelementtype",
+      "domhandler",
+      "entities"
+    ],
+    "devDependencies": [
+      "@types/jest",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "cheerio",
+      "coveralls",
+      "eslint",
+      "eslint-config-prettier",
+      "htmlparser2",
+      "jest",
+      "prettier",
+      "ts-jest",
+      "typescript"
+    ],
+    "numDependencies": 16
+  },
+  {
+    "packageName": "domelementtype",
+    "dependencies": [],
+    "devDependencies": [
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "eslint",
+      "eslint-config-prettier",
+      "prettier",
+      "typescript"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "domhandler",
+    "dependencies": [
+      "domelementtype"
+    ],
+    "devDependencies": [
+      "@types/jest",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "eslint",
+      "eslint-config-prettier",
+      "htmlparser2",
+      "jest",
+      "prettier",
+      "ts-jest",
+      "typescript"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "domutils",
+    "dependencies": [
+      "dom-serializer",
+      "domelementtype",
+      "domhandler"
+    ],
+    "devDependencies": [
+      "@types/jest",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-jsdoc",
+      "htmlparser2",
+      "jest",
+      "prettier",
+      "ts-jest",
+      "typedoc",
+      "typescript"
+    ],
+    "numDependencies": 16
+  },
+  {
+    "packageName": "dot-case",
+    "dependencies": [
+      "no-case",
+      "tslib"
+    ],
+    "devDependencies": [
+      "@size-limit/preset-small-lib",
+      "@types/jest",
+      "@types/node",
+      "jest",
+      "rimraf",
+      "ts-jest",
+      "tslint",
+      "tslint-config-prettier",
+      "tslint-config-standard",
+      "typescript"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "ee-first",
+    "dependencies": [],
+    "devDependencies": [
+      "istanbul",
+      "mocha"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "electron-to-chromium",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "codecov",
+      "compare-versions",
+      "node-fetch",
+      "nyc",
+      "shelljs"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "emojis-list",
+    "dependencies": [],
+    "devDependencies": [
+      "acho",
+      "browserify",
+      "cheerio",
+      "got",
+      "standard"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "encodeurl",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "istanbul",
+      "mocha"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "enhanced-resolve",
+    "dependencies": [
+      "graceful-fs",
+      "tapable"
+    ],
+    "devDependencies": [
+      "@types/graceful-fs",
+      "@types/jest",
+      "@types/node",
+      "cspell",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-jsdoc",
+      "eslint-plugin-node",
+      "eslint-plugin-prettier",
+      "husky",
+      "jest",
+      "lint-staged",
+      "memfs",
+      "prettier",
+      "tooling",
+      "typescript"
+    ],
+    "numDependencies": 18
+  },
+  {
+    "packageName": "entities",
+    "dependencies": [],
+    "devDependencies": [
+      "@types/jest",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "coveralls",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-node",
+      "jest",
+      "prettier",
+      "ts-jest",
+      "typescript"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "envinfo",
+    "dependencies": [],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/plugin-proposal-optional-chaining",
+      "@babel/polyfill",
+      "@babel/preset-env",
+      "@commitlint/cli",
+      "@commitlint/config-conventional",
+      "all-contributors-cli",
+      "babel-core",
+      "babel-eslint",
+      "babel-jest",
+      "babel-loader",
+      "eslint",
+      "eslint-config-airbnb-base",
+      "eslint-config-prettier",
+      "eslint-plugin-import",
+      "eslint-plugin-prettier",
+      "esm",
+      "github-release-cli",
+      "glob",
+      "husky",
+      "jest",
+      "minimist",
+      "os-name",
+      "pkg",
+      "prettier",
+      "prettier-eslint-cli",
+      "webpack",
+      "webpack-cli",
+      "which",
+      "yamlify-object"
+    ],
+    "numDependencies": 30
+  },
+  {
+    "packageName": "error-stack-parser",
+    "dependencies": [
+      "stackframe"
+    ],
+    "devDependencies": [
+      "eslint",
+      "jasmine",
+      "jasmine-core",
+      "karma",
+      "karma-chrome-launcher",
+      "karma-coverage",
+      "karma-coveralls",
+      "karma-firefox-launcher",
+      "karma-ie-launcher",
+      "karma-jasmine",
+      "karma-opera-launcher",
+      "karma-phantomjs-launcher",
+      "karma-safari-launcher",
+      "karma-sauce-launcher",
+      "karma-spec-reporter",
+      "uglify-es"
+    ],
+    "numDependencies": 17
+  },
+  {
+    "packageName": "es-module-lexer",
+    "dependencies": [],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/plugin-transform-modules-commonjs",
+      "@swc/cli",
+      "@swc/core",
+      "@types/node",
+      "kleur",
+      "mocha",
+      "terser",
+      "typescript"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "escalade",
+    "dependencies": [],
+    "devDependencies": [
+      "bundt",
+      "esm",
+      "uvu"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "escape-html",
+    "dependencies": [],
+    "devDependencies": [
+      "benchmark",
+      "beautify-benchmark"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "escape-string-regexp",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "xo"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "eslint-scope",
+    "dependencies": [
+      "esrecurse",
+      "estraverse"
+    ],
+    "devDependencies": [
+      "@typescript-eslint/parser",
+      "chai",
+      "eslint",
+      "eslint-config-eslint",
+      "eslint-plugin-node",
+      "eslint-release",
+      "eslint-visitor-keys",
+      "espree",
+      "istanbul",
+      "mocha",
+      "npm-license",
+      "shelljs",
+      "typescript"
+    ],
+    "numDependencies": 15
+  },
+  {
+    "packageName": "esrecurse",
+    "dependencies": [
+      "estraverse"
+    ],
+    "devDependencies": [
+      "babel-cli",
+      "babel-eslint",
+      "babel-preset-es2015",
+      "babel-register",
+      "chai",
+      "esprima",
+      "gulp",
+      "gulp-bump",
+      "gulp-eslint",
+      "gulp-filter",
+      "gulp-git",
+      "gulp-mocha",
+      "gulp-tag-version",
+      "jsdoc",
+      "minimist"
+    ],
+    "numDependencies": 16
+  },
+  {
+    "packageName": "estraverse",
+    "dependencies": [],
+    "devDependencies": [
+      "babel-preset-env",
+      "babel-register",
+      "chai",
+      "espree",
+      "gulp",
+      "gulp-bump",
+      "gulp-filter",
+      "gulp-git",
+      "gulp-tag-version",
+      "jshint",
+      "mocha"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "etag",
+    "dependencies": [],
+    "devDependencies": [
+      "beautify-benchmark",
+      "benchmark",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "istanbul",
+      "mocha",
+      "safe-buffer",
+      "seedrandom"
+    ],
+    "numDependencies": 13
+  },
+  {
+    "packageName": "eventemitter3",
+    "dependencies": [],
+    "devDependencies": [
+      "assume",
+      "browserify",
+      "mocha",
+      "nyc",
+      "pre-commit",
+      "sauce-browsers",
+      "sauce-test",
+      "uglify-js"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "events",
+    "dependencies": [],
+    "devDependencies": [
+      "airtap",
+      "functions-have-names",
+      "has",
+      "has-symbols",
+      "isarray",
+      "tape"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "execa",
+    "dependencies": [
+      "cross-spawn",
+      "get-stream",
+      "human-signals",
+      "is-stream",
+      "merge-stream",
+      "npm-run-path",
+      "onetime",
+      "signal-exit",
+      "strip-final-newline"
+    ],
+    "devDependencies": [
+      "@types/node",
+      "ava",
+      "get-node",
+      "is-running",
+      "nyc",
+      "p-event",
+      "tempfile",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 18
+  },
+  {
+    "packageName": "express",
+    "dependencies": [
+      "accepts",
+      "array-flatten",
+      "body-parser",
+      "content-disposition",
+      "content-type",
+      "cookie",
+      "cookie-signature",
+      "debug",
+      "depd",
+      "encodeurl",
+      "escape-html",
+      "etag",
+      "finalhandler",
+      "fresh",
+      "http-errors",
+      "merge-descriptors",
+      "methods",
+      "on-finished",
+      "parseurl",
+      "path-to-regexp",
+      "proxy-addr",
+      "qs",
+      "range-parser",
+      "safe-buffer",
+      "send",
+      "serve-static",
+      "setprototypeof",
+      "statuses",
+      "type-is",
+      "utils-merge",
+      "vary"
+    ],
+    "devDependencies": [
+      "after",
+      "connect-redis",
+      "cookie-parser",
+      "cookie-session",
+      "ejs",
+      "eslint",
+      "express-session",
+      "hbs",
+      "marked",
+      "method-override",
+      "mocha",
+      "morgan",
+      "multiparty",
+      "nyc",
+      "pbkdf2-password",
+      "supertest",
+      "vhost"
+    ],
+    "numDependencies": 48
+  },
+  {
+    "packageName": "fast-deep-equal",
+    "dependencies": [],
+    "devDependencies": [
+      "coveralls",
+      "dot",
+      "eslint",
+      "mocha",
+      "nyc",
+      "pre-commit",
+      "react",
+      "react-test-renderer",
+      "sinon",
+      "typescript"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "fast-json-stable-stringify",
+    "dependencies": [],
+    "devDependencies": [
+      "benchmark",
+      "coveralls",
+      "eslint",
+      "fast-stable-stringify",
+      "faster-stable-stringify",
+      "json-stable-stringify",
+      "nyc",
+      "pre-commit",
+      "tape"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "fastest-levenshtein",
+    "dependencies": [],
+    "devDependencies": [
+      "@types/benchmark",
+      "@types/jest",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "benchmark",
+      "coveralls",
+      "eslint",
+      "eslint-config-node",
+      "eslint-config-prettier",
+      "eslint-plugin-import",
+      "eslint-plugin-node",
+      "eslint-plugin-prettier",
+      "fast-levenshtein",
+      "jest",
+      "js-levenshtein",
+      "leven",
+      "levenshtein-edit-distance",
+      "natural",
+      "prettier",
+      "talisman",
+      "typescript"
+    ],
+    "numDependencies": 21
+  },
+  {
+    "packageName": "faye-websocket",
+    "dependencies": [
+      "websocket-driver"
+    ],
+    "devDependencies": [
+      "jstest",
+      "pace",
+      "permessage-deflate"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "fill-range",
+    "dependencies": [
+      "to-regex-range"
+    ],
+    "devDependencies": [
+      "gulp-format-md",
+      "mocha"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "finalhandler",
+    "dependencies": [
+      "debug",
+      "encodeurl",
+      "escape-html",
+      "on-finished",
+      "parseurl",
+      "statuses",
+      "unpipe"
+    ],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc",
+      "readable-stream",
+      "safe-buffer",
+      "supertest"
+    ],
+    "numDependencies": 19
+  },
+  {
+    "packageName": "find-cache-dir",
+    "dependencies": [
+      "common-path-prefix",
+      "pkg-dir"
+    ],
+    "devDependencies": [
+      "ava",
+      "del",
+      "tempy",
+      "xo"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "find-up",
+    "dependencies": [
+      "locate-path",
+      "path-exists"
+    ],
+    "devDependencies": [
+      "ava",
+      "is-path-inside",
+      "tempy",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "flat",
+    "dependencies": [],
+    "devDependencies": [
+      "mocha",
+      "standard"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "follow-redirects",
+    "dependencies": [],
+    "devDependencies": [
+      "concat-stream",
+      "eslint",
+      "express",
+      "lolex",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "forwarded",
+    "dependencies": [],
+    "devDependencies": [
+      "beautify-benchmark",
+      "benchmark",
+      "deep-equal",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "fresh",
+    "dependencies": [],
+    "devDependencies": [
+      "beautify-benchmark",
+      "benchmark",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "istanbul",
+      "mocha"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "fs-monkey",
+    "dependencies": [],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/preset-env",
+      "@semantic-release/changelog",
+      "@semantic-release/git",
+      "@semantic-release/npm",
+      "@types/jest",
+      "@types/node",
+      "babel-jest",
+      "jest",
+      "semantic-release",
+      "source-map-support"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "fs.realpath",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "fsevents",
+    "dependencies": [],
+    "devDependencies": [
+      "node-gyp"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "function-bind",
+    "dependencies": [],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "auto-changelog",
+      "eslint",
+      "in-publish",
+      "npmignore",
+      "nyc",
+      "safe-publish-latest",
+      "tape"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "gensync",
+    "dependencies": [],
+    "devDependencies": [
+      "babel-core",
+      "babel-preset-env",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-node",
+      "eslint-plugin-prettier",
+      "flow-bin",
+      "jest",
+      "prettier"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "get-intrinsic",
+    "dependencies": [
+      "function-bind",
+      "has-proto",
+      "has-symbols",
+      "hasown"
+    ],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "auto-changelog",
+      "call-bind",
+      "es-abstract",
+      "es-value-fixtures",
+      "eslint",
+      "evalmd",
+      "for-each",
+      "gopd",
+      "make-async-function",
+      "make-async-generator-function",
+      "make-generator-function",
+      "mock-property",
+      "npmignore",
+      "nyc",
+      "object-inspect",
+      "safe-publish-latest",
+      "tape"
+    ],
+    "numDependencies": 23
+  },
+  {
+    "packageName": "get-stream",
+    "dependencies": [],
+    "devDependencies": [
+      "@types/node",
+      "ava",
+      "into-stream",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "glob",
+    "dependencies": [
+      "fs.realpath",
+      "inflight",
+      "inherits",
+      "minimatch",
+      "once",
+      "path-is-absolute"
+    ],
+    "devDependencies": [
+      "memfs",
+      "mkdirp",
+      "rimraf",
+      "tap",
+      "tick"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "glob-parent",
+    "dependencies": [
+      "is-glob"
+    ],
+    "devDependencies": [
+      "coveralls",
+      "eslint",
+      "eslint-config-gulp",
+      "expect",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "glob-to-regexp",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "globals",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "xo"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "gopd",
+    "dependencies": [
+      "get-intrinsic"
+    ],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "auto-changelog",
+      "eslint",
+      "evalmd",
+      "in-publish",
+      "npmignore",
+      "safe-publish-latest",
+      "tape"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "graceful-fs",
+    "dependencies": [],
+    "devDependencies": [
+      "import-fresh",
+      "mkdirp",
+      "rimraf",
+      "tap"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "handle-thing",
+    "dependencies": [],
+    "devDependencies": [
+      "istanbul",
+      "mocha",
+      "pre-commit",
+      "readable-stream",
+      "standard",
+      "stream-pair"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "has-flag",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "has-property-descriptors",
+    "dependencies": [
+      "get-intrinsic"
+    ],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "auto-changelog",
+      "eslint",
+      "evalmd",
+      "in-publish",
+      "npmignore",
+      "nyc",
+      "safe-publish-latest",
+      "tape"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "has-proto",
+    "dependencies": [],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "auto-changelog",
+      "eslint",
+      "in-publish",
+      "npmignore",
+      "safe-publish-latest",
+      "tape"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "has-symbols",
+    "dependencies": [],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "auto-changelog",
+      "core-js",
+      "eslint",
+      "get-own-property-symbols",
+      "nyc",
+      "safe-publish-latest",
+      "tape"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "hasown",
+    "dependencies": [
+      "function-bind"
+    ],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "@types/function-bind",
+      "@types/mock-property",
+      "@types/tape",
+      "aud",
+      "auto-changelog",
+      "eslint",
+      "evalmd",
+      "in-publish",
+      "mock-property",
+      "npmignore",
+      "nyc",
+      "safe-publish-latest",
+      "tape",
+      "typescript"
+    ],
+    "numDependencies": 16
+  },
+  {
+    "packageName": "he",
+    "dependencies": [],
+    "devDependencies": [
+      "codecov.io",
+      "grunt",
+      "grunt-cli",
+      "grunt-shell",
+      "grunt-template",
+      "istanbul",
+      "jsesc",
+      "lodash",
+      "qunit-extras",
+      "qunitjs",
+      "regenerate",
+      "regexgen",
+      "requirejs",
+      "sort-object"
+    ],
+    "numDependencies": 14
+  },
+  {
+    "packageName": "hpack.js",
+    "dependencies": [
+      "inherits",
+      "obuf",
+      "readable-stream",
+      "wbuf"
+    ],
+    "devDependencies": [
+      "mocha"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "html-entities",
+    "dependencies": [],
+    "devDependencies": [
+      "@types/benchmark",
+      "@types/chai",
+      "@types/he",
+      "@types/mocha",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "benchmark",
+      "chai",
+      "entities",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-import",
+      "eslint-plugin-prettier",
+      "flowgen",
+      "he",
+      "husky",
+      "mocha",
+      "prettier",
+      "terser",
+      "ts-node",
+      "ttypescript",
+      "typescript",
+      "typescript-transform-macros"
+    ],
+    "numDependencies": 24
+  },
+  {
+    "packageName": "html-minifier-terser",
+    "dependencies": [
+      "camel-case",
+      "clean-css",
+      "commander",
+      "he",
+      "param-case",
+      "relateurl",
+      "terser"
+    ],
+    "devDependencies": [
+      "grunt",
+      "grunt-browserify",
+      "grunt-eslint",
+      "grunt-terser",
+      "husky",
+      "is-ci",
+      "lint-staged",
+      "node-qunit-puppeteer",
+      "qunit",
+      "serve"
+    ],
+    "numDependencies": 17
+  },
+  {
+    "packageName": "html-webpack-plugin",
+    "dependencies": [
+      "@types/html-minifier-terser",
+      "html-minifier-terser",
+      "lodash",
+      "pretty-error",
+      "tapable"
+    ],
+    "devDependencies": [
+      "@types/node",
+      "commitizen",
+      "css-loader",
+      "cz-conventional-changelog",
+      "dir-compare",
+      "html-loader",
+      "jest",
+      "mini-css-extract-plugin",
+      "pug",
+      "pug-loader",
+      "raw-loader",
+      "rimraf",
+      "semistandard",
+      "standard-version",
+      "style-loader",
+      "typescript",
+      "webpack",
+      "webpack-cli",
+      "webpack-recompilation-simulator"
+    ],
+    "numDependencies": 24
+  },
+  {
+    "packageName": "htmlparser2",
+    "dependencies": [
+      "domelementtype",
+      "domhandler",
+      "domutils",
+      "entities"
+    ],
+    "devDependencies": [
+      "@types/jest",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "eslint",
+      "eslint-config-prettier",
+      "jest",
+      "prettier",
+      "ts-jest",
+      "typescript"
+    ],
+    "numDependencies": 14
+  },
+  {
+    "packageName": "http-deceiver",
+    "dependencies": [],
+    "devDependencies": [
+      "handle-thing",
+      "mocha",
+      "readable-stream",
+      "stream-pair"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "http-errors",
+    "dependencies": [
+      "depd",
+      "inherits",
+      "setprototypeof",
+      "statuses",
+      "toidentifier"
+    ],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 14
+  },
+  {
+    "packageName": "http-parser-js",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "http-proxy",
+    "dependencies": [
+      "eventemitter3",
+      "requires-port",
+      "follow-redirects"
+    ],
+    "devDependencies": [
+      "async",
+      "auto-changelog",
+      "concat-stream",
+      "expect.js",
+      "mocha",
+      "nyc",
+      "semver",
+      "socket.io",
+      "socket.io-client",
+      "sse",
+      "ws"
+    ],
+    "numDependencies": 14
+  },
+  {
+    "packageName": "http-proxy-middleware",
+    "dependencies": [
+      "@types/http-proxy",
+      "http-proxy",
+      "is-glob",
+      "is-plain-obj",
+      "micromatch"
+    ],
+    "devDependencies": [
+      "@commitlint/cli",
+      "@commitlint/config-conventional",
+      "@types/express",
+      "@types/is-glob",
+      "@types/jest",
+      "@types/micromatch",
+      "@types/node",
+      "@types/supertest",
+      "@types/ws",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "body-parser",
+      "browser-sync",
+      "connect",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-prettier",
+      "express",
+      "get-port",
+      "husky",
+      "jest",
+      "lint-staged",
+      "mockttp",
+      "open",
+      "prettier",
+      "supertest",
+      "ts-jest",
+      "typescript",
+      "ws"
+    ],
+    "numDependencies": 34
+  },
+  {
+    "packageName": "human-signals",
+    "dependencies": [],
+    "devDependencies": [
+      "@ehmicky/dev-tasks",
+      "ajv",
+      "ava",
+      "gulp",
+      "husky",
+      "test-each"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "iconv-lite",
+    "dependencies": [
+      "safer-buffer"
+    ],
+    "devDependencies": [
+      "mocha",
+      "request",
+      "unorm",
+      "errto",
+      "async",
+      "istanbul",
+      "semver",
+      "iconv"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "icss-utils",
+    "dependencies": [],
+    "devDependencies": [
+      "coveralls",
+      "eslint",
+      "eslint-config-prettier",
+      "husky",
+      "jest",
+      "lint-staged",
+      "postcss",
+      "prettier"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "import-local",
+    "dependencies": [
+      "pkg-dir",
+      "resolve-cwd"
+    ],
+    "devDependencies": [
+      "ava",
+      "cpy",
+      "del",
+      "execa",
+      "xo"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "inflight",
+    "dependencies": [
+      "once",
+      "wrappy"
+    ],
+    "devDependencies": [
+      "tap"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "inherits",
+    "dependencies": [],
+    "devDependencies": [
+      "tap"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "interpret",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-gulp",
+      "eslint-plugin-node",
+      "expect",
+      "js-yaml",
+      "mocha",
+      "nyc",
+      "parse-node-version",
+      "rechoir",
+      "remark-cli",
+      "remark-code-import",
+      "shelljs"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "ipaddr.js",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "uglify-es"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "is-binary-path",
+    "dependencies": [
+      "binary-extensions"
+    ],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "is-core-module",
+    "dependencies": [
+      "hasown"
+    ],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "auto-changelog",
+      "eslint",
+      "in-publish",
+      "mock-property",
+      "npmignore",
+      "nyc",
+      "safe-publish-latest",
+      "semver",
+      "tape"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "is-docker",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "sinon",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "is-extglob",
+    "dependencies": [],
+    "devDependencies": [
+      "gulp-format-md",
+      "mocha"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "is-glob",
+    "dependencies": [
+      "is-extglob"
+    ],
+    "devDependencies": [
+      "gulp-format-md",
+      "mocha"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "is-number",
+    "dependencies": [],
+    "devDependencies": [
+      "ansi",
+      "benchmark",
+      "gulp-format-md",
+      "mocha"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "is-plain-obj",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "is-plain-object",
+    "dependencies": [
+      "isobject"
+    ],
+    "devDependencies": [
+      "browserify",
+      "chai",
+      "gulp-format-md",
+      "mocha",
+      "mocha-phantomjs",
+      "phantomjs",
+      "uglify-js"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "is-stream",
+    "dependencies": [],
+    "devDependencies": [
+      "@types/node",
+      "ava",
+      "tempy",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "is-wsl",
+    "dependencies": [
+      "is-docker"
+    ],
+    "devDependencies": [
+      "ava",
+      "clear-module",
+      "proxyquire",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "isarray",
+    "dependencies": [],
+    "devDependencies": [
+      "tape"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "isexe",
+    "dependencies": [],
+    "devDependencies": [
+      "mkdirp",
+      "rimraf",
+      "tap"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "isobject",
+    "dependencies": [],
+    "devDependencies": [
+      "gulp-format-md",
+      "mocha"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "jest-worker",
+    "dependencies": [
+      "@types/node",
+      "merge-stream",
+      "supports-color"
+    ],
+    "devDependencies": [
+      "@types/merge-stream",
+      "@types/supports-color",
+      "get-stream",
+      "jest-leak-detector",
+      "worker-farm"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "js-tokens",
+    "dependencies": [],
+    "devDependencies": [
+      "coffeescript",
+      "esprima",
+      "everything.js",
+      "mocha"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "jsesc",
+    "dependencies": [],
+    "devDependencies": [
+      "coveralls",
+      "grunt",
+      "grunt-template",
+      "istanbul",
+      "mocha",
+      "regenerate",
+      "requirejs"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "json-parse-even-better-errors",
+    "dependencies": [],
+    "devDependencies": [
+      "tap"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "json-schema-traverse",
+    "dependencies": [],
+    "devDependencies": [
+      "coveralls",
+      "eslint",
+      "mocha",
+      "nyc",
+      "pre-commit"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "json5",
+    "dependencies": [],
+    "devDependencies": [
+      "core-js",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "npm-run-all",
+      "regenerate",
+      "rollup",
+      "rollup-plugin-buble",
+      "rollup-plugin-commonjs",
+      "rollup-plugin-node-resolve",
+      "rollup-plugin-terser",
+      "sinon",
+      "tap",
+      "unicode-10.0.0"
+    ],
+    "numDependencies": 17
+  },
+  {
+    "packageName": "kind-of",
+    "dependencies": [],
+    "devDependencies": [
+      "benchmarked",
+      "browserify",
+      "gulp-format-md",
+      "mocha",
+      "write"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "launch-editor",
+    "dependencies": [
+      "picocolors",
+      "shell-quote"
+    ],
+    "devDependencies": [],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "loader-runner",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "eslint-plugin-node",
+      "eslint-plugin-nodeca",
+      "istanbul",
+      "mocha",
+      "should"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "loader-utils",
+    "dependencies": [
+      "big.js",
+      "emojis-list",
+      "json5"
+    ],
+    "devDependencies": [
+      "coveralls",
+      "eslint",
+      "eslint-plugin-node",
+      "eslint-plugin-prettier",
+      "jest",
+      "prettier",
+      "standard-version"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "locate-path",
+    "dependencies": [
+      "p-locate"
+    ],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "lodash",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "loose-envify",
+    "dependencies": [
+      "js-tokens"
+    ],
+    "devDependencies": [
+      "browserify",
+      "envify",
+      "tap"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "lower-case",
+    "dependencies": [
+      "tslib"
+    ],
+    "devDependencies": [
+      "@size-limit/preset-small-lib",
+      "@types/jest",
+      "@types/node",
+      "jest",
+      "rimraf",
+      "ts-jest",
+      "tslint",
+      "tslint-config-prettier",
+      "tslint-config-standard",
+      "typescript"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "lru-cache",
+    "dependencies": [
+      "yallist"
+    ],
+    "devDependencies": [
+      "benchmark",
+      "tap"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "make-error",
+    "dependencies": [],
+    "devDependencies": [
+      "browserify",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "husky",
+      "jest",
+      "prettier",
+      "uglify-js"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "media-typer",
+    "dependencies": [],
+    "devDependencies": [
+      "istanbul",
+      "mocha",
+      "should"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "memfs",
+    "dependencies": [
+      "fs-monkey"
+    ],
+    "devDependencies": [
+      "@semantic-release/changelog",
+      "@semantic-release/git",
+      "@semantic-release/npm",
+      "@types/jest",
+      "@types/node",
+      "husky",
+      "jest",
+      "prettier",
+      "pretty-quick",
+      "rimraf",
+      "semantic-release",
+      "ts-jest",
+      "ts-node",
+      "tslint",
+      "tslint-config-common",
+      "typescript"
+    ],
+    "numDependencies": 17
+  },
+  {
+    "packageName": "merge-descriptors",
+    "dependencies": [],
+    "devDependencies": [
+      "istanbul",
+      "mocha"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "merge-stream",
+    "dependencies": [],
+    "devDependencies": [
+      "from2",
+      "istanbul"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "methods",
+    "dependencies": [],
+    "devDependencies": [
+      "istanbul",
+      "mocha"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "micromatch",
+    "dependencies": [
+      "braces",
+      "picomatch"
+    ],
+    "devDependencies": [
+      "fill-range",
+      "gulp-format-md",
+      "minimatch",
+      "mocha",
+      "time-require"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "mime",
+    "dependencies": [],
+    "devDependencies": [
+      "github-release-notes",
+      "mime-db",
+      "mime-score"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "mime-db",
+    "dependencies": [],
+    "devDependencies": [
+      "bluebird",
+      "co",
+      "cogent",
+      "csv-parse",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "gnode",
+      "media-typer",
+      "mocha",
+      "nyc",
+      "raw-body",
+      "stream-to-array"
+    ],
+    "numDependencies": 17
+  },
+  {
+    "packageName": "mime-types",
+    "dependencies": [
+      "mime-db"
+    ],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "mimic-fn",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "minimalistic-assert",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "minimatch",
+    "dependencies": [
+      "brace-expansion"
+    ],
+    "devDependencies": [
+      "tap"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "ms",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "expect.js",
+      "husky",
+      "lint-staged",
+      "mocha"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "multicast-dns",
+    "dependencies": [
+      "dns-packet",
+      "thunky"
+    ],
+    "devDependencies": [
+      "standard",
+      "tape"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "nanoid",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "negotiator",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "eslint-plugin-markdown",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "neo-async",
+    "dependencies": [],
+    "devDependencies": [
+      "aigle",
+      "async",
+      "benchmark",
+      "bluebird",
+      "codecov.io",
+      "fs-extra",
+      "func-comparator",
+      "gulp",
+      "gulp-bump",
+      "gulp-exit",
+      "gulp-git",
+      "gulp-jscs",
+      "gulp-mocha",
+      "gulp-tag-version",
+      "gulp-util",
+      "husky",
+      "istanbul",
+      "jsdoc",
+      "jshint",
+      "lint-staged",
+      "lodash",
+      "minimist",
+      "mocha",
+      "mocha-parallel-executor",
+      "mocha.parallel",
+      "prettier",
+      "require-dir"
+    ],
+    "numDependencies": 27
+  },
+  {
+    "packageName": "no-case",
+    "dependencies": [
+      "lower-case",
+      "tslib"
+    ],
+    "devDependencies": [
+      "@size-limit/preset-small-lib",
+      "@types/jest",
+      "@types/node",
+      "jest",
+      "rimraf",
+      "ts-jest",
+      "tslint",
+      "tslint-config-prettier",
+      "tslint-config-standard",
+      "typescript"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "node-forge",
+    "dependencies": [],
+    "devDependencies": [
+      "browserify",
+      "commander",
+      "cross-env",
+      "eslint",
+      "eslint-config-digitalbazaar",
+      "express",
+      "karma",
+      "karma-browserify",
+      "karma-chrome-launcher",
+      "karma-edge-launcher",
+      "karma-firefox-launcher",
+      "karma-ie-launcher",
+      "karma-mocha",
+      "karma-mocha-reporter",
+      "karma-safari-launcher",
+      "karma-sauce-launcher",
+      "karma-sourcemap-loader",
+      "karma-tap-reporter",
+      "karma-webpack",
+      "mocha",
+      "mocha-lcov-reporter",
+      "nodejs-websocket",
+      "nyc",
+      "opts",
+      "webpack",
+      "webpack-cli",
+      "worker-loader"
+    ],
+    "numDependencies": 27
+  },
+  {
+    "packageName": "node-releases",
+    "dependencies": [],
+    "devDependencies": [
+      "semver"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "normalize-path",
+    "dependencies": [],
+    "devDependencies": [
+      "gulp-format-md",
+      "minimist",
+      "mocha"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "npm-run-path",
+    "dependencies": [
+      "path-key"
+    ],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "nth-check",
+    "dependencies": [
+      "boolbase"
+    ],
+    "devDependencies": [
+      "@types/boolbase",
+      "@types/jest",
+      "@types/node",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "eslint",
+      "eslint-config-prettier",
+      "jest",
+      "prettier",
+      "ts-jest",
+      "typescript"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "object-inspect",
+    "dependencies": [],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "@pkgjs/support",
+      "auto-changelog",
+      "core-js",
+      "error-cause",
+      "es-value-fixtures",
+      "eslint",
+      "for-each",
+      "functions-have-names",
+      "glob",
+      "globalthis",
+      "has-tostringtag",
+      "in-publish",
+      "jackspeak",
+      "make-arrow-function",
+      "mock-property",
+      "npmignore",
+      "nyc",
+      "safe-publish-latest",
+      "string.prototype.repeat",
+      "tape"
+    ],
+    "numDependencies": 21
+  },
+  {
+    "packageName": "obuf",
+    "dependencies": [],
+    "devDependencies": [
+      "mocha"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "on-finished",
+    "dependencies": [
+      "ee-first"
+    ],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "on-headers",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "istanbul",
+      "mocha",
+      "supertest"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "once",
+    "dependencies": [
+      "wrappy"
+    ],
+    "devDependencies": [
+      "tap"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "onetime",
+    "dependencies": [
+      "mimic-fn"
+    ],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "open",
+    "dependencies": [
+      "define-lazy-prop",
+      "is-docker",
+      "is-wsl"
+    ],
+    "devDependencies": [
+      "@types/node",
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "p-limit",
+    "dependencies": [
+      "p-try"
+    ],
+    "devDependencies": [
+      "ava",
+      "delay",
+      "in-range",
+      "random-int",
+      "time-span",
+      "tsd-check",
+      "xo"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "p-locate",
+    "dependencies": [
+      "p-limit"
+    ],
+    "devDependencies": [
+      "ava",
+      "delay",
+      "in-range",
+      "time-span",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "p-retry",
+    "dependencies": [
+      "@types/retry",
+      "retry"
+    ],
+    "devDependencies": [
+      "ava",
+      "delay",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "p-try",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "param-case",
+    "dependencies": [
+      "dot-case",
+      "tslib"
+    ],
+    "devDependencies": [
+      "@size-limit/preset-small-lib",
+      "@types/jest",
+      "@types/node",
+      "jest",
+      "rimraf",
+      "ts-jest",
+      "tslint",
+      "tslint-config-prettier",
+      "tslint-config-standard",
+      "typescript"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "parseurl",
+    "dependencies": [],
+    "devDependencies": [
+      "beautify-benchmark",
+      "benchmark",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "fast-url-parser",
+      "istanbul",
+      "mocha"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "pascal-case",
+    "dependencies": [
+      "no-case",
+      "tslib"
+    ],
+    "devDependencies": [
+      "@size-limit/preset-small-lib",
+      "@types/jest",
+      "@types/node",
+      "jest",
+      "rimraf",
+      "ts-jest",
+      "tslint",
+      "tslint-config-prettier",
+      "tslint-config-standard",
+      "typescript"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "path-exists",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "path-is-absolute",
+    "dependencies": [],
+    "devDependencies": [
+      "xo"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "path-key",
+    "dependencies": [],
+    "devDependencies": [
+      "@types/node",
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "path-parse",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "path-to-regexp",
+    "dependencies": [],
+    "devDependencies": [
+      "mocha",
+      "istanbul"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "picocolors",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "picomatch",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "fill-range",
+      "gulp-format-md",
+      "mocha",
+      "nyc",
+      "time-require"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "pkg-dir",
+    "dependencies": [
+      "find-up"
+    ],
+    "devDependencies": [
+      "ava",
+      "tempy",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "postcss",
+    "dependencies": [
+      "nanoid",
+      "picocolors",
+      "source-map-js"
+    ],
+    "devDependencies": [],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "postcss-modules-extract-imports",
+    "dependencies": [],
+    "devDependencies": [
+      "coveralls",
+      "eslint",
+      "eslint-config-prettier",
+      "husky",
+      "jest",
+      "lint-staged",
+      "postcss",
+      "prettier"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "postcss-modules-local-by-default",
+    "dependencies": [
+      "icss-utils",
+      "postcss-selector-parser",
+      "postcss-value-parser"
+    ],
+    "devDependencies": [
+      "coveralls",
+      "eslint",
+      "eslint-config-prettier",
+      "husky",
+      "jest",
+      "lint-staged",
+      "postcss",
+      "prettier"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "postcss-modules-scope",
+    "dependencies": [
+      "postcss-selector-parser"
+    ],
+    "devDependencies": [
+      "coveralls",
+      "eslint",
+      "eslint-config-prettier",
+      "husky",
+      "jest",
+      "lint-staged",
+      "postcss",
+      "prettier"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "postcss-modules-values",
+    "dependencies": [
+      "icss-utils"
+    ],
+    "devDependencies": [
+      "coveralls",
+      "eslint",
+      "eslint-config-prettier",
+      "husky",
+      "jest",
+      "lint-staged",
+      "postcss",
+      "prettier"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "postcss-selector-parser",
+    "dependencies": [
+      "cssesc",
+      "util-deprecate"
+    ],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/eslint-parser",
+      "@babel/eslint-plugin",
+      "@babel/plugin-proposal-class-properties",
+      "@babel/preset-env",
+      "@babel/register",
+      "ava",
+      "babel-plugin-add-module-exports",
+      "coveralls",
+      "del-cli",
+      "eslint",
+      "eslint-plugin-import",
+      "glob",
+      "minimist",
+      "nyc",
+      "postcss",
+      "semver",
+      "typescript"
+    ],
+    "numDependencies": 21
+  },
+  {
+    "packageName": "postcss-value-parser",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "husky",
+      "lint-staged",
+      "prettier",
+      "tap-spec",
+      "tape"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "pretty-error",
+    "dependencies": [
+      "lodash",
+      "renderkid"
+    ],
+    "devDependencies": [
+      "chai",
+      "coffee-script",
+      "coffeescript",
+      "jitter",
+      "mocha"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "process-nextick-args",
+    "dependencies": [],
+    "devDependencies": [
+      "tap"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "proxy-addr",
+    "dependencies": [
+      "forwarded",
+      "ipaddr.js"
+    ],
+    "devDependencies": [
+      "benchmark",
+      "beautify-benchmark",
+      "deep-equal",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 14
+  },
+  {
+    "packageName": "punycode",
+    "dependencies": [],
+    "devDependencies": [
+      "codecov",
+      "nyc",
+      "mocha"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "qs",
+    "dependencies": [
+      "side-channel"
+    ],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "browserify",
+      "eclint",
+      "eslint",
+      "evalmd",
+      "for-each",
+      "has-symbols",
+      "iconv-lite",
+      "in-publish",
+      "mkdirp",
+      "npmignore",
+      "nyc",
+      "object-inspect",
+      "qs-iconv",
+      "safe-publish-latest",
+      "safer-buffer",
+      "tape"
+    ],
+    "numDependencies": 19
+  },
+  {
+    "packageName": "randombytes",
+    "dependencies": [
+      "safe-buffer"
+    ],
+    "devDependencies": [
+      "phantomjs",
+      "standard",
+      "tap-spec",
+      "tape",
+      "zuul"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "range-parser",
+    "dependencies": [],
+    "devDependencies": [
+      "deep-equal",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-markdown",
+      "eslint-plugin-import",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "raw-body",
+    "dependencies": [
+      "bytes",
+      "http-errors",
+      "iconv-lite",
+      "unpipe"
+    ],
+    "devDependencies": [
+      "bluebird",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc",
+      "readable-stream",
+      "safe-buffer"
+    ],
+    "numDependencies": 16
+  },
+  {
+    "packageName": "react",
+    "dependencies": [
+      "loose-envify"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "react-dom",
+    "dependencies": [
+      "loose-envify",
+      "scheduler"
+    ],
+    "devDependencies": [],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "react-refresh",
+    "dependencies": [],
+    "devDependencies": [
+      "react-16-8",
+      "react-dom-16-8",
+      "scheduler-0-13"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "readable-stream",
+    "dependencies": [
+      "inherits",
+      "string_decoder",
+      "util-deprecate"
+    ],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/polyfill",
+      "@babel/preset-env",
+      "airtap",
+      "assert",
+      "bl",
+      "deep-strict-equal",
+      "events.once",
+      "glob",
+      "gunzip-maybe",
+      "hyperquest",
+      "lolex",
+      "nyc",
+      "pump",
+      "rimraf",
+      "tap",
+      "tape",
+      "tar-fs",
+      "util-promisify"
+    ],
+    "numDependencies": 23
+  },
+  {
+    "packageName": "readdirp",
+    "dependencies": [
+      "picomatch"
+    ],
+    "devDependencies": [
+      "@types/node",
+      "chai",
+      "chai-subset",
+      "dtslint",
+      "eslint",
+      "mocha",
+      "nyc",
+      "rimraf",
+      "typescript"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "rechoir",
+    "dependencies": [
+      "resolve"
+    ],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-gulp",
+      "expect",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "relateurl",
+    "dependencies": [],
+    "devDependencies": [
+      "browserify",
+      "chai",
+      "mocha",
+      "uglify-js"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "renderkid",
+    "dependencies": [
+      "css-select",
+      "dom-converter",
+      "htmlparser2",
+      "lodash",
+      "strip-ansi"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/preset-env",
+      "chai",
+      "chai-changes",
+      "chai-fuzzy",
+      "coffeescript",
+      "mocha",
+      "sinon",
+      "sinon-chai"
+    ],
+    "numDependencies": 14
+  },
+  {
+    "packageName": "require-from-string",
+    "dependencies": [],
+    "devDependencies": [
+      "mocha"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "requires-port",
+    "dependencies": [],
+    "devDependencies": [
+      "assume",
+      "istanbul",
+      "mocha",
+      "pre-commit"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "resolve",
+    "dependencies": [
+      "is-core-module",
+      "path-parse",
+      "supports-preserve-symlinks-flag"
+    ],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "array.prototype.map",
+      "aud",
+      "copy-dir",
+      "eclint",
+      "eslint",
+      "in-publish",
+      "mkdirp",
+      "mv",
+      "npmignore",
+      "object-keys",
+      "rimraf",
+      "safe-publish-latest",
+      "semver",
+      "tap",
+      "tape",
+      "tmp"
+    ],
+    "numDependencies": 20
+  },
+  {
+    "packageName": "resolve-cwd",
+    "dependencies": [
+      "resolve-from"
+    ],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "resolve-from",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "retry",
+    "dependencies": [],
+    "devDependencies": [
+      "fake",
+      "istanbul",
+      "tape"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "rimraf",
+    "dependencies": [
+      "glob"
+    ],
+    "devDependencies": [
+      "mkdirp",
+      "tap"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "safe-buffer",
+    "dependencies": [],
+    "devDependencies": [
+      "standard",
+      "tape"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "safer-buffer",
+    "dependencies": [],
+    "devDependencies": [
+      "standard",
+      "tape"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "scheduler",
+    "dependencies": [
+      "loose-envify"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "schema-utils",
+    "dependencies": [
+      "@types/json-schema",
+      "ajv",
+      "ajv-keywords"
+    ],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/preset-env",
+      "@commitlint/cli",
+      "@commitlint/config-conventional",
+      "@webpack-contrib/eslint-config-webpack",
+      "babel-jest",
+      "cross-env",
+      "del",
+      "del-cli",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-import",
+      "husky",
+      "jest",
+      "lint-staged",
+      "npm-run-all",
+      "prettier",
+      "standard-version",
+      "typescript",
+      "webpack"
+    ],
+    "numDependencies": 24
+  },
+  {
+    "packageName": "select-hose",
+    "dependencies": [],
+    "devDependencies": [
+      "handle-thing",
+      "jscs",
+      "jshint",
+      "mocha",
+      "stream-pair"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "selfsigned",
+    "dependencies": [
+      "@types/node-forge",
+      "node-forge"
+    ],
+    "devDependencies": [
+      "chai",
+      "mocha"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "semver",
+    "dependencies": [
+      "lru-cache"
+    ],
+    "devDependencies": [
+      "@npmcli/eslint-config",
+      "@npmcli/template-oss",
+      "tap"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "send",
+    "dependencies": [
+      "debug",
+      "depd",
+      "destroy",
+      "encodeurl",
+      "escape-html",
+      "etag",
+      "fresh",
+      "http-errors",
+      "mime",
+      "ms",
+      "on-finished",
+      "range-parser",
+      "statuses"
+    ],
+    "devDependencies": [
+      "after",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc",
+      "supertest"
+    ],
+    "numDependencies": 24
+  },
+  {
+    "packageName": "serialize-javascript",
+    "dependencies": [
+      "randombytes"
+    ],
+    "devDependencies": [
+      "benchmark",
+      "chai",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "serve-index",
+    "dependencies": [
+      "accepts",
+      "batch",
+      "debug",
+      "escape-html",
+      "http-errors",
+      "mime-types",
+      "parseurl"
+    ],
+    "devDependencies": [
+      "after",
+      "istanbul",
+      "mocha",
+      "supertest"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "serve-static",
+    "dependencies": [
+      "encodeurl",
+      "escape-html",
+      "parseurl",
+      "send"
+    ],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc",
+      "safe-buffer",
+      "supertest"
+    ],
+    "numDependencies": 15
+  },
+  {
+    "packageName": "set-function-length",
+    "dependencies": [
+      "define-data-property",
+      "get-intrinsic",
+      "gopd",
+      "has-property-descriptors"
+    ],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "auto-changelog",
+      "call-bind",
+      "es-value-fixtures",
+      "eslint",
+      "evalmd",
+      "for-each",
+      "in-publish",
+      "npmignore",
+      "nyc",
+      "object-inspect",
+      "safe-publish-latest",
+      "tape"
+    ],
+    "numDependencies": 18
+  },
+  {
+    "packageName": "setprototypeof",
+    "dependencies": [],
+    "devDependencies": [
+      "mocha",
+      "standard"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "shallow-clone",
+    "dependencies": [
+      "kind-of"
+    ],
+    "devDependencies": [
+      "gulp-format-md",
+      "mocha"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "shebang-command",
+    "dependencies": [
+      "shebang-regex"
+    ],
+    "devDependencies": [
+      "ava",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "shebang-regex",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "shell-quote",
+    "dependencies": [],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "auto-changelog",
+      "eslint",
+      "evalmd",
+      "in-publish",
+      "npmignore",
+      "nyc",
+      "safe-publish-latest",
+      "tape"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "side-channel",
+    "dependencies": [
+      "call-bind",
+      "get-intrinsic",
+      "object-inspect"
+    ],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "auto-changelog",
+      "eslint",
+      "nyc",
+      "safe-publish-latest",
+      "tape"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "signal-exit",
+    "dependencies": [],
+    "devDependencies": [
+      "chai",
+      "coveralls",
+      "nyc",
+      "standard-version",
+      "tap"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "sockjs",
+    "dependencies": [
+      "faye-websocket",
+      "uuid",
+      "websocket-driver"
+    ],
+    "devDependencies": [
+      "coffeescript"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "source-map",
+    "dependencies": [],
+    "devDependencies": [
+      "doctoc",
+      "webpack"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "source-map-js",
+    "dependencies": [],
+    "devDependencies": [
+      "clean-publish",
+      "doctoc",
+      "webpack"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "source-map-support",
+    "dependencies": [
+      "buffer-from",
+      "source-map"
+    ],
+    "devDependencies": [
+      "browserify",
+      "coffeescript",
+      "http-server",
+      "mocha",
+      "webpack"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "spdy",
+    "dependencies": [
+      "debug",
+      "handle-thing",
+      "http-deceiver",
+      "select-hose",
+      "spdy-transport"
+    ],
+    "devDependencies": [
+      "istanbul",
+      "mocha",
+      "pre-commit",
+      "standard"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "spdy-transport",
+    "dependencies": [
+      "debug",
+      "detect-node",
+      "hpack.js",
+      "obuf",
+      "readable-stream",
+      "wbuf"
+    ],
+    "devDependencies": [
+      "async",
+      "istanbul",
+      "mocha",
+      "pre-commit",
+      "standard",
+      "stream-pair"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "stackframe",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "jasmine",
+      "jasmine-core",
+      "karma",
+      "karma-chrome-launcher",
+      "karma-coverage",
+      "karma-coveralls",
+      "karma-firefox-launcher",
+      "karma-ie-launcher",
+      "karma-jasmine",
+      "karma-opera-launcher",
+      "karma-phantomjs-launcher",
+      "karma-safari-launcher",
+      "karma-sauce-launcher",
+      "karma-spec-reporter",
+      "uglify-es"
+    ],
+    "numDependencies": 16
+  },
+  {
+    "packageName": "statuses",
+    "dependencies": [],
+    "devDependencies": [
+      "csv-parse",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc",
+      "raw-body",
+      "stream-to-array"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "string_decoder",
+    "dependencies": [
+      "safe-buffer"
+    ],
+    "devDependencies": [
+      "babel-polyfill",
+      "core-util-is",
+      "inherits",
+      "tap"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "strip-ansi",
+    "dependencies": [
+      "ansi-regex"
+    ],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "strip-final-newline",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "xo"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "style-loader",
+    "dependencies": [],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/preset-env",
+      "@commitlint/cli",
+      "@commitlint/config-conventional",
+      "@webpack-contrib/eslint-config-webpack",
+      "babel-jest",
+      "cross-env",
+      "cspell",
+      "css-loader",
+      "del",
+      "del-cli",
+      "es-check",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-import",
+      "file-loader",
+      "husky",
+      "jest",
+      "jest-environment-jsdom",
+      "jsdom",
+      "lint-staged",
+      "memfs",
+      "npm-run-all",
+      "prettier",
+      "sass",
+      "sass-loader",
+      "semver",
+      "standard-version",
+      "webpack",
+      "webpack-cli",
+      "webpack-dev-server"
+    ],
+    "numDependencies": 32
+  },
+  {
+    "packageName": "supports-color",
+    "dependencies": [
+      "has-flag"
+    ],
+    "devDependencies": [
+      "ava",
+      "import-fresh",
+      "xo"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "supports-preserve-symlinks-flag",
+    "dependencies": [],
+    "devDependencies": [
+      "@ljharb/eslint-config",
+      "aud",
+      "auto-changelog",
+      "eslint",
+      "nyc",
+      "safe-publish-latest",
+      "semver",
+      "tape"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "tapable",
+    "dependencies": [],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/preset-env",
+      "babel-jest",
+      "codecov",
+      "jest",
+      "prettier"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "terser",
+    "dependencies": [
+      "@jridgewell/source-map",
+      "acorn",
+      "commander",
+      "source-map-support"
+    ],
+    "devDependencies": [
+      "@ls-lint/ls-lint",
+      "astring",
+      "eslint",
+      "eslump",
+      "esm",
+      "mocha",
+      "pre-commit",
+      "rollup",
+      "semver",
+      "source-map"
+    ],
+    "numDependencies": 14
+  },
+  {
+    "packageName": "terser-webpack-plugin",
+    "dependencies": [
+      "@jridgewell/trace-mapping",
+      "jest-worker",
+      "schema-utils",
+      "serialize-javascript",
+      "terser"
+    ],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/preset-env",
+      "@commitlint/cli",
+      "@commitlint/config-conventional",
+      "@swc/core",
+      "@types/node",
+      "@types/serialize-javascript",
+      "@types/uglify-js",
+      "@webpack-contrib/eslint-config-webpack",
+      "babel-jest",
+      "copy-webpack-plugin",
+      "cross-env",
+      "cspell",
+      "del",
+      "del-cli",
+      "esbuild",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-import",
+      "file-loader",
+      "husky",
+      "jest",
+      "lint-staged",
+      "memfs",
+      "npm-run-all",
+      "prettier",
+      "standard-version",
+      "typescript",
+      "uglify-js",
+      "webpack",
+      "webpack-cli",
+      "worker-loader"
+    ],
+    "numDependencies": 38
+  },
+  {
+    "packageName": "thunky",
+    "dependencies": [],
+    "devDependencies": [
+      "standard",
+      "tape"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "to-fast-properties",
+    "dependencies": [],
+    "devDependencies": [
+      "ava"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "to-regex-range",
+    "dependencies": [
+      "is-number"
+    ],
+    "devDependencies": [
+      "fill-range",
+      "gulp-format-md",
+      "mocha",
+      "text-table",
+      "time-diff"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "toidentifier",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "ts-loader",
+    "dependencies": [
+      "chalk",
+      "enhanced-resolve",
+      "micromatch",
+      "semver",
+      "source-map"
+    ],
+    "devDependencies": [
+      "@types/micromatch",
+      "@types/node",
+      "@types/semver",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "babel",
+      "babel-core",
+      "babel-loader",
+      "babel-polyfill",
+      "babel-preset-es2015",
+      "babel-preset-es2016",
+      "babel-preset-react",
+      "escape-string-regexp",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-node",
+      "eslint-plugin-prettier",
+      "fs-extra",
+      "glob",
+      "husky",
+      "jasmine-core",
+      "karma",
+      "karma-chrome-launcher",
+      "karma-jasmine",
+      "karma-mocha-reporter",
+      "karma-sourcemap-loader",
+      "karma-webpack",
+      "lint-staged",
+      "markdown-toc",
+      "mkdirp",
+      "mocha",
+      "prettier",
+      "rimraf",
+      "typescript",
+      "webpack",
+      "webpack-cli"
+    ],
+    "numDependencies": 41
+  },
+  {
+    "packageName": "ts-node",
+    "dependencies": [
+      "@cspotcode/source-map-support",
+      "@tsconfig/node10",
+      "@tsconfig/node12",
+      "@tsconfig/node14",
+      "@tsconfig/node16",
+      "acorn",
+      "acorn-walk",
+      "arg",
+      "create-require",
+      "diff",
+      "make-error",
+      "v8-compile-cache-lib",
+      "yn"
+    ],
+    "devDependencies": [
+      "@microsoft/api-extractor",
+      "@swc/core",
+      "@swc/wasm",
+      "@types/diff",
+      "@types/lodash",
+      "@types/node",
+      "@types/proper-lockfile",
+      "@types/proxyquire",
+      "@types/react",
+      "@types/rimraf",
+      "@types/semver",
+      "@yarnpkg/fslib",
+      "ava",
+      "axios",
+      "dprint",
+      "expect",
+      "get-stream",
+      "lodash",
+      "ntypescript",
+      "nyc",
+      "outdent",
+      "proper-lockfile",
+      "proxyquire",
+      "react",
+      "rimraf",
+      "semver",
+      "throat",
+      "typedoc",
+      "typescript",
+      "typescript-json-schema",
+      "util.promisify"
+    ],
+    "numDependencies": 44
+  },
+  {
+    "packageName": "tslib",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "type-is",
+    "dependencies": [
+      "media-typer",
+      "mime-types"
+    ],
+    "devDependencies": [
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "mocha",
+      "nyc"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "typescript",
+    "dependencies": [],
+    "devDependencies": [
+      "@esfx/canceltoken",
+      "@octokit/rest",
+      "@types/chai",
+      "@types/glob",
+      "@types/microsoft__typescript-etw",
+      "@types/minimist",
+      "@types/mocha",
+      "@types/ms",
+      "@types/node",
+      "@types/source-map-support",
+      "@types/which",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "@typescript-eslint/utils",
+      "azure-devops-node-api",
+      "c8",
+      "chai",
+      "chalk",
+      "chokidar",
+      "diff",
+      "dprint",
+      "esbuild",
+      "eslint",
+      "eslint-formatter-autolinkable-stylish",
+      "eslint-plugin-local",
+      "eslint-plugin-no-null",
+      "eslint-plugin-simple-import-sort",
+      "fast-xml-parser",
+      "glob",
+      "hereby",
+      "jsonc-parser",
+      "minimist",
+      "mocha",
+      "mocha-fivemat-progress-reporter",
+      "ms",
+      "node-fetch",
+      "playwright",
+      "source-map-support",
+      "tslib",
+      "typescript",
+      "which"
+    ],
+    "numDependencies": 41
+  },
+  {
+    "packageName": "undici-types",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "unpipe",
+    "dependencies": [],
+    "devDependencies": [
+      "istanbul",
+      "mocha",
+      "readable-stream"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "update-browserslist-db",
+    "dependencies": [
+      "escalade",
+      "picocolors"
+    ],
+    "devDependencies": [],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "uri-js",
+    "dependencies": [
+      "punycode"
+    ],
+    "devDependencies": [
+      "babel-cli",
+      "babel-plugin-external-helpers",
+      "babel-preset-latest",
+      "mocha",
+      "mocha-qunit-ui",
+      "rollup",
+      "rollup-plugin-babel",
+      "rollup-plugin-node-resolve",
+      "sorcery",
+      "typescript",
+      "uglify-js"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "util-deprecate",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "utila",
+    "dependencies": [],
+    "devDependencies": [
+      "coffee-script",
+      "little-popo"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "utils-merge",
+    "dependencies": [],
+    "devDependencies": [
+      "make-node",
+      "mocha",
+      "chai"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "uuid",
+    "dependencies": [],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/preset-env",
+      "@commitlint/cli",
+      "@commitlint/config-conventional",
+      "@rollup/plugin-node-resolve",
+      "babel-eslint",
+      "bundlewatch",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-node",
+      "eslint-plugin-prettier",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "husky",
+      "jest",
+      "lint-staged",
+      "npm-run-all",
+      "optional-dev-dependency",
+      "prettier",
+      "random-seed",
+      "rollup",
+      "rollup-plugin-terser",
+      "runmd",
+      "standard-version"
+    ],
+    "numDependencies": 27
+  },
+  {
+    "packageName": "v8-compile-cache-lib",
+    "dependencies": [],
+    "devDependencies": [
+      "babel-core",
+      "eslint",
+      "flow-parser",
+      "rimraf",
+      "rxjs",
+      "semver",
+      "tap",
+      "temp",
+      "yarn"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "vary",
+    "dependencies": [],
+    "devDependencies": [
+      "beautify-benchmark",
+      "benchmark",
+      "eslint",
+      "eslint-config-standard",
+      "eslint-plugin-import",
+      "eslint-plugin-markdown",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+      "eslint-plugin-standard",
+      "istanbul",
+      "mocha",
+      "supertest"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "watchpack",
+    "dependencies": [
+      "glob-to-regexp",
+      "graceful-fs"
+    ],
+    "devDependencies": [
+      "coveralls",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-prettier",
+      "istanbul",
+      "mocha",
+      "prettier",
+      "rimraf",
+      "should",
+      "write-file-atomic"
+    ],
+    "numDependencies": 12
+  },
+  {
+    "packageName": "wbuf",
+    "dependencies": [
+      "minimalistic-assert"
+    ],
+    "devDependencies": [
+      "mocha"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "webpack",
+    "dependencies": [
+      "@types/eslint-scope",
+      "@types/estree",
+      "@webassemblyjs/ast",
+      "@webassemblyjs/wasm-edit",
+      "@webassemblyjs/wasm-parser",
+      "acorn",
+      "acorn-import-assertions",
+      "browserslist",
+      "chrome-trace-event",
+      "enhanced-resolve",
+      "es-module-lexer",
+      "eslint-scope",
+      "events",
+      "glob-to-regexp",
+      "graceful-fs",
+      "json-parse-even-better-errors",
+      "loader-runner",
+      "mime-types",
+      "neo-async",
+      "schema-utils",
+      "tapable",
+      "terser-webpack-plugin",
+      "watchpack",
+      "webpack-sources"
+    ],
+    "devDependencies": [
+      "@babel/core",
+      "@babel/preset-react",
+      "@types/jest",
+      "@types/mime-types",
+      "@types/node",
+      "assemblyscript",
+      "babel-loader",
+      "benchmark",
+      "bundle-loader",
+      "coffee-loader",
+      "coffeescript",
+      "core-js",
+      "coveralls",
+      "cspell",
+      "css-loader",
+      "date-fns",
+      "es5-ext",
+      "es6-promise-polyfill",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-jest",
+      "eslint-plugin-jsdoc",
+      "eslint-plugin-node",
+      "eslint-plugin-prettier",
+      "file-loader",
+      "fork-ts-checker-webpack-plugin",
+      "hash-wasm",
+      "husky",
+      "is-ci",
+      "istanbul",
+      "jest",
+      "jest-circus",
+      "jest-cli",
+      "jest-diff",
+      "jest-environment-node",
+      "jest-junit",
+      "json-loader",
+      "json5",
+      "less",
+      "less-loader",
+      "lint-staged",
+      "lodash",
+      "lodash-es",
+      "memfs",
+      "mini-css-extract-plugin",
+      "mini-svg-data-uri",
+      "nyc",
+      "open-cli",
+      "prettier",
+      "pretty-format",
+      "pug",
+      "pug-loader",
+      "raw-loader",
+      "react",
+      "react-dom",
+      "rimraf",
+      "script-loader",
+      "simple-git",
+      "strip-ansi",
+      "style-loader",
+      "terser",
+      "toml",
+      "tooling",
+      "ts-loader",
+      "typescript",
+      "url-loader",
+      "wast-loader",
+      "webassembly-feature",
+      "webpack-cli",
+      "xxhashjs",
+      "yamljs",
+      "yarn-deduplicate"
+    ],
+    "numDependencies": 96
+  },
+  {
+    "packageName": "webpack-cli",
+    "dependencies": [
+      "@discoveryjs/json-ext",
+      "@webpack-cli/configtest",
+      "@webpack-cli/info",
+      "@webpack-cli/serve",
+      "colorette",
+      "commander",
+      "cross-spawn",
+      "envinfo",
+      "fastest-levenshtein",
+      "import-local",
+      "interpret",
+      "rechoir",
+      "webpack-merge"
+    ],
+    "devDependencies": [
+      "@types/envinfo"
+    ],
+    "numDependencies": 14
+  },
+  {
+    "packageName": "webpack-dev-middleware",
+    "dependencies": [
+      "colorette",
+      "memfs",
+      "mime-types",
+      "range-parser",
+      "schema-utils"
+    ],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/preset-env",
+      "@commitlint/cli",
+      "@commitlint/config-conventional",
+      "@types/connect",
+      "@types/express",
+      "@types/mime-types",
+      "@types/node",
+      "@webpack-contrib/eslint-config-webpack",
+      "babel-jest",
+      "chokidar",
+      "connect",
+      "cross-env",
+      "deepmerge",
+      "del",
+      "del-cli",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-import",
+      "execa",
+      "express",
+      "file-loader",
+      "husky",
+      "jest",
+      "lint-staged",
+      "npm-run-all",
+      "prettier",
+      "standard-version",
+      "strip-ansi",
+      "supertest",
+      "typescript",
+      "webpack"
+    ],
+    "numDependencies": 38
+  },
+  {
+    "packageName": "webpack-dev-server",
+    "dependencies": [
+      "@types/bonjour",
+      "@types/connect-history-api-fallback",
+      "@types/express",
+      "@types/serve-index",
+      "@types/serve-static",
+      "@types/sockjs",
+      "@types/ws",
+      "ansi-html-community",
+      "bonjour-service",
+      "chokidar",
+      "colorette",
+      "compression",
+      "connect-history-api-fallback",
+      "default-gateway",
+      "express",
+      "graceful-fs",
+      "html-entities",
+      "http-proxy-middleware",
+      "ipaddr.js",
+      "launch-editor",
+      "open",
+      "p-retry",
+      "rimraf",
+      "schema-utils",
+      "selfsigned",
+      "serve-index",
+      "sockjs",
+      "spdy",
+      "webpack-dev-middleware",
+      "ws"
+    ],
+    "devDependencies": [
+      "@babel/cli",
+      "@babel/core",
+      "@babel/eslint-parser",
+      "@babel/plugin-transform-object-assign",
+      "@babel/plugin-transform-runtime",
+      "@babel/preset-env",
+      "@babel/runtime",
+      "@commitlint/cli",
+      "@commitlint/config-conventional",
+      "@types/compression",
+      "@types/default-gateway",
+      "@types/node",
+      "@types/node-forge",
+      "@types/rimraf",
+      "@types/sockjs-client",
+      "@types/trusted-types",
+      "acorn",
+      "babel-jest",
+      "babel-loader",
+      "body-parser",
+      "core-js",
+      "css-loader",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-config-webpack",
+      "eslint-plugin-import",
+      "execa",
+      "file-loader",
+      "html-webpack-plugin",
+      "http-proxy",
+      "husky",
+      "jest",
+      "jest-environment-jsdom",
+      "klona",
+      "less",
+      "less-loader",
+      "lint-staged",
+      "marked",
+      "memfs",
+      "npm-run-all",
+      "prettier",
+      "puppeteer",
+      "require-from-string",
+      "rimraf",
+      "sockjs-client",
+      "standard-version",
+      "strip-ansi-v6",
+      "style-loader",
+      "supertest",
+      "tcp-port-used",
+      "typescript",
+      "url-loader",
+      "wait-for-expect",
+      "webpack",
+      "webpack-cli",
+      "webpack-merge"
+    ],
+    "numDependencies": 86
+  },
+  {
+    "packageName": "webpack-merge",
+    "dependencies": [
+      "clone-deep",
+      "flat",
+      "wildcard"
+    ],
+    "devDependencies": [
+      "@types/estree",
+      "@types/flat",
+      "husky",
+      "prettier",
+      "tsdx",
+      "tslib",
+      "typescript",
+      "webpack"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "webpack-sources",
+    "dependencies": [],
+    "devDependencies": [
+      "coveralls",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-jest",
+      "eslint-plugin-mocha",
+      "eslint-plugin-node",
+      "eslint-plugin-nodeca",
+      "eslint-plugin-prettier",
+      "istanbul",
+      "jest",
+      "prettier",
+      "source-map",
+      "sourcemap-validator"
+    ],
+    "numDependencies": 13
+  },
+  {
+    "packageName": "websocket-driver",
+    "dependencies": [
+      "http-parser-js",
+      "safe-buffer",
+      "websocket-extensions"
+    ],
+    "devDependencies": [
+      "jstest",
+      "permessage-deflate"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "websocket-extensions",
+    "dependencies": [],
+    "devDependencies": [
+      "jstest"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "which",
+    "dependencies": [
+      "isexe"
+    ],
+    "devDependencies": [
+      "mkdirp",
+      "rimraf",
+      "tap"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "wildcard",
+    "dependencies": [],
+    "devDependencies": [
+      "embellish-readme",
+      "tape"
+    ],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "wrappy",
+    "dependencies": [],
+    "devDependencies": [
+      "tap"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "ws",
+    "dependencies": [],
+    "devDependencies": [
+      "benchmark",
+      "bufferutil",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-prettier",
+      "mocha",
+      "nyc",
+      "prettier",
+      "utf-8-validate"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "yallist",
+    "dependencies": [],
+    "devDependencies": [
+      "tap"
+    ],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "yn",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 3
+  },
+  {
+    "packageName": "yocto-queue",
+    "dependencies": [],
+    "devDependencies": [
+      "ava",
+      "tsd",
+      "xo"
+    ],
+    "numDependencies": 3
+  }
+]
