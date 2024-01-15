@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import dependenciesList from '../../bin/dependenciesList.json'
 
 interface ResultProps {
@@ -24,10 +24,16 @@ export default function Result({ onDataFiltered }: ResultProps) {
   const filteredData = data.filter((item) => item.packageName.toLowerCase().includes(searchTerm.toLowerCase()))
 
   useEffect(() => {
-    if (onDataFiltered) {
-      onDataFiltered(filteredData)
+    const fetchData = async () => {
+      // 异步操作，例如从服务器获取数据
+      // ...
+      // 在异步操作完成后调用 onDataFiltered
+      if (onDataFiltered) {
+        onDataFiltered(filteredData)
+      }
     }
-  }, [filteredData, onDataFiltered])
+    fetchData()
+  }, [searchTerm]) // 此处应该根据实际需要设置依赖项
 
   return (
     <div id='Result'>
