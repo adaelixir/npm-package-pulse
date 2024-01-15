@@ -2084,6 +2084,478 @@
     "numDependencies": 28
   },
   {
+    "packageName": "d3",
+    "dependencies": [
+      "d3-array",
+      "d3-axis",
+      "d3-brush",
+      "d3-chord",
+      "d3-color",
+      "d3-contour",
+      "d3-delaunay",
+      "d3-dispatch",
+      "d3-drag",
+      "d3-dsv",
+      "d3-ease",
+      "d3-fetch",
+      "d3-force",
+      "d3-format",
+      "d3-geo",
+      "d3-hierarchy",
+      "d3-interpolate",
+      "d3-path",
+      "d3-polygon",
+      "d3-quadtree",
+      "d3-random",
+      "d3-scale",
+      "d3-scale-chromatic",
+      "d3-selection",
+      "d3-shape",
+      "d3-time",
+      "d3-time-format",
+      "d3-timer",
+      "d3-transition",
+      "d3-zoom"
+    ],
+    "devDependencies": [
+      "@rollup/plugin-json",
+      "@rollup/plugin-node-resolve",
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 36
+  },
+  {
+    "packageName": "d3-array",
+    "dependencies": [
+      "internmap"
+    ],
+    "devDependencies": [
+      "@rollup/plugin-node-resolve",
+      "d3-dsv",
+      "d3-random",
+      "eslint",
+      "jsdom",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "d3-axis",
+    "dependencies": [],
+    "devDependencies": [
+      "d3-scale",
+      "d3-selection",
+      "eslint",
+      "js-beautify",
+      "jsdom",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "d3-brush",
+    "dependencies": [
+      "d3-dispatch",
+      "d3-drag",
+      "d3-interpolate",
+      "d3-selection",
+      "d3-transition"
+    ],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "d3-chord",
+    "dependencies": [
+      "d3-path"
+    ],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "d3-color",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "d3-contour",
+    "dependencies": [
+      "d3-array"
+    ],
+    "devDependencies": [
+      "d3-axis",
+      "d3-dsv",
+      "d3-fetch",
+      "d3-geo",
+      "d3-polygon",
+      "d3-scale",
+      "d3-selection",
+      "eslint",
+      "htl",
+      "js-beautify",
+      "jsdom",
+      "mocha",
+      "module-alias",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 16
+  },
+  {
+    "packageName": "d3-delaunay",
+    "dependencies": [
+      "delaunator"
+    ],
+    "devDependencies": [
+      "@rollup/plugin-node-resolve",
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "d3-dispatch",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "d3-drag",
+    "dependencies": [
+      "d3-dispatch",
+      "d3-selection"
+    ],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "d3-dsv",
+    "dependencies": [
+      "commander",
+      "iconv-lite",
+      "rw"
+    ],
+    "devDependencies": [
+      "csv-spectrum",
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "d3-ease",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "d3-fetch",
+    "dependencies": [
+      "d3-dsv"
+    ],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "d3-force",
+    "dependencies": [
+      "d3-dispatch",
+      "d3-quadtree",
+      "d3-timer"
+    ],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 7
+  },
+  {
+    "packageName": "d3-format",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "d3-geo",
+    "dependencies": [
+      "d3-array"
+    ],
+    "devDependencies": [
+      "canvas",
+      "d3-format",
+      "eslint",
+      "mocha",
+      "pixelmatch",
+      "pngjs",
+      "rollup",
+      "rollup-plugin-terser",
+      "topojson-client",
+      "world-atlas"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "d3-hierarchy",
+    "dependencies": [],
+    "devDependencies": [
+      "benchmark",
+      "d3-array",
+      "d3-dsv",
+      "d3-random",
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 8
+  },
+  {
+    "packageName": "d3-interpolate",
+    "dependencies": [
+      "d3-color"
+    ],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "d3-path",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "d3-polygon",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "d3-quadtree",
+    "dependencies": [],
+    "devDependencies": [
+      "d3-array",
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "d3-random",
+    "dependencies": [],
+    "devDependencies": [
+      "d3-array",
+      "eslint",
+      "jsdom",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "d3-scale",
+    "dependencies": [
+      "d3-array",
+      "d3-format",
+      "d3-interpolate",
+      "d3-time",
+      "d3-time-format"
+    ],
+    "devDependencies": [
+      "d3-color",
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 10
+  },
+  {
+    "packageName": "d3-scale-chromatic",
+    "dependencies": [
+      "d3-color",
+      "d3-interpolate"
+    ],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "d3-selection",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "jsdom",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "d3-shape",
+    "dependencies": [
+      "d3-path"
+    ],
+    "devDependencies": [
+      "d3-polygon",
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 6
+  },
+  {
+    "packageName": "d3-time",
+    "dependencies": [
+      "d3-array"
+    ],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "d3-time-format",
+    "dependencies": [
+      "d3-time"
+    ],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 5
+  },
+  {
+    "packageName": "d3-timer",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 4
+  },
+  {
+    "packageName": "d3-transition",
+    "dependencies": [
+      "d3-color",
+      "d3-dispatch",
+      "d3-ease",
+      "d3-interpolate",
+      "d3-timer"
+    ],
+    "devDependencies": [
+      "d3-selection",
+      "eslint",
+      "jsdom",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 11
+  },
+  {
+    "packageName": "d3-zoom",
+    "dependencies": [
+      "d3-dispatch",
+      "d3-drag",
+      "d3-interpolate",
+      "d3-selection",
+      "d3-transition"
+    ],
+    "devDependencies": [
+      "eslint",
+      "jsdom",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 10
+  },
+  {
     "packageName": "debug",
     "dependencies": [
       "ms"
@@ -2168,6 +2640,22 @@
       "xo"
     ],
     "numDependencies": 3
+  },
+  {
+    "packageName": "delaunator",
+    "dependencies": [
+      "robust-predicates"
+    ],
+    "devDependencies": [
+      "@rollup/plugin-node-resolve",
+      "c8",
+      "eslint",
+      "eslint-config-mourner",
+      "rollup",
+      "rollup-plugin-terser",
+      "tape"
+    ],
+    "numDependencies": 8
   },
   {
     "packageName": "depd",
@@ -3600,6 +4088,17 @@
       "tap"
     ],
     "numDependencies": 1
+  },
+  {
+    "packageName": "internmap",
+    "dependencies": [],
+    "devDependencies": [
+      "eslint",
+      "mocha",
+      "rollup",
+      "rollup-plugin-terser"
+    ],
+    "numDependencies": 4
   },
   {
     "packageName": "interpret",
@@ -5099,6 +5598,31 @@
       "tap"
     ],
     "numDependencies": 3
+  },
+  {
+    "packageName": "robust-predicates",
+    "dependencies": [],
+    "devDependencies": [
+      "@rollup/plugin-terser",
+      "c8",
+      "eslint",
+      "eslint-config-mourner",
+      "mkdirp",
+      "nextafter",
+      "robust-in-sphere",
+      "robust-orientation",
+      "rollup"
+    ],
+    "numDependencies": 9
+  },
+  {
+    "packageName": "rw",
+    "dependencies": [],
+    "devDependencies": [
+      "d3-queue",
+      "eslint"
+    ],
+    "numDependencies": 2
   },
   {
     "packageName": "safe-buffer",

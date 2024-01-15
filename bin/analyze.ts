@@ -38,7 +38,6 @@ async function getPackageList(directory: string): Promise<string[]> {
         return null
       })
     )
-
     return packageDirs.flat().filter((packageDir) => packageDir !== null) as string[]
   } catch (error) {
     console.error(`Error in getPackageList for directory: ${directory}`, error)
