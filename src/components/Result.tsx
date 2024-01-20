@@ -27,17 +27,6 @@ export default function Result({ onDataFiltered }: ResultProps) {
     const fetchData = async () => {
       // 异步操作，例如从服务器获取数据
       // ...
-
-      try {
-        const response = await fetch('/api/data')
-        const resultData = await response.json()
-
-        console.log(resultData)
-      } catch (error) {
-        console.error('Error fetching data:', error)
-      }
-
-      fetchData()
       // 在异步操作完成后调用 onDataFiltered
       if (onDataFiltered) {
         onDataFiltered(filteredData)
