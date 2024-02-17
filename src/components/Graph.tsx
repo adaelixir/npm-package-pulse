@@ -15,6 +15,7 @@ export default function Graph({ filteredData }: GraphProps) {
   const svgRef = useRef<SVGSVGElement | null>(null)
 
   useEffect(() => {
+    console.time('draw') // 开始计时
     if (filteredData && svgRef.current) {
       d3.select(svgRef.current).selectAll('*').remove()
       const width = svgRef.current.clientWidth
@@ -82,6 +83,8 @@ export default function Graph({ filteredData }: GraphProps) {
         .style('font-size', '10px')
         .style('color', 'black')
     }
+
+    console.timeEnd('draw') // 结束计时
   }, [filteredData])
 
   return (

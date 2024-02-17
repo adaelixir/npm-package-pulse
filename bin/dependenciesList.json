@@ -807,6 +807,247 @@
     "numDependencies": 2
   },
   {
+    "packageName": "@types/d3",
+    "dependencies": [
+      "@types/d3-array",
+      "@types/d3-axis",
+      "@types/d3-brush",
+      "@types/d3-chord",
+      "@types/d3-color",
+      "@types/d3-contour",
+      "@types/d3-delaunay",
+      "@types/d3-dispatch",
+      "@types/d3-drag",
+      "@types/d3-dsv",
+      "@types/d3-ease",
+      "@types/d3-fetch",
+      "@types/d3-force",
+      "@types/d3-format",
+      "@types/d3-geo",
+      "@types/d3-hierarchy",
+      "@types/d3-interpolate",
+      "@types/d3-path",
+      "@types/d3-polygon",
+      "@types/d3-quadtree",
+      "@types/d3-random",
+      "@types/d3-scale",
+      "@types/d3-scale-chromatic",
+      "@types/d3-selection",
+      "@types/d3-shape",
+      "@types/d3-time",
+      "@types/d3-time-format",
+      "@types/d3-timer",
+      "@types/d3-transition",
+      "@types/d3-zoom"
+    ],
+    "devDependencies": [],
+    "numDependencies": 30
+  },
+  {
+    "packageName": "@types/d3-array",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-axis",
+    "dependencies": [
+      "@types/d3-selection"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/d3-brush",
+    "dependencies": [
+      "@types/d3-selection"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/d3-chord",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-color",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-contour",
+    "dependencies": [
+      "@types/d3-array",
+      "@types/geojson"
+    ],
+    "devDependencies": [],
+    "numDependencies": 2
+  },
+  {
+    "packageName": "@types/d3-delaunay",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-dispatch",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-drag",
+    "dependencies": [
+      "@types/d3-selection"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/d3-dsv",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-ease",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-fetch",
+    "dependencies": [
+      "@types/d3-dsv"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/d3-force",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-format",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-geo",
+    "dependencies": [
+      "@types/geojson"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/d3-hierarchy",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-interpolate",
+    "dependencies": [
+      "@types/d3-color"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/d3-path",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-polygon",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-quadtree",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-random",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-scale",
+    "dependencies": [
+      "@types/d3-time"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/d3-scale-chromatic",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-selection",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-shape",
+    "dependencies": [
+      "@types/d3-path"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/d3-time",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-time-format",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-timer",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
+  },
+  {
+    "packageName": "@types/d3-transition",
+    "dependencies": [
+      "@types/d3-selection"
+    ],
+    "devDependencies": [],
+    "numDependencies": 1
+  },
+  {
+    "packageName": "@types/d3-zoom",
+    "dependencies": [
+      "@types/d3-interpolate",
+      "@types/d3-selection"
+    ],
+    "devDependencies": [],
+    "numDependencies": 2
+  },
+  {
     "packageName": "@types/eslint",
     "dependencies": [
       "@types/estree",
@@ -851,6 +1092,12 @@
     ],
     "devDependencies": [],
     "numDependencies": 4
+  },
+  {
+    "packageName": "@types/geojson",
+    "dependencies": [],
+    "devDependencies": [],
+    "numDependencies": 0
   },
   {
     "packageName": "@types/html-minifier-terser",
