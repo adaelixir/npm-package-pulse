@@ -57,14 +57,18 @@ export async function analyze() {
         const packageData = await fs.readFile(packageJsonPath, 'utf-8')
         const packageObj = JSON.parse(packageData)
 
-        const dependencies = Object.keys(packageObj.dependencies || {})
-        const devDependencies = Object.keys(packageObj.devDependencies || {})
+        const dependencies = packageObj.dependencies ? packageObj.dependencies : {}
+        const devDependencies = packageObj.devDependencies ? packageObj.devDependencies : {}
+        const version = packageObj.version
+        const numDependencies =
+          Object.keys(packageObj.dependencies || {}).length + Object.keys(packageObj.devDependencies || {}).length
 
         return {
           packageName,
           dependencies,
           devDependencies,
-          numDependencies: dependencies.length + devDependencies.length,
+          version,
+          numDependencies,
         }
       })
     )
