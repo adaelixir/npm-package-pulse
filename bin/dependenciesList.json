@@ -1,10 +1,7 @@
 [
   {
     "packageName": "@ampproject/remapping",
-    "dependencies": [
-      "@jridgewell/gen-mapping",
-      "@jridgewell/trace-mapping"
-    ],
+    "dependencies": ["@jridgewell/gen-mapping", "@jridgewell/trace-mapping"],
     "devDependencies": [
       "@rollup/plugin-typescript",
       "@types/jest",
@@ -25,24 +22,14 @@
   },
   {
     "packageName": "@babel/code-frame",
-    "dependencies": [
-      "@babel/highlight",
-      "chalk"
-    ],
-    "devDependencies": [
-      "import-meta-resolve",
-      "strip-ansi"
-    ],
+    "dependencies": ["@babel/highlight", "chalk"],
+    "devDependencies": ["import-meta-resolve", "strip-ansi"],
     "numDependencies": 4
   },
   {
     "packageName": "@babel/compat-data",
     "dependencies": [],
-    "devDependencies": [
-      "@mdn/browser-compat-data",
-      "core-js-compat",
-      "electron-to-chromium"
-    ],
+    "devDependencies": ["@mdn/browser-compat-data", "core-js-compat", "electron-to-chromium"],
     "numDependencies": 3
   },
   {
@@ -84,12 +71,7 @@
   },
   {
     "packageName": "@babel/generator",
-    "dependencies": [
-      "@babel/types",
-      "@jridgewell/gen-mapping",
-      "@jridgewell/trace-mapping",
-      "jsesc"
-    ],
+    "dependencies": ["@babel/types", "@jridgewell/gen-mapping", "@jridgewell/trace-mapping", "jsesc"],
     "devDependencies": [
       "@babel/helper-fixtures",
       "@babel/parser",
@@ -101,26 +83,14 @@
   },
   {
     "packageName": "@babel/helper-annotate-as-pure",
-    "dependencies": [
-      "@babel/types"
-    ],
+    "dependencies": ["@babel/types"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "@babel/helper-compilation-targets",
-    "dependencies": [
-      "@babel/compat-data",
-      "@babel/helper-validator-option",
-      "browserslist",
-      "lru-cache",
-      "semver"
-    ],
-    "devDependencies": [
-      "@babel/helper-plugin-test-runner",
-      "@types/lru-cache",
-      "@types/semver"
-    ],
+    "dependencies": ["@babel/compat-data", "@babel/helper-validator-option", "browserslist", "lru-cache", "semver"],
+    "devDependencies": ["@babel/helper-plugin-test-runner", "@types/lru-cache", "@types/semver"],
     "numDependencies": 8
   },
   {
@@ -136,60 +106,37 @@
       "@babel/helper-split-export-declaration",
       "semver"
     ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/helper-plugin-test-runner",
-      "@babel/preset-env"
-    ],
+    "devDependencies": ["@babel/core", "@babel/helper-plugin-test-runner", "@babel/preset-env"],
     "numDependencies": 12
   },
   {
     "packageName": "@babel/helper-environment-visitor",
     "dependencies": [],
-    "devDependencies": [
-      "@babel/traverse",
-      "@babel/types"
-    ],
+    "devDependencies": ["@babel/traverse", "@babel/types"],
     "numDependencies": 2
   },
   {
     "packageName": "@babel/helper-function-name",
-    "dependencies": [
-      "@babel/template",
-      "@babel/types"
-    ],
+    "dependencies": ["@babel/template", "@babel/types"],
     "devDependencies": [],
     "numDependencies": 2
   },
   {
     "packageName": "@babel/helper-hoist-variables",
-    "dependencies": [
-      "@babel/types"
-    ],
-    "devDependencies": [
-      "@babel/traverse"
-    ],
+    "dependencies": ["@babel/types"],
+    "devDependencies": ["@babel/traverse"],
     "numDependencies": 2
   },
   {
     "packageName": "@babel/helper-member-expression-to-functions",
-    "dependencies": [
-      "@babel/types"
-    ],
-    "devDependencies": [
-      "@babel/traverse"
-    ],
+    "dependencies": ["@babel/types"],
+    "devDependencies": ["@babel/traverse"],
     "numDependencies": 2
   },
   {
     "packageName": "@babel/helper-module-imports",
-    "dependencies": [
-      "@babel/types"
-    ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/traverse"
-    ],
+    "dependencies": ["@babel/types"],
+    "devDependencies": ["@babel/core", "@babel/traverse"],
     "numDependencies": 3
   },
   {
@@ -201,21 +148,13 @@
       "@babel/helper-split-export-declaration",
       "@babel/helper-validator-identifier"
     ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/traverse"
-    ],
+    "devDependencies": ["@babel/core", "@babel/traverse"],
     "numDependencies": 7
   },
   {
     "packageName": "@babel/helper-optimise-call-expression",
-    "dependencies": [
-      "@babel/types"
-    ],
-    "devDependencies": [
-      "@babel/generator",
-      "@babel/parser"
-    ],
+    "dependencies": ["@babel/types"],
+    "devDependencies": ["@babel/generator", "@babel/parser"],
     "numDependencies": 3
   },
   {
@@ -231,55 +170,37 @@
       "@babel/helper-member-expression-to-functions",
       "@babel/helper-optimise-call-expression"
     ],
-    "devDependencies": [
-      "@babel/core"
-    ],
+    "devDependencies": ["@babel/core"],
     "numDependencies": 4
   },
   {
     "packageName": "@babel/helper-simple-access",
-    "dependencies": [
-      "@babel/types"
-    ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/traverse"
-    ],
+    "dependencies": ["@babel/types"],
+    "devDependencies": ["@babel/core", "@babel/traverse"],
     "numDependencies": 3
   },
   {
     "packageName": "@babel/helper-skip-transparent-expression-wrappers",
-    "dependencies": [
-      "@babel/types"
-    ],
-    "devDependencies": [
-      "@babel/traverse"
-    ],
+    "dependencies": ["@babel/types"],
+    "devDependencies": ["@babel/traverse"],
     "numDependencies": 2
   },
   {
     "packageName": "@babel/helper-split-export-declaration",
-    "dependencies": [
-      "@babel/types"
-    ],
+    "dependencies": ["@babel/types"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "@babel/helper-string-parser",
     "dependencies": [],
-    "devDependencies": [
-      "charcodes"
-    ],
+    "devDependencies": ["charcodes"],
     "numDependencies": 1
   },
   {
     "packageName": "@babel/helper-validator-identifier",
     "dependencies": [],
-    "devDependencies": [
-      "@unicode/unicode-15.1.0",
-      "charcodes"
-    ],
+    "devDependencies": ["@unicode/unicode-15.1.0", "charcodes"],
     "numDependencies": 2
   },
   {
@@ -290,29 +211,14 @@
   },
   {
     "packageName": "@babel/helpers",
-    "dependencies": [
-      "@babel/template",
-      "@babel/traverse",
-      "@babel/types"
-    ],
-    "devDependencies": [
-      "@babel/generator",
-      "@babel/helper-plugin-test-runner",
-      "@babel/parser",
-      "regenerator-runtime"
-    ],
+    "dependencies": ["@babel/template", "@babel/traverse", "@babel/types"],
+    "devDependencies": ["@babel/generator", "@babel/helper-plugin-test-runner", "@babel/parser", "regenerator-runtime"],
     "numDependencies": 7
   },
   {
     "packageName": "@babel/highlight",
-    "dependencies": [
-      "@babel/helper-validator-identifier",
-      "chalk",
-      "js-tokens"
-    ],
-    "devDependencies": [
-      "strip-ansi"
-    ],
+    "dependencies": ["@babel/helper-validator-identifier", "chalk", "js-tokens"],
+    "devDependencies": ["strip-ansi"],
     "numDependencies": 4
   },
   {
@@ -330,48 +236,26 @@
   },
   {
     "packageName": "@babel/plugin-syntax-jsx",
-    "dependencies": [
-      "@babel/helper-plugin-utils"
-    ],
-    "devDependencies": [
-      "@babel/core"
-    ],
+    "dependencies": ["@babel/helper-plugin-utils"],
+    "devDependencies": ["@babel/core"],
     "numDependencies": 2
   },
   {
     "packageName": "@babel/plugin-syntax-typescript",
-    "dependencies": [
-      "@babel/helper-plugin-utils"
-    ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/helper-plugin-test-runner"
-    ],
+    "dependencies": ["@babel/helper-plugin-utils"],
+    "devDependencies": ["@babel/core", "@babel/helper-plugin-test-runner"],
     "numDependencies": 3
   },
   {
     "packageName": "@babel/plugin-transform-modules-commonjs",
-    "dependencies": [
-      "@babel/helper-module-transforms",
-      "@babel/helper-plugin-utils",
-      "@babel/helper-simple-access"
-    ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/helper-plugin-test-runner",
-      "@babel/plugin-external-helpers"
-    ],
+    "dependencies": ["@babel/helper-module-transforms", "@babel/helper-plugin-utils", "@babel/helper-simple-access"],
+    "devDependencies": ["@babel/core", "@babel/helper-plugin-test-runner", "@babel/plugin-external-helpers"],
     "numDependencies": 6
   },
   {
     "packageName": "@babel/plugin-transform-react-display-name",
-    "dependencies": [
-      "@babel/helper-plugin-utils"
-    ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/helper-plugin-test-runner"
-    ],
+    "dependencies": ["@babel/helper-plugin-utils"],
+    "devDependencies": ["@babel/core", "@babel/helper-plugin-test-runner"],
     "numDependencies": 3
   },
   {
@@ -383,34 +267,19 @@
       "@babel/plugin-syntax-jsx",
       "@babel/types"
     ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/helper-plugin-test-runner",
-      "@babel/traverse"
-    ],
+    "devDependencies": ["@babel/core", "@babel/helper-plugin-test-runner", "@babel/traverse"],
     "numDependencies": 8
   },
   {
     "packageName": "@babel/plugin-transform-react-jsx-development",
-    "dependencies": [
-      "@babel/plugin-transform-react-jsx"
-    ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/helper-plugin-test-runner"
-    ],
+    "dependencies": ["@babel/plugin-transform-react-jsx"],
+    "devDependencies": ["@babel/core", "@babel/helper-plugin-test-runner"],
     "numDependencies": 3
   },
   {
     "packageName": "@babel/plugin-transform-react-pure-annotations",
-    "dependencies": [
-      "@babel/helper-annotate-as-pure",
-      "@babel/helper-plugin-utils"
-    ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/helper-plugin-test-runner"
-    ],
+    "dependencies": ["@babel/helper-annotate-as-pure", "@babel/helper-plugin-utils"],
+    "devDependencies": ["@babel/core", "@babel/helper-plugin-test-runner"],
     "numDependencies": 4
   },
   {
@@ -421,12 +290,7 @@
       "@babel/helper-plugin-utils",
       "@babel/plugin-syntax-typescript"
     ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/helper-plugin-test-runner",
-      "@babel/traverse",
-      "@babel/types"
-    ],
+    "devDependencies": ["@babel/core", "@babel/helper-plugin-test-runner", "@babel/traverse", "@babel/types"],
     "numDependencies": 8
   },
   {
@@ -439,10 +303,7 @@
       "@babel/plugin-transform-react-jsx-development",
       "@babel/plugin-transform-react-pure-annotations"
     ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/helper-plugin-test-runner"
-    ],
+    "devDependencies": ["@babel/core", "@babel/helper-plugin-test-runner"],
     "numDependencies": 8
   },
   {
@@ -454,19 +315,12 @@
       "@babel/plugin-transform-modules-commonjs",
       "@babel/plugin-transform-typescript"
     ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/helper-plugin-test-runner"
-    ],
+    "devDependencies": ["@babel/core", "@babel/helper-plugin-test-runner"],
     "numDependencies": 7
   },
   {
     "packageName": "@babel/template",
-    "dependencies": [
-      "@babel/code-frame",
-      "@babel/parser",
-      "@babel/types"
-    ],
+    "dependencies": ["@babel/code-frame", "@babel/parser", "@babel/types"],
     "devDependencies": [],
     "numDependencies": 3
   },
@@ -484,31 +338,18 @@
       "debug",
       "globals"
     ],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/helper-plugin-test-runner"
-    ],
+    "devDependencies": ["@babel/core", "@babel/helper-plugin-test-runner"],
     "numDependencies": 12
   },
   {
     "packageName": "@babel/types",
-    "dependencies": [
-      "@babel/helper-string-parser",
-      "@babel/helper-validator-identifier",
-      "to-fast-properties"
-    ],
-    "devDependencies": [
-      "@babel/generator",
-      "@babel/parser",
-      "glob"
-    ],
+    "dependencies": ["@babel/helper-string-parser", "@babel/helper-validator-identifier", "to-fast-properties"],
+    "devDependencies": ["@babel/generator", "@babel/parser", "glob"],
     "numDependencies": 6
   },
   {
     "packageName": "@cspotcode/source-map-support",
-    "dependencies": [
-      "@jridgewell/trace-mapping"
-    ],
+    "dependencies": ["@jridgewell/trace-mapping"],
     "devDependencies": [
       "@types/lodash",
       "browserify",
@@ -541,11 +382,7 @@
   },
   {
     "packageName": "@jridgewell/gen-mapping",
-    "dependencies": [
-      "@jridgewell/set-array",
-      "@jridgewell/sourcemap-codec",
-      "@jridgewell/trace-mapping"
-    ],
+    "dependencies": ["@jridgewell/set-array", "@jridgewell/sourcemap-codec", "@jridgewell/trace-mapping"],
     "devDependencies": [
       "@rollup/plugin-typescript",
       "@types/mocha",
@@ -605,10 +442,7 @@
   },
   {
     "packageName": "@jridgewell/source-map",
-    "dependencies": [
-      "@jridgewell/gen-mapping",
-      "@jridgewell/trace-mapping"
-    ],
+    "dependencies": ["@jridgewell/gen-mapping", "@jridgewell/trace-mapping"],
     "devDependencies": [
       "@rollup/plugin-node-resolve",
       "@rollup/plugin-typescript",
@@ -652,10 +486,7 @@
   },
   {
     "packageName": "@jridgewell/trace-mapping",
-    "dependencies": [
-      "@jridgewell/resolve-uri",
-      "@jridgewell/sourcemap-codec"
-    ],
+    "dependencies": ["@jridgewell/resolve-uri", "@jridgewell/sourcemap-codec"],
     "devDependencies": [
       "@rollup/plugin-typescript",
       "@typescript-eslint/eslint-plugin",
@@ -678,14 +509,7 @@
   {
     "packageName": "@leichtgewicht/ip-codec",
     "dependencies": [],
-    "devDependencies": [
-      "@definitelytyped/dtslint",
-      "c8",
-      "esm2umd",
-      "fresh-tape",
-      "standard",
-      "typescript"
-    ],
+    "devDependencies": ["@definitelytyped/dtslint", "c8", "esm2umd", "fresh-tape", "standard", "typescript"],
     "numDependencies": 6
   },
   {
@@ -774,35 +598,25 @@
   },
   {
     "packageName": "@types/body-parser",
-    "dependencies": [
-      "@types/connect",
-      "@types/node"
-    ],
+    "dependencies": ["@types/connect", "@types/node"],
     "devDependencies": [],
     "numDependencies": 2
   },
   {
     "packageName": "@types/bonjour",
-    "dependencies": [
-      "@types/node"
-    ],
+    "dependencies": ["@types/node"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "@types/connect",
-    "dependencies": [
-      "@types/node"
-    ],
+    "dependencies": ["@types/node"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "@types/connect-history-api-fallback",
-    "dependencies": [
-      "@types/express-serve-static-core",
-      "@types/node"
-    ],
+    "dependencies": ["@types/express-serve-static-core", "@types/node"],
     "devDependencies": [],
     "numDependencies": 2
   },
@@ -851,17 +665,13 @@
   },
   {
     "packageName": "@types/d3-axis",
-    "dependencies": [
-      "@types/d3-selection"
-    ],
+    "dependencies": ["@types/d3-selection"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "@types/d3-brush",
-    "dependencies": [
-      "@types/d3-selection"
-    ],
+    "dependencies": ["@types/d3-selection"],
     "devDependencies": [],
     "numDependencies": 1
   },
@@ -879,10 +689,7 @@
   },
   {
     "packageName": "@types/d3-contour",
-    "dependencies": [
-      "@types/d3-array",
-      "@types/geojson"
-    ],
+    "dependencies": ["@types/d3-array", "@types/geojson"],
     "devDependencies": [],
     "numDependencies": 2
   },
@@ -900,9 +707,7 @@
   },
   {
     "packageName": "@types/d3-drag",
-    "dependencies": [
-      "@types/d3-selection"
-    ],
+    "dependencies": ["@types/d3-selection"],
     "devDependencies": [],
     "numDependencies": 1
   },
@@ -920,9 +725,7 @@
   },
   {
     "packageName": "@types/d3-fetch",
-    "dependencies": [
-      "@types/d3-dsv"
-    ],
+    "dependencies": ["@types/d3-dsv"],
     "devDependencies": [],
     "numDependencies": 1
   },
@@ -940,9 +743,7 @@
   },
   {
     "packageName": "@types/d3-geo",
-    "dependencies": [
-      "@types/geojson"
-    ],
+    "dependencies": ["@types/geojson"],
     "devDependencies": [],
     "numDependencies": 1
   },
@@ -954,9 +755,7 @@
   },
   {
     "packageName": "@types/d3-interpolate",
-    "dependencies": [
-      "@types/d3-color"
-    ],
+    "dependencies": ["@types/d3-color"],
     "devDependencies": [],
     "numDependencies": 1
   },
@@ -986,9 +785,7 @@
   },
   {
     "packageName": "@types/d3-scale",
-    "dependencies": [
-      "@types/d3-time"
-    ],
+    "dependencies": ["@types/d3-time"],
     "devDependencies": [],
     "numDependencies": 1
   },
@@ -1006,9 +803,7 @@
   },
   {
     "packageName": "@types/d3-shape",
-    "dependencies": [
-      "@types/d3-path"
-    ],
+    "dependencies": ["@types/d3-path"],
     "devDependencies": [],
     "numDependencies": 1
   },
@@ -1032,36 +827,25 @@
   },
   {
     "packageName": "@types/d3-transition",
-    "dependencies": [
-      "@types/d3-selection"
-    ],
+    "dependencies": ["@types/d3-selection"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "@types/d3-zoom",
-    "dependencies": [
-      "@types/d3-interpolate",
-      "@types/d3-selection"
-    ],
+    "dependencies": ["@types/d3-interpolate", "@types/d3-selection"],
     "devDependencies": [],
     "numDependencies": 2
   },
   {
     "packageName": "@types/eslint",
-    "dependencies": [
-      "@types/estree",
-      "@types/json-schema"
-    ],
+    "dependencies": ["@types/estree", "@types/json-schema"],
     "devDependencies": [],
     "numDependencies": 2
   },
   {
     "packageName": "@types/eslint-scope",
-    "dependencies": [
-      "@types/eslint",
-      "@types/estree"
-    ],
+    "dependencies": ["@types/eslint", "@types/estree"],
     "devDependencies": [],
     "numDependencies": 2
   },
@@ -1073,23 +857,13 @@
   },
   {
     "packageName": "@types/express",
-    "dependencies": [
-      "@types/body-parser",
-      "@types/express-serve-static-core",
-      "@types/qs",
-      "@types/serve-static"
-    ],
+    "dependencies": ["@types/body-parser", "@types/express-serve-static-core", "@types/qs", "@types/serve-static"],
     "devDependencies": [],
     "numDependencies": 4
   },
   {
     "packageName": "@types/express-serve-static-core",
-    "dependencies": [
-      "@types/node",
-      "@types/qs",
-      "@types/range-parser",
-      "@types/send"
-    ],
+    "dependencies": ["@types/node", "@types/qs", "@types/range-parser", "@types/send"],
     "devDependencies": [],
     "numDependencies": 4
   },
@@ -1113,9 +887,7 @@
   },
   {
     "packageName": "@types/http-proxy",
-    "dependencies": [
-      "@types/node"
-    ],
+    "dependencies": ["@types/node"],
     "devDependencies": [],
     "numDependencies": 1
   },
@@ -1133,17 +905,13 @@
   },
   {
     "packageName": "@types/node",
-    "dependencies": [
-      "undici-types"
-    ],
+    "dependencies": ["undici-types"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "@types/node-forge",
-    "dependencies": [
-      "@types/node"
-    ],
+    "dependencies": ["@types/node"],
     "devDependencies": [],
     "numDependencies": 1
   },
@@ -1167,19 +935,13 @@
   },
   {
     "packageName": "@types/react",
-    "dependencies": [
-      "@types/prop-types",
-      "@types/scheduler",
-      "csstype"
-    ],
+    "dependencies": ["@types/prop-types", "@types/scheduler", "csstype"],
     "devDependencies": [],
     "numDependencies": 3
   },
   {
     "packageName": "@types/react-dom",
-    "dependencies": [
-      "@types/react"
-    ],
+    "dependencies": ["@types/react"],
     "devDependencies": [],
     "numDependencies": 1
   },
@@ -1197,59 +959,38 @@
   },
   {
     "packageName": "@types/send",
-    "dependencies": [
-      "@types/mime",
-      "@types/node"
-    ],
+    "dependencies": ["@types/mime", "@types/node"],
     "devDependencies": [],
     "numDependencies": 2
   },
   {
     "packageName": "@types/serve-index",
-    "dependencies": [
-      "@types/express"
-    ],
+    "dependencies": ["@types/express"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "@types/serve-static",
-    "dependencies": [
-      "@types/http-errors",
-      "@types/mime",
-      "@types/node"
-    ],
+    "dependencies": ["@types/http-errors", "@types/mime", "@types/node"],
     "devDependencies": [],
     "numDependencies": 3
   },
   {
     "packageName": "@types/sockjs",
-    "dependencies": [
-      "@types/node"
-    ],
+    "dependencies": ["@types/node"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "@types/ws",
-    "dependencies": [
-      "@types/node"
-    ],
+    "dependencies": ["@types/node"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "@webassemblyjs/ast",
-    "dependencies": [
-      "@webassemblyjs/helper-numbers",
-      "@webassemblyjs/helper-wasm-bytecode"
-    ],
-    "devDependencies": [
-      "@webassemblyjs/helper-test-framework",
-      "array.prototype.flatmap",
-      "dump-exports",
-      "mamacro"
-    ],
+    "dependencies": ["@webassemblyjs/helper-numbers", "@webassemblyjs/helper-wasm-bytecode"],
+    "devDependencies": ["@webassemblyjs/helper-test-framework", "array.prototype.flatmap", "dump-exports", "mamacro"],
     "numDependencies": 6
   },
   {
@@ -1267,19 +1008,12 @@
   {
     "packageName": "@webassemblyjs/helper-buffer",
     "dependencies": [],
-    "devDependencies": [
-      "@webassemblyjs/wasm-parser",
-      "jest-diff"
-    ],
+    "devDependencies": ["@webassemblyjs/wasm-parser", "jest-diff"],
     "numDependencies": 2
   },
   {
     "packageName": "@webassemblyjs/helper-numbers",
-    "dependencies": [
-      "@webassemblyjs/floating-point-hex-parser",
-      "@webassemblyjs/helper-api-error",
-      "@xtuc/long"
-    ],
+    "dependencies": ["@webassemblyjs/floating-point-hex-parser", "@webassemblyjs/helper-api-error", "@xtuc/long"],
     "devDependencies": [],
     "numDependencies": 3
   },
@@ -1297,24 +1031,18 @@
       "@webassemblyjs/helper-wasm-bytecode",
       "@webassemblyjs/wasm-gen"
     ],
-    "devDependencies": [
-      "@webassemblyjs/wasm-parser"
-    ],
+    "devDependencies": ["@webassemblyjs/wasm-parser"],
     "numDependencies": 5
   },
   {
     "packageName": "@webassemblyjs/ieee754",
-    "dependencies": [
-      "@xtuc/ieee754"
-    ],
+    "dependencies": ["@xtuc/ieee754"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "@webassemblyjs/leb128",
-    "dependencies": [
-      "@xtuc/long"
-    ],
+    "dependencies": ["@xtuc/long"],
     "devDependencies": [],
     "numDependencies": 1
   },
@@ -1336,9 +1064,7 @@
       "@webassemblyjs/wasm-parser",
       "@webassemblyjs/wast-printer"
     ],
-    "devDependencies": [
-      "@webassemblyjs/helper-test-framework"
-    ],
+    "devDependencies": ["@webassemblyjs/helper-test-framework"],
     "numDependencies": 9
   },
   {
@@ -1387,14 +1113,8 @@
   },
   {
     "packageName": "@webassemblyjs/wast-printer",
-    "dependencies": [
-      "@webassemblyjs/ast",
-      "@xtuc/long"
-    ],
-    "devDependencies": [
-      "@webassemblyjs/helper-test-framework",
-      "@webassemblyjs/wast-parser"
-    ],
+    "dependencies": ["@webassemblyjs/ast", "@xtuc/long"],
+    "devDependencies": ["@webassemblyjs/helper-test-framework", "@webassemblyjs/wast-parser"],
     "numDependencies": 4
   },
   {
@@ -1431,17 +1151,12 @@
   {
     "packageName": "@xtuc/long",
     "dependencies": [],
-    "devDependencies": [
-      "webpack"
-    ],
+    "devDependencies": ["webpack"],
     "numDependencies": 1
   },
   {
     "packageName": "accepts",
-    "dependencies": [
-      "mime-types",
-      "negotiator"
-    ],
+    "dependencies": ["mime-types", "negotiator"],
     "devDependencies": [
       "deep-equal",
       "eslint",
@@ -1486,12 +1201,7 @@
   },
   {
     "packageName": "ajv",
-    "dependencies": [
-      "fast-deep-equal",
-      "fast-json-stable-stringify",
-      "json-schema-traverse",
-      "uri-js"
-    ],
+    "dependencies": ["fast-deep-equal", "fast-json-stable-stringify", "json-schema-traverse", "uri-js"],
     "devDependencies": [
       "ajv-async",
       "bluebird",
@@ -1524,9 +1234,7 @@
   },
   {
     "packageName": "ajv-formats",
-    "dependencies": [
-      "ajv"
-    ],
+    "dependencies": ["ajv"],
     "devDependencies": [
       "@ajv-validator/config",
       "@types/jest",
@@ -1569,77 +1277,42 @@
   {
     "packageName": "ansi-html-community",
     "dependencies": [],
-    "devDependencies": [
-      "mocha",
-      "chai",
-      "chalk",
-      "lodash"
-    ],
+    "devDependencies": ["mocha", "chai", "chalk", "lodash"],
     "numDependencies": 4
   },
   {
     "packageName": "ansi-regex",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 3
   },
   {
     "packageName": "ansi-styles",
-    "dependencies": [
-      "color-convert"
-    ],
-    "devDependencies": [
-      "@types/color-convert",
-      "ava",
-      "svg-term-cli",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["color-convert"],
+    "devDependencies": ["@types/color-convert", "ava", "svg-term-cli", "tsd", "xo"],
     "numDependencies": 6
   },
   {
     "packageName": "anymatch",
-    "dependencies": [
-      "normalize-path",
-      "picomatch"
-    ],
-    "devDependencies": [
-      "mocha",
-      "nyc"
-    ],
+    "dependencies": ["normalize-path", "picomatch"],
+    "devDependencies": ["mocha", "nyc"],
     "numDependencies": 4
   },
   {
     "packageName": "arg",
     "dependencies": [],
-    "devDependencies": [
-      "chai",
-      "jest",
-      "xo"
-    ],
+    "devDependencies": ["chai", "jest", "xo"],
     "numDependencies": 3
   },
   {
     "packageName": "array-flatten",
     "dependencies": [],
-    "devDependencies": [
-      "benchmarked",
-      "istanbul",
-      "mocha",
-      "standard"
-    ],
+    "devDependencies": ["benchmarked", "istanbul", "mocha", "standard"],
     "numDependencies": 4
   },
   {
     "packageName": "babel-loader",
-    "dependencies": [
-      "find-cache-dir",
-      "schema-utils"
-    ],
+    "dependencies": ["find-cache-dir", "schema-utils"],
     "devDependencies": [
       "@ava/babel",
       "@babel/cli",
@@ -1672,19 +1345,13 @@
   {
     "packageName": "balanced-match",
     "dependencies": [],
-    "devDependencies": [
-      "matcha",
-      "tape"
-    ],
+    "devDependencies": ["matcha", "tape"],
     "numDependencies": 2
   },
   {
     "packageName": "batch",
     "dependencies": [],
-    "devDependencies": [
-      "mocha",
-      "should"
-    ],
+    "devDependencies": ["mocha", "should"],
     "numDependencies": 2
   },
   {
@@ -1696,11 +1363,7 @@
   {
     "packageName": "binary-extensions",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 3
   },
   {
@@ -1737,12 +1400,7 @@
   },
   {
     "packageName": "bonjour-service",
-    "dependencies": [
-      "array-flatten",
-      "dns-equal",
-      "fast-deep-equal",
-      "multicast-dns"
-    ],
+    "dependencies": ["array-flatten", "dns-equal", "fast-deep-equal", "multicast-dns"],
     "devDependencies": [
       "@types/node",
       "@typescript-eslint/eslint-plugin",
@@ -1764,64 +1422,37 @@
   },
   {
     "packageName": "brace-expansion",
-    "dependencies": [
-      "balanced-match",
-      "concat-map"
-    ],
-    "devDependencies": [
-      "matcha",
-      "tape"
-    ],
+    "dependencies": ["balanced-match", "concat-map"],
+    "devDependencies": ["matcha", "tape"],
     "numDependencies": 4
   },
   {
     "packageName": "braces",
-    "dependencies": [
-      "fill-range"
-    ],
-    "devDependencies": [
-      "ansi-colors",
-      "bash-path",
-      "gulp-format-md",
-      "mocha"
-    ],
+    "dependencies": ["fill-range"],
+    "devDependencies": ["ansi-colors", "bash-path", "gulp-format-md", "mocha"],
     "numDependencies": 5
   },
   {
     "packageName": "browserslist",
-    "dependencies": [
-      "caniuse-lite",
-      "electron-to-chromium",
-      "node-releases",
-      "update-browserslist-db"
-    ],
+    "dependencies": ["caniuse-lite", "electron-to-chromium", "node-releases", "update-browserslist-db"],
     "devDependencies": [],
     "numDependencies": 4
   },
   {
     "packageName": "buffer-from",
     "dependencies": [],
-    "devDependencies": [
-      "standard"
-    ],
+    "devDependencies": ["standard"],
     "numDependencies": 1
   },
   {
     "packageName": "bytes",
     "dependencies": [],
-    "devDependencies": [
-      "mocha",
-      "nyc"
-    ],
+    "devDependencies": ["mocha", "nyc"],
     "numDependencies": 2
   },
   {
     "packageName": "call-bind",
-    "dependencies": [
-      "function-bind",
-      "get-intrinsic",
-      "set-function-length"
-    ],
+    "dependencies": ["function-bind", "get-intrinsic", "set-function-length"],
     "devDependencies": [
       "@ljharb/eslint-config",
       "aud",
@@ -1843,10 +1474,7 @@
   },
   {
     "packageName": "camel-case",
-    "dependencies": [
-      "pascal-case",
-      "tslib"
-    ],
+    "dependencies": ["pascal-case", "tslib"],
     "devDependencies": [
       "@size-limit/preset-small-lib",
       "@types/jest",
@@ -1869,34 +1497,13 @@
   },
   {
     "packageName": "chalk",
-    "dependencies": [
-      "ansi-styles",
-      "supports-color"
-    ],
-    "devDependencies": [
-      "ava",
-      "coveralls",
-      "execa",
-      "import-fresh",
-      "matcha",
-      "nyc",
-      "resolve-from",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["ansi-styles", "supports-color"],
+    "devDependencies": ["ava", "coveralls", "execa", "import-fresh", "matcha", "nyc", "resolve-from", "tsd", "xo"],
     "numDependencies": 11
   },
   {
     "packageName": "chokidar",
-    "dependencies": [
-      "anymatch",
-      "braces",
-      "glob-parent",
-      "is-binary-path",
-      "is-glob",
-      "normalize-path",
-      "readdirp"
-    ],
+    "dependencies": ["anymatch", "braces", "glob-parent", "is-binary-path", "is-glob", "normalize-path", "readdirp"],
     "devDependencies": [
       "@types/node",
       "chai",
@@ -1915,19 +1522,12 @@
   {
     "packageName": "chrome-trace-event",
     "dependencies": [],
-    "devDependencies": [
-      "@types/node",
-      "prettier",
-      "tape",
-      "typescript"
-    ],
+    "devDependencies": ["@types/node", "prettier", "tape", "typescript"],
     "numDependencies": 4
   },
   {
     "packageName": "clean-css",
-    "dependencies": [
-      "source-map"
-    ],
+    "dependencies": ["source-map"],
     "devDependencies": [
       "browserify",
       "eslint",
@@ -1942,26 +1542,14 @@
   },
   {
     "packageName": "clone-deep",
-    "dependencies": [
-      "is-plain-object",
-      "kind-of",
-      "shallow-clone"
-    ],
-    "devDependencies": [
-      "gulp-format-md",
-      "mocha"
-    ],
+    "dependencies": ["is-plain-object", "kind-of", "shallow-clone"],
+    "devDependencies": ["gulp-format-md", "mocha"],
     "numDependencies": 5
   },
   {
     "packageName": "color-convert",
-    "dependencies": [
-      "color-name"
-    ],
-    "devDependencies": [
-      "chalk",
-      "xo"
-    ],
+    "dependencies": ["color-name"],
+    "devDependencies": ["chalk", "xo"],
     "numDependencies": 3
   },
   {
@@ -1973,41 +1561,24 @@
   {
     "packageName": "colorette",
     "dependencies": [],
-    "devDependencies": [
-      "c8",
-      "twist"
-    ],
+    "devDependencies": ["c8", "twist"],
     "numDependencies": 2
   },
   {
     "packageName": "commander",
     "dependencies": [],
-    "devDependencies": [
-      "@types/node",
-      "eslint",
-      "should",
-      "sinon",
-      "standard",
-      "ts-node",
-      "typescript"
-    ],
+    "devDependencies": ["@types/node", "eslint", "should", "sinon", "standard", "ts-node", "typescript"],
     "numDependencies": 7
   },
   {
     "packageName": "common-path-prefix",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "nyc",
-      "standard"
-    ],
+    "devDependencies": ["ava", "nyc", "standard"],
     "numDependencies": 3
   },
   {
     "packageName": "compressible",
-    "dependencies": [
-      "mime-db"
-    ],
+    "dependencies": ["mime-db"],
     "devDependencies": [
       "eslint",
       "eslint-config-standard",
@@ -2023,15 +1594,7 @@
   },
   {
     "packageName": "compression",
-    "dependencies": [
-      "accepts",
-      "bytes",
-      "compressible",
-      "debug",
-      "on-headers",
-      "safe-buffer",
-      "vary"
-    ],
+    "dependencies": ["accepts", "bytes", "compressible", "debug", "on-headers", "safe-buffer", "vary"],
     "devDependencies": [
       "after",
       "eslint",
@@ -2050,26 +1613,18 @@
   {
     "packageName": "concat-map",
     "dependencies": [],
-    "devDependencies": [
-      "tape"
-    ],
+    "devDependencies": ["tape"],
     "numDependencies": 1
   },
   {
     "packageName": "connect-history-api-fallback",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "jest",
-      "sinon"
-    ],
+    "devDependencies": ["eslint", "jest", "sinon"],
     "numDependencies": 3
   },
   {
     "packageName": "content-disposition",
-    "dependencies": [
-      "safe-buffer"
-    ],
+    "dependencies": ["safe-buffer"],
     "devDependencies": [
       "deep-equal",
       "eslint",
@@ -2103,10 +1658,7 @@
   {
     "packageName": "convert-source-map",
     "dependencies": [],
-    "devDependencies": [
-      "inline-source-map",
-      "tap"
-    ],
+    "devDependencies": ["inline-source-map", "tap"],
     "numDependencies": 2
   },
   {
@@ -2127,10 +1679,7 @@
   {
     "packageName": "cookie-signature",
     "dependencies": [],
-    "devDependencies": [
-      "mocha",
-      "should"
-    ],
+    "devDependencies": ["mocha", "should"],
     "numDependencies": 2
   },
   {
@@ -2142,29 +1691,18 @@
   {
     "packageName": "core-util-is",
     "dependencies": [],
-    "devDependencies": [
-      "tap"
-    ],
+    "devDependencies": ["tap"],
     "numDependencies": 1
   },
   {
     "packageName": "create-require",
     "dependencies": [],
-    "devDependencies": [
-      "@nuxtjs/eslint-config",
-      "eslint",
-      "tap",
-      "standard-version"
-    ],
+    "devDependencies": ["@nuxtjs/eslint-config", "eslint", "tap", "standard-version"],
     "numDependencies": 4
   },
   {
     "packageName": "cross-spawn",
-    "dependencies": [
-      "path-key",
-      "shebang-command",
-      "which"
-    ],
+    "dependencies": ["path-key", "shebang-command", "which"],
     "devDependencies": [
       "@commitlint/cli",
       "@commitlint/config-conventional",
@@ -2237,13 +1775,7 @@
   },
   {
     "packageName": "css-select",
-    "dependencies": [
-      "boolbase",
-      "css-what",
-      "domhandler",
-      "domutils",
-      "nth-check"
-    ],
+    "dependencies": ["boolbase", "css-what", "domhandler", "domutils", "nth-check"],
     "devDependencies": [
       "@types/boolbase",
       "@types/jest",
@@ -2376,9 +1908,7 @@
   },
   {
     "packageName": "d3-array",
-    "dependencies": [
-      "internmap"
-    ],
+    "dependencies": ["internmap"],
     "devDependencies": [
       "@rollup/plugin-node-resolve",
       "d3-dsv",
@@ -2408,50 +1938,25 @@
   },
   {
     "packageName": "d3-brush",
-    "dependencies": [
-      "d3-dispatch",
-      "d3-drag",
-      "d3-interpolate",
-      "d3-selection",
-      "d3-transition"
-    ],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-dispatch", "d3-drag", "d3-interpolate", "d3-selection", "d3-transition"],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 9
   },
   {
     "packageName": "d3-chord",
-    "dependencies": [
-      "d3-path"
-    ],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-path"],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 5
   },
   {
     "packageName": "d3-color",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 4
   },
   {
     "packageName": "d3-contour",
-    "dependencies": [
-      "d3-array"
-    ],
+    "dependencies": ["d3-array"],
     "devDependencies": [
       "d3-axis",
       "d3-dsv",
@@ -2473,114 +1978,55 @@
   },
   {
     "packageName": "d3-delaunay",
-    "dependencies": [
-      "delaunator"
-    ],
-    "devDependencies": [
-      "@rollup/plugin-node-resolve",
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["delaunator"],
+    "devDependencies": ["@rollup/plugin-node-resolve", "eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 6
   },
   {
     "packageName": "d3-dispatch",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 4
   },
   {
     "packageName": "d3-drag",
-    "dependencies": [
-      "d3-dispatch",
-      "d3-selection"
-    ],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-dispatch", "d3-selection"],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 6
   },
   {
     "packageName": "d3-dsv",
-    "dependencies": [
-      "commander",
-      "iconv-lite",
-      "rw"
-    ],
-    "devDependencies": [
-      "csv-spectrum",
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["commander", "iconv-lite", "rw"],
+    "devDependencies": ["csv-spectrum", "eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 8
   },
   {
     "packageName": "d3-ease",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 4
   },
   {
     "packageName": "d3-fetch",
-    "dependencies": [
-      "d3-dsv"
-    ],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-dsv"],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 5
   },
   {
     "packageName": "d3-force",
-    "dependencies": [
-      "d3-dispatch",
-      "d3-quadtree",
-      "d3-timer"
-    ],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-dispatch", "d3-quadtree", "d3-timer"],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 7
   },
   {
     "packageName": "d3-format",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 4
   },
   {
     "packageName": "d3-geo",
-    "dependencies": [
-      "d3-array"
-    ],
+    "dependencies": ["d3-array"],
     "devDependencies": [
       "canvas",
       "d3-format",
@@ -2612,201 +2058,91 @@
   },
   {
     "packageName": "d3-interpolate",
-    "dependencies": [
-      "d3-color"
-    ],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-color"],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 5
   },
   {
     "packageName": "d3-path",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 4
   },
   {
     "packageName": "d3-polygon",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 4
   },
   {
     "packageName": "d3-quadtree",
     "dependencies": [],
-    "devDependencies": [
-      "d3-array",
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "devDependencies": ["d3-array", "eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 5
   },
   {
     "packageName": "d3-random",
     "dependencies": [],
-    "devDependencies": [
-      "d3-array",
-      "eslint",
-      "jsdom",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "devDependencies": ["d3-array", "eslint", "jsdom", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 6
   },
   {
     "packageName": "d3-scale",
-    "dependencies": [
-      "d3-array",
-      "d3-format",
-      "d3-interpolate",
-      "d3-time",
-      "d3-time-format"
-    ],
-    "devDependencies": [
-      "d3-color",
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-array", "d3-format", "d3-interpolate", "d3-time", "d3-time-format"],
+    "devDependencies": ["d3-color", "eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 10
   },
   {
     "packageName": "d3-scale-chromatic",
-    "dependencies": [
-      "d3-color",
-      "d3-interpolate"
-    ],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-color", "d3-interpolate"],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 6
   },
   {
     "packageName": "d3-selection",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "jsdom",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "devDependencies": ["eslint", "jsdom", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 5
   },
   {
     "packageName": "d3-shape",
-    "dependencies": [
-      "d3-path"
-    ],
-    "devDependencies": [
-      "d3-polygon",
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-path"],
+    "devDependencies": ["d3-polygon", "eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 6
   },
   {
     "packageName": "d3-time",
-    "dependencies": [
-      "d3-array"
-    ],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-array"],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 5
   },
   {
     "packageName": "d3-time-format",
-    "dependencies": [
-      "d3-time"
-    ],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-time"],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 5
   },
   {
     "packageName": "d3-timer",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 4
   },
   {
     "packageName": "d3-transition",
-    "dependencies": [
-      "d3-color",
-      "d3-dispatch",
-      "d3-ease",
-      "d3-interpolate",
-      "d3-timer"
-    ],
-    "devDependencies": [
-      "d3-selection",
-      "eslint",
-      "jsdom",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-color", "d3-dispatch", "d3-ease", "d3-interpolate", "d3-timer"],
+    "devDependencies": ["d3-selection", "eslint", "jsdom", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 11
   },
   {
     "packageName": "d3-zoom",
-    "dependencies": [
-      "d3-dispatch",
-      "d3-drag",
-      "d3-interpolate",
-      "d3-selection",
-      "d3-transition"
-    ],
-    "devDependencies": [
-      "eslint",
-      "jsdom",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "dependencies": ["d3-dispatch", "d3-drag", "d3-interpolate", "d3-selection", "d3-transition"],
+    "devDependencies": ["eslint", "jsdom", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 10
   },
   {
     "packageName": "debug",
-    "dependencies": [
-      "ms"
-    ],
+    "dependencies": ["ms"],
     "devDependencies": [
       "browserify",
       "chai",
@@ -2829,25 +2165,13 @@
   },
   {
     "packageName": "default-gateway",
-    "dependencies": [
-      "execa"
-    ],
-    "devDependencies": [
-      "eslint",
-      "eslint-config-silverwind",
-      "jest",
-      "updates",
-      "versions"
-    ],
+    "dependencies": ["execa"],
+    "devDependencies": ["eslint", "eslint-config-silverwind", "jest", "updates", "versions"],
     "numDependencies": 6
   },
   {
     "packageName": "define-data-property",
-    "dependencies": [
-      "get-intrinsic",
-      "gopd",
-      "has-property-descriptors"
-    ],
+    "dependencies": ["get-intrinsic", "gopd", "has-property-descriptors"],
     "devDependencies": [
       "@ljharb/eslint-config",
       "@types/es-value-fixtures",
@@ -2881,18 +2205,12 @@
   {
     "packageName": "define-lazy-prop",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 3
   },
   {
     "packageName": "delaunator",
-    "dependencies": [
-      "robust-predicates"
-    ],
+    "dependencies": ["robust-predicates"],
     "devDependencies": [
       "@rollup/plugin-node-resolve",
       "c8",
@@ -2993,16 +2311,12 @@
   {
     "packageName": "dns-equal",
     "dependencies": [],
-    "devDependencies": [
-      "standard"
-    ],
+    "devDependencies": ["standard"],
     "numDependencies": 1
   },
   {
     "packageName": "dns-packet",
-    "dependencies": [
-      "@leichtgewicht/ip-codec"
-    ],
+    "dependencies": ["@leichtgewicht/ip-codec"],
     "devDependencies": [
       "eslint",
       "eslint-config-standard",
@@ -3016,9 +2330,7 @@
   },
   {
     "packageName": "dom-converter",
-    "dependencies": [
-      "utila"
-    ],
+    "dependencies": ["utila"],
     "devDependencies": [
       "chai",
       "chai-changes",
@@ -3034,11 +2346,7 @@
   },
   {
     "packageName": "dom-serializer",
-    "dependencies": [
-      "domelementtype",
-      "domhandler",
-      "entities"
-    ],
+    "dependencies": ["domelementtype", "domhandler", "entities"],
     "devDependencies": [
       "@types/jest",
       "@types/node",
@@ -3071,9 +2379,7 @@
   },
   {
     "packageName": "domhandler",
-    "dependencies": [
-      "domelementtype"
-    ],
+    "dependencies": ["domelementtype"],
     "devDependencies": [
       "@types/jest",
       "@types/node",
@@ -3091,11 +2397,7 @@
   },
   {
     "packageName": "domutils",
-    "dependencies": [
-      "dom-serializer",
-      "domelementtype",
-      "domhandler"
-    ],
+    "dependencies": ["dom-serializer", "domelementtype", "domhandler"],
     "devDependencies": [
       "@types/jest",
       "@types/node",
@@ -3115,10 +2417,7 @@
   },
   {
     "packageName": "dot-case",
-    "dependencies": [
-      "no-case",
-      "tslib"
-    ],
+    "dependencies": ["no-case", "tslib"],
     "devDependencies": [
       "@size-limit/preset-small-lib",
       "@types/jest",
@@ -3136,35 +2435,19 @@
   {
     "packageName": "ee-first",
     "dependencies": [],
-    "devDependencies": [
-      "istanbul",
-      "mocha"
-    ],
+    "devDependencies": ["istanbul", "mocha"],
     "numDependencies": 2
   },
   {
     "packageName": "electron-to-chromium",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "codecov",
-      "compare-versions",
-      "node-fetch",
-      "nyc",
-      "shelljs"
-    ],
+    "devDependencies": ["ava", "codecov", "compare-versions", "node-fetch", "nyc", "shelljs"],
     "numDependencies": 6
   },
   {
     "packageName": "emojis-list",
     "dependencies": [],
-    "devDependencies": [
-      "acho",
-      "browserify",
-      "cheerio",
-      "got",
-      "standard"
-    ],
+    "devDependencies": ["acho", "browserify", "cheerio", "got", "standard"],
     "numDependencies": 5
   },
   {
@@ -3184,10 +2467,7 @@
   },
   {
     "packageName": "enhanced-resolve",
-    "dependencies": [
-      "graceful-fs",
-      "tapable"
-    ],
+    "dependencies": ["graceful-fs", "tapable"],
     "devDependencies": [
       "@types/graceful-fs",
       "@types/jest",
@@ -3266,9 +2546,7 @@
   },
   {
     "packageName": "error-stack-parser",
-    "dependencies": [
-      "stackframe"
-    ],
+    "dependencies": ["stackframe"],
     "devDependencies": [
       "eslint",
       "jasmine",
@@ -3309,37 +2587,24 @@
   {
     "packageName": "escalade",
     "dependencies": [],
-    "devDependencies": [
-      "bundt",
-      "esm",
-      "uvu"
-    ],
+    "devDependencies": ["bundt", "esm", "uvu"],
     "numDependencies": 3
   },
   {
     "packageName": "escape-html",
     "dependencies": [],
-    "devDependencies": [
-      "benchmark",
-      "beautify-benchmark"
-    ],
+    "devDependencies": ["benchmark", "beautify-benchmark"],
     "numDependencies": 2
   },
   {
     "packageName": "escape-string-regexp",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "xo"
-    ],
+    "devDependencies": ["ava", "xo"],
     "numDependencies": 2
   },
   {
     "packageName": "eslint-scope",
-    "dependencies": [
-      "esrecurse",
-      "estraverse"
-    ],
+    "dependencies": ["esrecurse", "estraverse"],
     "devDependencies": [
       "@typescript-eslint/parser",
       "chai",
@@ -3359,9 +2624,7 @@
   },
   {
     "packageName": "esrecurse",
-    "dependencies": [
-      "estraverse"
-    ],
+    "dependencies": ["estraverse"],
     "devDependencies": [
       "babel-cli",
       "babel-eslint",
@@ -3437,14 +2700,7 @@
   {
     "packageName": "events",
     "dependencies": [],
-    "devDependencies": [
-      "airtap",
-      "functions-have-names",
-      "has",
-      "has-symbols",
-      "isarray",
-      "tape"
-    ],
+    "devDependencies": ["airtap", "functions-have-names", "has", "has-symbols", "isarray", "tape"],
     "numDependencies": 6
   },
   {
@@ -3460,17 +2716,7 @@
       "signal-exit",
       "strip-final-newline"
     ],
-    "devDependencies": [
-      "@types/node",
-      "ava",
-      "get-node",
-      "is-running",
-      "nyc",
-      "p-event",
-      "tempfile",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["@types/node", "ava", "get-node", "is-running", "nyc", "p-event", "tempfile", "tsd", "xo"],
     "numDependencies": 18
   },
   {
@@ -3592,38 +2838,19 @@
   },
   {
     "packageName": "faye-websocket",
-    "dependencies": [
-      "websocket-driver"
-    ],
-    "devDependencies": [
-      "jstest",
-      "pace",
-      "permessage-deflate"
-    ],
+    "dependencies": ["websocket-driver"],
+    "devDependencies": ["jstest", "pace", "permessage-deflate"],
     "numDependencies": 4
   },
   {
     "packageName": "fill-range",
-    "dependencies": [
-      "to-regex-range"
-    ],
-    "devDependencies": [
-      "gulp-format-md",
-      "mocha"
-    ],
+    "dependencies": ["to-regex-range"],
+    "devDependencies": ["gulp-format-md", "mocha"],
     "numDependencies": 3
   },
   {
     "packageName": "finalhandler",
-    "dependencies": [
-      "debug",
-      "encodeurl",
-      "escape-html",
-      "on-finished",
-      "parseurl",
-      "statuses",
-      "unpipe"
-    ],
+    "dependencies": ["debug", "encodeurl", "escape-html", "on-finished", "parseurl", "statuses", "unpipe"],
     "devDependencies": [
       "eslint",
       "eslint-config-standard",
@@ -3642,53 +2869,26 @@
   },
   {
     "packageName": "find-cache-dir",
-    "dependencies": [
-      "common-path-prefix",
-      "pkg-dir"
-    ],
-    "devDependencies": [
-      "ava",
-      "del",
-      "tempy",
-      "xo"
-    ],
+    "dependencies": ["common-path-prefix", "pkg-dir"],
+    "devDependencies": ["ava", "del", "tempy", "xo"],
     "numDependencies": 6
   },
   {
     "packageName": "find-up",
-    "dependencies": [
-      "locate-path",
-      "path-exists"
-    ],
-    "devDependencies": [
-      "ava",
-      "is-path-inside",
-      "tempy",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["locate-path", "path-exists"],
+    "devDependencies": ["ava", "is-path-inside", "tempy", "tsd", "xo"],
     "numDependencies": 7
   },
   {
     "packageName": "flat",
     "dependencies": [],
-    "devDependencies": [
-      "mocha",
-      "standard"
-    ],
+    "devDependencies": ["mocha", "standard"],
     "numDependencies": 2
   },
   {
     "packageName": "follow-redirects",
     "dependencies": [],
-    "devDependencies": [
-      "concat-stream",
-      "eslint",
-      "express",
-      "lolex",
-      "mocha",
-      "nyc"
-    ],
+    "devDependencies": ["concat-stream", "eslint", "express", "lolex", "mocha", "nyc"],
     "numDependencies": 6
   },
   {
@@ -3755,9 +2955,7 @@
   {
     "packageName": "fsevents",
     "dependencies": [],
-    "devDependencies": [
-      "node-gyp"
-    ],
+    "devDependencies": ["node-gyp"],
     "numDependencies": 1
   },
   {
@@ -3794,12 +2992,7 @@
   },
   {
     "packageName": "get-intrinsic",
-    "dependencies": [
-      "function-bind",
-      "has-proto",
-      "has-symbols",
-      "hasown"
-    ],
+    "dependencies": ["function-bind", "has-proto", "has-symbols", "hasown"],
     "devDependencies": [
       "@ljharb/eslint-config",
       "aud",
@@ -3826,47 +3019,19 @@
   {
     "packageName": "get-stream",
     "dependencies": [],
-    "devDependencies": [
-      "@types/node",
-      "ava",
-      "into-stream",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["@types/node", "ava", "into-stream", "tsd", "xo"],
     "numDependencies": 5
   },
   {
     "packageName": "glob",
-    "dependencies": [
-      "fs.realpath",
-      "inflight",
-      "inherits",
-      "minimatch",
-      "once",
-      "path-is-absolute"
-    ],
-    "devDependencies": [
-      "memfs",
-      "mkdirp",
-      "rimraf",
-      "tap",
-      "tick"
-    ],
+    "dependencies": ["fs.realpath", "inflight", "inherits", "minimatch", "once", "path-is-absolute"],
+    "devDependencies": ["memfs", "mkdirp", "rimraf", "tap", "tick"],
     "numDependencies": 11
   },
   {
     "packageName": "glob-parent",
-    "dependencies": [
-      "is-glob"
-    ],
-    "devDependencies": [
-      "coveralls",
-      "eslint",
-      "eslint-config-gulp",
-      "expect",
-      "mocha",
-      "nyc"
-    ],
+    "dependencies": ["is-glob"],
+    "devDependencies": ["coveralls", "eslint", "eslint-config-gulp", "expect", "mocha", "nyc"],
     "numDependencies": 7
   },
   {
@@ -3878,17 +3043,12 @@
   {
     "packageName": "globals",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "xo"
-    ],
+    "devDependencies": ["ava", "xo"],
     "numDependencies": 2
   },
   {
     "packageName": "gopd",
-    "dependencies": [
-      "get-intrinsic"
-    ],
+    "dependencies": ["get-intrinsic"],
     "devDependencies": [
       "@ljharb/eslint-config",
       "aud",
@@ -3905,42 +3065,24 @@
   {
     "packageName": "graceful-fs",
     "dependencies": [],
-    "devDependencies": [
-      "import-fresh",
-      "mkdirp",
-      "rimraf",
-      "tap"
-    ],
+    "devDependencies": ["import-fresh", "mkdirp", "rimraf", "tap"],
     "numDependencies": 4
   },
   {
     "packageName": "handle-thing",
     "dependencies": [],
-    "devDependencies": [
-      "istanbul",
-      "mocha",
-      "pre-commit",
-      "readable-stream",
-      "standard",
-      "stream-pair"
-    ],
+    "devDependencies": ["istanbul", "mocha", "pre-commit", "readable-stream", "standard", "stream-pair"],
     "numDependencies": 6
   },
   {
     "packageName": "has-flag",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 3
   },
   {
     "packageName": "has-property-descriptors",
-    "dependencies": [
-      "get-intrinsic"
-    ],
+    "dependencies": ["get-intrinsic"],
     "devDependencies": [
       "@ljharb/eslint-config",
       "aud",
@@ -3988,9 +3130,7 @@
   },
   {
     "packageName": "hasown",
-    "dependencies": [
-      "function-bind"
-    ],
+    "dependencies": ["function-bind"],
     "devDependencies": [
       "@ljharb/eslint-config",
       "@types/function-bind",
@@ -4033,15 +3173,8 @@
   },
   {
     "packageName": "hpack.js",
-    "dependencies": [
-      "inherits",
-      "obuf",
-      "readable-stream",
-      "wbuf"
-    ],
-    "devDependencies": [
-      "mocha"
-    ],
+    "dependencies": ["inherits", "obuf", "readable-stream", "wbuf"],
+    "devDependencies": ["mocha"],
     "numDependencies": 5
   },
   {
@@ -4077,15 +3210,7 @@
   },
   {
     "packageName": "html-minifier-terser",
-    "dependencies": [
-      "camel-case",
-      "clean-css",
-      "commander",
-      "he",
-      "param-case",
-      "relateurl",
-      "terser"
-    ],
+    "dependencies": ["camel-case", "clean-css", "commander", "he", "param-case", "relateurl", "terser"],
     "devDependencies": [
       "grunt",
       "grunt-browserify",
@@ -4102,13 +3227,7 @@
   },
   {
     "packageName": "html-webpack-plugin",
-    "dependencies": [
-      "@types/html-minifier-terser",
-      "html-minifier-terser",
-      "lodash",
-      "pretty-error",
-      "tapable"
-    ],
+    "dependencies": ["@types/html-minifier-terser", "html-minifier-terser", "lodash", "pretty-error", "tapable"],
     "devDependencies": [
       "@types/node",
       "commitizen",
@@ -4134,12 +3253,7 @@
   },
   {
     "packageName": "htmlparser2",
-    "dependencies": [
-      "domelementtype",
-      "domhandler",
-      "domutils",
-      "entities"
-    ],
+    "dependencies": ["domelementtype", "domhandler", "domutils", "entities"],
     "devDependencies": [
       "@types/jest",
       "@types/node",
@@ -4157,23 +3271,12 @@
   {
     "packageName": "http-deceiver",
     "dependencies": [],
-    "devDependencies": [
-      "handle-thing",
-      "mocha",
-      "readable-stream",
-      "stream-pair"
-    ],
+    "devDependencies": ["handle-thing", "mocha", "readable-stream", "stream-pair"],
     "numDependencies": 4
   },
   {
     "packageName": "http-errors",
-    "dependencies": [
-      "depd",
-      "inherits",
-      "setprototypeof",
-      "statuses",
-      "toidentifier"
-    ],
+    "dependencies": ["depd", "inherits", "setprototypeof", "statuses", "toidentifier"],
     "devDependencies": [
       "eslint",
       "eslint-config-standard",
@@ -4195,11 +3298,7 @@
   },
   {
     "packageName": "http-proxy",
-    "dependencies": [
-      "eventemitter3",
-      "requires-port",
-      "follow-redirects"
-    ],
+    "dependencies": ["eventemitter3", "requires-port", "follow-redirects"],
     "devDependencies": [
       "async",
       "auto-changelog",
@@ -4217,13 +3316,7 @@
   },
   {
     "packageName": "http-proxy-middleware",
-    "dependencies": [
-      "@types/http-proxy",
-      "http-proxy",
-      "is-glob",
-      "is-plain-obj",
-      "micromatch"
-    ],
+    "dependencies": ["@types/http-proxy", "http-proxy", "is-glob", "is-plain-obj", "micromatch"],
     "devDependencies": [
       "@commitlint/cli",
       "@commitlint/config-conventional",
@@ -4260,31 +3353,13 @@
   {
     "packageName": "human-signals",
     "dependencies": [],
-    "devDependencies": [
-      "@ehmicky/dev-tasks",
-      "ajv",
-      "ava",
-      "gulp",
-      "husky",
-      "test-each"
-    ],
+    "devDependencies": ["@ehmicky/dev-tasks", "ajv", "ava", "gulp", "husky", "test-each"],
     "numDependencies": 6
   },
   {
     "packageName": "iconv-lite",
-    "dependencies": [
-      "safer-buffer"
-    ],
-    "devDependencies": [
-      "mocha",
-      "request",
-      "unorm",
-      "errto",
-      "async",
-      "istanbul",
-      "semver",
-      "iconv"
-    ],
+    "dependencies": ["safer-buffer"],
+    "devDependencies": ["mocha", "request", "unorm", "errto", "async", "istanbul", "semver", "iconv"],
     "numDependencies": 9
   },
   {
@@ -4304,47 +3379,26 @@
   },
   {
     "packageName": "import-local",
-    "dependencies": [
-      "pkg-dir",
-      "resolve-cwd"
-    ],
-    "devDependencies": [
-      "ava",
-      "cpy",
-      "del",
-      "execa",
-      "xo"
-    ],
+    "dependencies": ["pkg-dir", "resolve-cwd"],
+    "devDependencies": ["ava", "cpy", "del", "execa", "xo"],
     "numDependencies": 7
   },
   {
     "packageName": "inflight",
-    "dependencies": [
-      "once",
-      "wrappy"
-    ],
-    "devDependencies": [
-      "tap"
-    ],
+    "dependencies": ["once", "wrappy"],
+    "devDependencies": ["tap"],
     "numDependencies": 3
   },
   {
     "packageName": "inherits",
     "dependencies": [],
-    "devDependencies": [
-      "tap"
-    ],
+    "devDependencies": ["tap"],
     "numDependencies": 1
   },
   {
     "packageName": "internmap",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "rollup",
-      "rollup-plugin-terser"
-    ],
+    "devDependencies": ["eslint", "mocha", "rollup", "rollup-plugin-terser"],
     "numDependencies": 4
   },
   {
@@ -4369,30 +3423,18 @@
   {
     "packageName": "ipaddr.js",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "mocha",
-      "uglify-es"
-    ],
+    "devDependencies": ["eslint", "mocha", "uglify-es"],
     "numDependencies": 3
   },
   {
     "packageName": "is-binary-path",
-    "dependencies": [
-      "binary-extensions"
-    ],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["binary-extensions"],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 4
   },
   {
     "packageName": "is-core-module",
-    "dependencies": [
-      "hasown"
-    ],
+    "dependencies": ["hasown"],
     "devDependencies": [
       "@ljharb/eslint-config",
       "aud",
@@ -4411,131 +3453,72 @@
   {
     "packageName": "is-docker",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "sinon",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "sinon", "tsd", "xo"],
     "numDependencies": 4
   },
   {
     "packageName": "is-extglob",
     "dependencies": [],
-    "devDependencies": [
-      "gulp-format-md",
-      "mocha"
-    ],
+    "devDependencies": ["gulp-format-md", "mocha"],
     "numDependencies": 2
   },
   {
     "packageName": "is-glob",
-    "dependencies": [
-      "is-extglob"
-    ],
-    "devDependencies": [
-      "gulp-format-md",
-      "mocha"
-    ],
+    "dependencies": ["is-extglob"],
+    "devDependencies": ["gulp-format-md", "mocha"],
     "numDependencies": 3
   },
   {
     "packageName": "is-number",
     "dependencies": [],
-    "devDependencies": [
-      "ansi",
-      "benchmark",
-      "gulp-format-md",
-      "mocha"
-    ],
+    "devDependencies": ["ansi", "benchmark", "gulp-format-md", "mocha"],
     "numDependencies": 4
   },
   {
     "packageName": "is-plain-obj",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 3
   },
   {
     "packageName": "is-plain-object",
-    "dependencies": [
-      "isobject"
-    ],
-    "devDependencies": [
-      "browserify",
-      "chai",
-      "gulp-format-md",
-      "mocha",
-      "mocha-phantomjs",
-      "phantomjs",
-      "uglify-js"
-    ],
+    "dependencies": ["isobject"],
+    "devDependencies": ["browserify", "chai", "gulp-format-md", "mocha", "mocha-phantomjs", "phantomjs", "uglify-js"],
     "numDependencies": 8
   },
   {
     "packageName": "is-stream",
     "dependencies": [],
-    "devDependencies": [
-      "@types/node",
-      "ava",
-      "tempy",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["@types/node", "ava", "tempy", "tsd", "xo"],
     "numDependencies": 5
   },
   {
     "packageName": "is-wsl",
-    "dependencies": [
-      "is-docker"
-    ],
-    "devDependencies": [
-      "ava",
-      "clear-module",
-      "proxyquire",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["is-docker"],
+    "devDependencies": ["ava", "clear-module", "proxyquire", "tsd", "xo"],
     "numDependencies": 6
   },
   {
     "packageName": "isarray",
     "dependencies": [],
-    "devDependencies": [
-      "tape"
-    ],
+    "devDependencies": ["tape"],
     "numDependencies": 1
   },
   {
     "packageName": "isexe",
     "dependencies": [],
-    "devDependencies": [
-      "mkdirp",
-      "rimraf",
-      "tap"
-    ],
+    "devDependencies": ["mkdirp", "rimraf", "tap"],
     "numDependencies": 3
   },
   {
     "packageName": "isobject",
     "dependencies": [],
-    "devDependencies": [
-      "gulp-format-md",
-      "mocha"
-    ],
+    "devDependencies": ["gulp-format-md", "mocha"],
     "numDependencies": 2
   },
   {
     "packageName": "jest-worker",
-    "dependencies": [
-      "@types/node",
-      "merge-stream",
-      "supports-color"
-    ],
+    "dependencies": ["@types/node", "merge-stream", "supports-color"],
     "devDependencies": [
       "@types/merge-stream",
       "@types/supports-color",
@@ -4548,46 +3531,25 @@
   {
     "packageName": "js-tokens",
     "dependencies": [],
-    "devDependencies": [
-      "coffeescript",
-      "esprima",
-      "everything.js",
-      "mocha"
-    ],
+    "devDependencies": ["coffeescript", "esprima", "everything.js", "mocha"],
     "numDependencies": 4
   },
   {
     "packageName": "jsesc",
     "dependencies": [],
-    "devDependencies": [
-      "coveralls",
-      "grunt",
-      "grunt-template",
-      "istanbul",
-      "mocha",
-      "regenerate",
-      "requirejs"
-    ],
+    "devDependencies": ["coveralls", "grunt", "grunt-template", "istanbul", "mocha", "regenerate", "requirejs"],
     "numDependencies": 7
   },
   {
     "packageName": "json-parse-even-better-errors",
     "dependencies": [],
-    "devDependencies": [
-      "tap"
-    ],
+    "devDependencies": ["tap"],
     "numDependencies": 1
   },
   {
     "packageName": "json-schema-traverse",
     "dependencies": [],
-    "devDependencies": [
-      "coveralls",
-      "eslint",
-      "mocha",
-      "nyc",
-      "pre-commit"
-    ],
+    "devDependencies": ["coveralls", "eslint", "mocha", "nyc", "pre-commit"],
     "numDependencies": 5
   },
   {
@@ -4617,44 +3579,24 @@
   {
     "packageName": "kind-of",
     "dependencies": [],
-    "devDependencies": [
-      "benchmarked",
-      "browserify",
-      "gulp-format-md",
-      "mocha",
-      "write"
-    ],
+    "devDependencies": ["benchmarked", "browserify", "gulp-format-md", "mocha", "write"],
     "numDependencies": 5
   },
   {
     "packageName": "launch-editor",
-    "dependencies": [
-      "picocolors",
-      "shell-quote"
-    ],
+    "dependencies": ["picocolors", "shell-quote"],
     "devDependencies": [],
     "numDependencies": 2
   },
   {
     "packageName": "loader-runner",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "eslint-plugin-node",
-      "eslint-plugin-nodeca",
-      "istanbul",
-      "mocha",
-      "should"
-    ],
+    "devDependencies": ["eslint", "eslint-plugin-node", "eslint-plugin-nodeca", "istanbul", "mocha", "should"],
     "numDependencies": 6
   },
   {
     "packageName": "loader-utils",
-    "dependencies": [
-      "big.js",
-      "emojis-list",
-      "json5"
-    ],
+    "dependencies": ["big.js", "emojis-list", "json5"],
     "devDependencies": [
       "coveralls",
       "eslint",
@@ -4668,14 +3610,8 @@
   },
   {
     "packageName": "locate-path",
-    "dependencies": [
-      "p-locate"
-    ],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["p-locate"],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 4
   },
   {
@@ -4686,21 +3622,13 @@
   },
   {
     "packageName": "loose-envify",
-    "dependencies": [
-      "js-tokens"
-    ],
-    "devDependencies": [
-      "browserify",
-      "envify",
-      "tap"
-    ],
+    "dependencies": ["js-tokens"],
+    "devDependencies": ["browserify", "envify", "tap"],
     "numDependencies": 4
   },
   {
     "packageName": "lower-case",
-    "dependencies": [
-      "tslib"
-    ],
+    "dependencies": ["tslib"],
     "devDependencies": [
       "@size-limit/preset-small-lib",
       "@types/jest",
@@ -4717,13 +3645,8 @@
   },
   {
     "packageName": "lru-cache",
-    "dependencies": [
-      "yallist"
-    ],
-    "devDependencies": [
-      "benchmark",
-      "tap"
-    ],
+    "dependencies": ["yallist"],
+    "devDependencies": ["benchmark", "tap"],
     "numDependencies": 3
   },
   {
@@ -4748,18 +3671,12 @@
   {
     "packageName": "media-typer",
     "dependencies": [],
-    "devDependencies": [
-      "istanbul",
-      "mocha",
-      "should"
-    ],
+    "devDependencies": ["istanbul", "mocha", "should"],
     "numDependencies": 3
   },
   {
     "packageName": "memfs",
-    "dependencies": [
-      "fs-monkey"
-    ],
+    "dependencies": ["fs-monkey"],
     "devDependencies": [
       "@semantic-release/changelog",
       "@semantic-release/git",
@@ -4783,53 +3700,31 @@
   {
     "packageName": "merge-descriptors",
     "dependencies": [],
-    "devDependencies": [
-      "istanbul",
-      "mocha"
-    ],
+    "devDependencies": ["istanbul", "mocha"],
     "numDependencies": 2
   },
   {
     "packageName": "merge-stream",
     "dependencies": [],
-    "devDependencies": [
-      "from2",
-      "istanbul"
-    ],
+    "devDependencies": ["from2", "istanbul"],
     "numDependencies": 2
   },
   {
     "packageName": "methods",
     "dependencies": [],
-    "devDependencies": [
-      "istanbul",
-      "mocha"
-    ],
+    "devDependencies": ["istanbul", "mocha"],
     "numDependencies": 2
   },
   {
     "packageName": "micromatch",
-    "dependencies": [
-      "braces",
-      "picomatch"
-    ],
-    "devDependencies": [
-      "fill-range",
-      "gulp-format-md",
-      "minimatch",
-      "mocha",
-      "time-require"
-    ],
+    "dependencies": ["braces", "picomatch"],
+    "devDependencies": ["fill-range", "gulp-format-md", "minimatch", "mocha", "time-require"],
     "numDependencies": 7
   },
   {
     "packageName": "mime",
     "dependencies": [],
-    "devDependencies": [
-      "github-release-notes",
-      "mime-db",
-      "mime-score"
-    ],
+    "devDependencies": ["github-release-notes", "mime-db", "mime-score"],
     "numDependencies": 3
   },
   {
@@ -4858,9 +3753,7 @@
   },
   {
     "packageName": "mime-types",
-    "dependencies": [
-      "mime-db"
-    ],
+    "dependencies": ["mime-db"],
     "devDependencies": [
       "eslint",
       "eslint-config-standard",
@@ -4877,11 +3770,7 @@
   {
     "packageName": "mimic-fn",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 3
   },
   {
@@ -4892,36 +3781,20 @@
   },
   {
     "packageName": "minimatch",
-    "dependencies": [
-      "brace-expansion"
-    ],
-    "devDependencies": [
-      "tap"
-    ],
+    "dependencies": ["brace-expansion"],
+    "devDependencies": ["tap"],
     "numDependencies": 2
   },
   {
     "packageName": "ms",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "expect.js",
-      "husky",
-      "lint-staged",
-      "mocha"
-    ],
+    "devDependencies": ["eslint", "expect.js", "husky", "lint-staged", "mocha"],
     "numDependencies": 5
   },
   {
     "packageName": "multicast-dns",
-    "dependencies": [
-      "dns-packet",
-      "thunky"
-    ],
-    "devDependencies": [
-      "standard",
-      "tape"
-    ],
+    "dependencies": ["dns-packet", "thunky"],
+    "devDependencies": ["standard", "tape"],
     "numDependencies": 4
   },
   {
@@ -4933,12 +3806,7 @@
   {
     "packageName": "negotiator",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "eslint-plugin-markdown",
-      "mocha",
-      "nyc"
-    ],
+    "devDependencies": ["eslint", "eslint-plugin-markdown", "mocha", "nyc"],
     "numDependencies": 4
   },
   {
@@ -4977,10 +3845,7 @@
   },
   {
     "packageName": "no-case",
-    "dependencies": [
-      "lower-case",
-      "tslib"
-    ],
+    "dependencies": ["lower-case", "tslib"],
     "devDependencies": [
       "@size-limit/preset-small-lib",
       "@types/jest",
@@ -5032,38 +3897,24 @@
   {
     "packageName": "node-releases",
     "dependencies": [],
-    "devDependencies": [
-      "semver"
-    ],
+    "devDependencies": ["semver"],
     "numDependencies": 1
   },
   {
     "packageName": "normalize-path",
     "dependencies": [],
-    "devDependencies": [
-      "gulp-format-md",
-      "minimist",
-      "mocha"
-    ],
+    "devDependencies": ["gulp-format-md", "minimist", "mocha"],
     "numDependencies": 3
   },
   {
     "packageName": "npm-run-path",
-    "dependencies": [
-      "path-key"
-    ],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["path-key"],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 4
   },
   {
     "packageName": "nth-check",
-    "dependencies": [
-      "boolbase"
-    ],
+    "dependencies": ["boolbase"],
     "devDependencies": [
       "@types/boolbase",
       "@types/jest",
@@ -5110,16 +3961,12 @@
   {
     "packageName": "obuf",
     "dependencies": [],
-    "devDependencies": [
-      "mocha"
-    ],
+    "devDependencies": ["mocha"],
     "numDependencies": 1
   },
   {
     "packageName": "on-finished",
-    "dependencies": [
-      "ee-first"
-    ],
+    "dependencies": ["ee-first"],
     "devDependencies": [
       "eslint",
       "eslint-config-standard",
@@ -5152,102 +3999,49 @@
   },
   {
     "packageName": "once",
-    "dependencies": [
-      "wrappy"
-    ],
-    "devDependencies": [
-      "tap"
-    ],
+    "dependencies": ["wrappy"],
+    "devDependencies": ["tap"],
     "numDependencies": 2
   },
   {
     "packageName": "onetime",
-    "dependencies": [
-      "mimic-fn"
-    ],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["mimic-fn"],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 4
   },
   {
     "packageName": "open",
-    "dependencies": [
-      "define-lazy-prop",
-      "is-docker",
-      "is-wsl"
-    ],
-    "devDependencies": [
-      "@types/node",
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["define-lazy-prop", "is-docker", "is-wsl"],
+    "devDependencies": ["@types/node", "ava", "tsd", "xo"],
     "numDependencies": 7
   },
   {
     "packageName": "p-limit",
-    "dependencies": [
-      "p-try"
-    ],
-    "devDependencies": [
-      "ava",
-      "delay",
-      "in-range",
-      "random-int",
-      "time-span",
-      "tsd-check",
-      "xo"
-    ],
+    "dependencies": ["p-try"],
+    "devDependencies": ["ava", "delay", "in-range", "random-int", "time-span", "tsd-check", "xo"],
     "numDependencies": 8
   },
   {
     "packageName": "p-locate",
-    "dependencies": [
-      "p-limit"
-    ],
-    "devDependencies": [
-      "ava",
-      "delay",
-      "in-range",
-      "time-span",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["p-limit"],
+    "devDependencies": ["ava", "delay", "in-range", "time-span", "tsd", "xo"],
     "numDependencies": 7
   },
   {
     "packageName": "p-retry",
-    "dependencies": [
-      "@types/retry",
-      "retry"
-    ],
-    "devDependencies": [
-      "ava",
-      "delay",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["@types/retry", "retry"],
+    "devDependencies": ["ava", "delay", "tsd", "xo"],
     "numDependencies": 6
   },
   {
     "packageName": "p-try",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 3
   },
   {
     "packageName": "param-case",
-    "dependencies": [
-      "dot-case",
-      "tslib"
-    ],
+    "dependencies": ["dot-case", "tslib"],
     "devDependencies": [
       "@size-limit/preset-small-lib",
       "@types/jest",
@@ -5282,10 +4076,7 @@
   },
   {
     "packageName": "pascal-case",
-    "dependencies": [
-      "no-case",
-      "tslib"
-    ],
+    "dependencies": ["no-case", "tslib"],
     "devDependencies": [
       "@size-limit/preset-small-lib",
       "@types/jest",
@@ -5303,30 +4094,19 @@
   {
     "packageName": "path-exists",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 3
   },
   {
     "packageName": "path-is-absolute",
     "dependencies": [],
-    "devDependencies": [
-      "xo"
-    ],
+    "devDependencies": ["xo"],
     "numDependencies": 1
   },
   {
     "packageName": "path-key",
     "dependencies": [],
-    "devDependencies": [
-      "@types/node",
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["@types/node", "ava", "tsd", "xo"],
     "numDependencies": 4
   },
   {
@@ -5338,10 +4118,7 @@
   {
     "packageName": "path-to-regexp",
     "dependencies": [],
-    "devDependencies": [
-      "mocha",
-      "istanbul"
-    ],
+    "devDependencies": ["mocha", "istanbul"],
     "numDependencies": 2
   },
   {
@@ -5353,36 +4130,18 @@
   {
     "packageName": "picomatch",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "fill-range",
-      "gulp-format-md",
-      "mocha",
-      "nyc",
-      "time-require"
-    ],
+    "devDependencies": ["eslint", "fill-range", "gulp-format-md", "mocha", "nyc", "time-require"],
     "numDependencies": 6
   },
   {
     "packageName": "pkg-dir",
-    "dependencies": [
-      "find-up"
-    ],
-    "devDependencies": [
-      "ava",
-      "tempy",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["find-up"],
+    "devDependencies": ["ava", "tempy", "tsd", "xo"],
     "numDependencies": 5
   },
   {
     "packageName": "postcss",
-    "dependencies": [
-      "nanoid",
-      "picocolors",
-      "source-map-js"
-    ],
+    "dependencies": ["nanoid", "picocolors", "source-map-js"],
     "devDependencies": [],
     "numDependencies": 3
   },
@@ -5403,11 +4162,7 @@
   },
   {
     "packageName": "postcss-modules-local-by-default",
-    "dependencies": [
-      "icss-utils",
-      "postcss-selector-parser",
-      "postcss-value-parser"
-    ],
+    "dependencies": ["icss-utils", "postcss-selector-parser", "postcss-value-parser"],
     "devDependencies": [
       "coveralls",
       "eslint",
@@ -5422,9 +4177,7 @@
   },
   {
     "packageName": "postcss-modules-scope",
-    "dependencies": [
-      "postcss-selector-parser"
-    ],
+    "dependencies": ["postcss-selector-parser"],
     "devDependencies": [
       "coveralls",
       "eslint",
@@ -5439,9 +4192,7 @@
   },
   {
     "packageName": "postcss-modules-values",
-    "dependencies": [
-      "icss-utils"
-    ],
+    "dependencies": ["icss-utils"],
     "devDependencies": [
       "coveralls",
       "eslint",
@@ -5456,10 +4207,7 @@
   },
   {
     "packageName": "postcss-selector-parser",
-    "dependencies": [
-      "cssesc",
-      "util-deprecate"
-    ],
+    "dependencies": ["cssesc", "util-deprecate"],
     "devDependencies": [
       "@babel/cli",
       "@babel/core",
@@ -5486,45 +4234,24 @@
   {
     "packageName": "postcss-value-parser",
     "dependencies": [],
-    "devDependencies": [
-      "eslint",
-      "husky",
-      "lint-staged",
-      "prettier",
-      "tap-spec",
-      "tape"
-    ],
+    "devDependencies": ["eslint", "husky", "lint-staged", "prettier", "tap-spec", "tape"],
     "numDependencies": 6
   },
   {
     "packageName": "pretty-error",
-    "dependencies": [
-      "lodash",
-      "renderkid"
-    ],
-    "devDependencies": [
-      "chai",
-      "coffee-script",
-      "coffeescript",
-      "jitter",
-      "mocha"
-    ],
+    "dependencies": ["lodash", "renderkid"],
+    "devDependencies": ["chai", "coffee-script", "coffeescript", "jitter", "mocha"],
     "numDependencies": 7
   },
   {
     "packageName": "process-nextick-args",
     "dependencies": [],
-    "devDependencies": [
-      "tap"
-    ],
+    "devDependencies": ["tap"],
     "numDependencies": 1
   },
   {
     "packageName": "proxy-addr",
-    "dependencies": [
-      "forwarded",
-      "ipaddr.js"
-    ],
+    "dependencies": ["forwarded", "ipaddr.js"],
     "devDependencies": [
       "benchmark",
       "beautify-benchmark",
@@ -5544,18 +4271,12 @@
   {
     "packageName": "punycode",
     "dependencies": [],
-    "devDependencies": [
-      "codecov",
-      "nyc",
-      "mocha"
-    ],
+    "devDependencies": ["codecov", "nyc", "mocha"],
     "numDependencies": 3
   },
   {
     "packageName": "qs",
-    "dependencies": [
-      "side-channel"
-    ],
+    "dependencies": ["side-channel"],
     "devDependencies": [
       "@ljharb/eslint-config",
       "aud",
@@ -5580,16 +4301,8 @@
   },
   {
     "packageName": "randombytes",
-    "dependencies": [
-      "safe-buffer"
-    ],
-    "devDependencies": [
-      "phantomjs",
-      "standard",
-      "tap-spec",
-      "tape",
-      "zuul"
-    ],
+    "dependencies": ["safe-buffer"],
+    "devDependencies": ["phantomjs", "standard", "tap-spec", "tape", "zuul"],
     "numDependencies": 6
   },
   {
@@ -5611,12 +4324,7 @@
   },
   {
     "packageName": "raw-body",
-    "dependencies": [
-      "bytes",
-      "http-errors",
-      "iconv-lite",
-      "unpipe"
-    ],
+    "dependencies": ["bytes", "http-errors", "iconv-lite", "unpipe"],
     "devDependencies": [
       "bluebird",
       "eslint",
@@ -5635,38 +4343,25 @@
   },
   {
     "packageName": "react",
-    "dependencies": [
-      "loose-envify"
-    ],
+    "dependencies": ["loose-envify"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "react-dom",
-    "dependencies": [
-      "loose-envify",
-      "scheduler"
-    ],
+    "dependencies": ["loose-envify", "scheduler"],
     "devDependencies": [],
     "numDependencies": 2
   },
   {
     "packageName": "react-refresh",
     "dependencies": [],
-    "devDependencies": [
-      "react-16-8",
-      "react-dom-16-8",
-      "scheduler-0-13"
-    ],
+    "devDependencies": ["react-16-8", "react-dom-16-8", "scheduler-0-13"],
     "numDependencies": 3
   },
   {
     "packageName": "readable-stream",
-    "dependencies": [
-      "inherits",
-      "string_decoder",
-      "util-deprecate"
-    ],
+    "dependencies": ["inherits", "string_decoder", "util-deprecate"],
     "devDependencies": [
       "@babel/cli",
       "@babel/core",
@@ -5693,9 +4388,7 @@
   },
   {
     "packageName": "readdirp",
-    "dependencies": [
-      "picomatch"
-    ],
+    "dependencies": ["picomatch"],
     "devDependencies": [
       "@types/node",
       "chai",
@@ -5711,38 +4404,19 @@
   },
   {
     "packageName": "rechoir",
-    "dependencies": [
-      "resolve"
-    ],
-    "devDependencies": [
-      "eslint",
-      "eslint-config-gulp",
-      "expect",
-      "mocha",
-      "nyc"
-    ],
+    "dependencies": ["resolve"],
+    "devDependencies": ["eslint", "eslint-config-gulp", "expect", "mocha", "nyc"],
     "numDependencies": 6
   },
   {
     "packageName": "relateurl",
     "dependencies": [],
-    "devDependencies": [
-      "browserify",
-      "chai",
-      "mocha",
-      "uglify-js"
-    ],
+    "devDependencies": ["browserify", "chai", "mocha", "uglify-js"],
     "numDependencies": 4
   },
   {
     "packageName": "renderkid",
-    "dependencies": [
-      "css-select",
-      "dom-converter",
-      "htmlparser2",
-      "lodash",
-      "strip-ansi"
-    ],
+    "dependencies": ["css-select", "dom-converter", "htmlparser2", "lodash", "strip-ansi"],
     "devDependencies": [
       "@babel/core",
       "@babel/preset-env",
@@ -5759,29 +4433,18 @@
   {
     "packageName": "require-from-string",
     "dependencies": [],
-    "devDependencies": [
-      "mocha"
-    ],
+    "devDependencies": ["mocha"],
     "numDependencies": 1
   },
   {
     "packageName": "requires-port",
     "dependencies": [],
-    "devDependencies": [
-      "assume",
-      "istanbul",
-      "mocha",
-      "pre-commit"
-    ],
+    "devDependencies": ["assume", "istanbul", "mocha", "pre-commit"],
     "numDependencies": 4
   },
   {
     "packageName": "resolve",
-    "dependencies": [
-      "is-core-module",
-      "path-parse",
-      "supports-preserve-symlinks-flag"
-    ],
+    "dependencies": ["is-core-module", "path-parse", "supports-preserve-symlinks-flag"],
     "devDependencies": [
       "@ljharb/eslint-config",
       "array.prototype.map",
@@ -5805,45 +4468,26 @@
   },
   {
     "packageName": "resolve-cwd",
-    "dependencies": [
-      "resolve-from"
-    ],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["resolve-from"],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 4
   },
   {
     "packageName": "resolve-from",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 3
   },
   {
     "packageName": "retry",
     "dependencies": [],
-    "devDependencies": [
-      "fake",
-      "istanbul",
-      "tape"
-    ],
+    "devDependencies": ["fake", "istanbul", "tape"],
     "numDependencies": 3
   },
   {
     "packageName": "rimraf",
-    "dependencies": [
-      "glob"
-    ],
-    "devDependencies": [
-      "mkdirp",
-      "tap"
-    ],
+    "dependencies": ["glob"],
+    "devDependencies": ["mkdirp", "tap"],
     "numDependencies": 3
   },
   {
@@ -5865,45 +4509,30 @@
   {
     "packageName": "rw",
     "dependencies": [],
-    "devDependencies": [
-      "d3-queue",
-      "eslint"
-    ],
+    "devDependencies": ["d3-queue", "eslint"],
     "numDependencies": 2
   },
   {
     "packageName": "safe-buffer",
     "dependencies": [],
-    "devDependencies": [
-      "standard",
-      "tape"
-    ],
+    "devDependencies": ["standard", "tape"],
     "numDependencies": 2
   },
   {
     "packageName": "safer-buffer",
     "dependencies": [],
-    "devDependencies": [
-      "standard",
-      "tape"
-    ],
+    "devDependencies": ["standard", "tape"],
     "numDependencies": 2
   },
   {
     "packageName": "scheduler",
-    "dependencies": [
-      "loose-envify"
-    ],
+    "dependencies": ["loose-envify"],
     "devDependencies": [],
     "numDependencies": 1
   },
   {
     "packageName": "schema-utils",
-    "dependencies": [
-      "@types/json-schema",
-      "ajv",
-      "ajv-keywords"
-    ],
+    "dependencies": ["@types/json-schema", "ajv", "ajv-keywords"],
     "devDependencies": [
       "@babel/cli",
       "@babel/core",
@@ -5932,37 +4561,19 @@
   {
     "packageName": "select-hose",
     "dependencies": [],
-    "devDependencies": [
-      "handle-thing",
-      "jscs",
-      "jshint",
-      "mocha",
-      "stream-pair"
-    ],
+    "devDependencies": ["handle-thing", "jscs", "jshint", "mocha", "stream-pair"],
     "numDependencies": 5
   },
   {
     "packageName": "selfsigned",
-    "dependencies": [
-      "@types/node-forge",
-      "node-forge"
-    ],
-    "devDependencies": [
-      "chai",
-      "mocha"
-    ],
+    "dependencies": ["@types/node-forge", "node-forge"],
+    "devDependencies": ["chai", "mocha"],
     "numDependencies": 4
   },
   {
     "packageName": "semver",
-    "dependencies": [
-      "lru-cache"
-    ],
-    "devDependencies": [
-      "@npmcli/eslint-config",
-      "@npmcli/template-oss",
-      "tap"
-    ],
+    "dependencies": ["lru-cache"],
+    "devDependencies": ["@npmcli/eslint-config", "@npmcli/template-oss", "tap"],
     "numDependencies": 4
   },
   {
@@ -5999,44 +4610,19 @@
   },
   {
     "packageName": "serialize-javascript",
-    "dependencies": [
-      "randombytes"
-    ],
-    "devDependencies": [
-      "benchmark",
-      "chai",
-      "mocha",
-      "nyc"
-    ],
+    "dependencies": ["randombytes"],
+    "devDependencies": ["benchmark", "chai", "mocha", "nyc"],
     "numDependencies": 5
   },
   {
     "packageName": "serve-index",
-    "dependencies": [
-      "accepts",
-      "batch",
-      "debug",
-      "escape-html",
-      "http-errors",
-      "mime-types",
-      "parseurl"
-    ],
-    "devDependencies": [
-      "after",
-      "istanbul",
-      "mocha",
-      "supertest"
-    ],
+    "dependencies": ["accepts", "batch", "debug", "escape-html", "http-errors", "mime-types", "parseurl"],
+    "devDependencies": ["after", "istanbul", "mocha", "supertest"],
     "numDependencies": 11
   },
   {
     "packageName": "serve-static",
-    "dependencies": [
-      "encodeurl",
-      "escape-html",
-      "parseurl",
-      "send"
-    ],
+    "dependencies": ["encodeurl", "escape-html", "parseurl", "send"],
     "devDependencies": [
       "eslint",
       "eslint-config-standard",
@@ -6054,12 +4640,7 @@
   },
   {
     "packageName": "set-function-length",
-    "dependencies": [
-      "define-data-property",
-      "get-intrinsic",
-      "gopd",
-      "has-property-descriptors"
-    ],
+    "dependencies": ["define-data-property", "get-intrinsic", "gopd", "has-property-descriptors"],
     "devDependencies": [
       "@ljharb/eslint-config",
       "aud",
@@ -6081,42 +4662,25 @@
   {
     "packageName": "setprototypeof",
     "dependencies": [],
-    "devDependencies": [
-      "mocha",
-      "standard"
-    ],
+    "devDependencies": ["mocha", "standard"],
     "numDependencies": 2
   },
   {
     "packageName": "shallow-clone",
-    "dependencies": [
-      "kind-of"
-    ],
-    "devDependencies": [
-      "gulp-format-md",
-      "mocha"
-    ],
+    "dependencies": ["kind-of"],
+    "devDependencies": ["gulp-format-md", "mocha"],
     "numDependencies": 3
   },
   {
     "packageName": "shebang-command",
-    "dependencies": [
-      "shebang-regex"
-    ],
-    "devDependencies": [
-      "ava",
-      "xo"
-    ],
+    "dependencies": ["shebang-regex"],
+    "devDependencies": ["ava", "xo"],
     "numDependencies": 3
   },
   {
     "packageName": "shebang-regex",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 3
   },
   {
@@ -6138,11 +4702,7 @@
   },
   {
     "packageName": "side-channel",
-    "dependencies": [
-      "call-bind",
-      "get-intrinsic",
-      "object-inspect"
-    ],
+    "dependencies": ["call-bind", "get-intrinsic", "object-inspect"],
     "devDependencies": [
       "@ljharb/eslint-config",
       "aud",
@@ -6157,96 +4717,43 @@
   {
     "packageName": "signal-exit",
     "dependencies": [],
-    "devDependencies": [
-      "chai",
-      "coveralls",
-      "nyc",
-      "standard-version",
-      "tap"
-    ],
+    "devDependencies": ["chai", "coveralls", "nyc", "standard-version", "tap"],
     "numDependencies": 5
   },
   {
     "packageName": "sockjs",
-    "dependencies": [
-      "faye-websocket",
-      "uuid",
-      "websocket-driver"
-    ],
-    "devDependencies": [
-      "coffeescript"
-    ],
+    "dependencies": ["faye-websocket", "uuid", "websocket-driver"],
+    "devDependencies": ["coffeescript"],
     "numDependencies": 4
   },
   {
     "packageName": "source-map",
     "dependencies": [],
-    "devDependencies": [
-      "doctoc",
-      "webpack"
-    ],
+    "devDependencies": ["doctoc", "webpack"],
     "numDependencies": 2
   },
   {
     "packageName": "source-map-js",
     "dependencies": [],
-    "devDependencies": [
-      "clean-publish",
-      "doctoc",
-      "webpack"
-    ],
+    "devDependencies": ["clean-publish", "doctoc", "webpack"],
     "numDependencies": 3
   },
   {
     "packageName": "source-map-support",
-    "dependencies": [
-      "buffer-from",
-      "source-map"
-    ],
-    "devDependencies": [
-      "browserify",
-      "coffeescript",
-      "http-server",
-      "mocha",
-      "webpack"
-    ],
+    "dependencies": ["buffer-from", "source-map"],
+    "devDependencies": ["browserify", "coffeescript", "http-server", "mocha", "webpack"],
     "numDependencies": 7
   },
   {
     "packageName": "spdy",
-    "dependencies": [
-      "debug",
-      "handle-thing",
-      "http-deceiver",
-      "select-hose",
-      "spdy-transport"
-    ],
-    "devDependencies": [
-      "istanbul",
-      "mocha",
-      "pre-commit",
-      "standard"
-    ],
+    "dependencies": ["debug", "handle-thing", "http-deceiver", "select-hose", "spdy-transport"],
+    "devDependencies": ["istanbul", "mocha", "pre-commit", "standard"],
     "numDependencies": 9
   },
   {
     "packageName": "spdy-transport",
-    "dependencies": [
-      "debug",
-      "detect-node",
-      "hpack.js",
-      "obuf",
-      "readable-stream",
-      "wbuf"
-    ],
-    "devDependencies": [
-      "async",
-      "istanbul",
-      "mocha",
-      "pre-commit",
-      "standard",
-      "stream-pair"
-    ],
+    "dependencies": ["debug", "detect-node", "hpack.js", "obuf", "readable-stream", "wbuf"],
+    "devDependencies": ["async", "istanbul", "mocha", "pre-commit", "standard", "stream-pair"],
     "numDependencies": 12
   },
   {
@@ -6293,36 +4800,20 @@
   },
   {
     "packageName": "string_decoder",
-    "dependencies": [
-      "safe-buffer"
-    ],
-    "devDependencies": [
-      "babel-polyfill",
-      "core-util-is",
-      "inherits",
-      "tap"
-    ],
+    "dependencies": ["safe-buffer"],
+    "devDependencies": ["babel-polyfill", "core-util-is", "inherits", "tap"],
     "numDependencies": 5
   },
   {
     "packageName": "strip-ansi",
-    "dependencies": [
-      "ansi-regex"
-    ],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "dependencies": ["ansi-regex"],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 4
   },
   {
     "packageName": "strip-final-newline",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "xo"
-    ],
+    "devDependencies": ["ava", "xo"],
     "numDependencies": 2
   },
   {
@@ -6366,14 +4857,8 @@
   },
   {
     "packageName": "supports-color",
-    "dependencies": [
-      "has-flag"
-    ],
-    "devDependencies": [
-      "ava",
-      "import-fresh",
-      "xo"
-    ],
+    "dependencies": ["has-flag"],
+    "devDependencies": ["ava", "import-fresh", "xo"],
     "numDependencies": 4
   },
   {
@@ -6394,24 +4879,12 @@
   {
     "packageName": "tapable",
     "dependencies": [],
-    "devDependencies": [
-      "@babel/core",
-      "@babel/preset-env",
-      "babel-jest",
-      "codecov",
-      "jest",
-      "prettier"
-    ],
+    "devDependencies": ["@babel/core", "@babel/preset-env", "babel-jest", "codecov", "jest", "prettier"],
     "numDependencies": 6
   },
   {
     "packageName": "terser",
-    "dependencies": [
-      "@jridgewell/source-map",
-      "acorn",
-      "commander",
-      "source-map-support"
-    ],
+    "dependencies": ["@jridgewell/source-map", "acorn", "commander", "source-map-support"],
     "devDependencies": [
       "@ls-lint/ls-lint",
       "astring",
@@ -6428,13 +4901,7 @@
   },
   {
     "packageName": "terser-webpack-plugin",
-    "dependencies": [
-      "@jridgewell/trace-mapping",
-      "jest-worker",
-      "schema-utils",
-      "serialize-javascript",
-      "terser"
-    ],
+    "dependencies": ["@jridgewell/trace-mapping", "jest-worker", "schema-utils", "serialize-javascript", "terser"],
     "devDependencies": [
       "@babel/cli",
       "@babel/core",
@@ -6475,32 +4942,19 @@
   {
     "packageName": "thunky",
     "dependencies": [],
-    "devDependencies": [
-      "standard",
-      "tape"
-    ],
+    "devDependencies": ["standard", "tape"],
     "numDependencies": 2
   },
   {
     "packageName": "to-fast-properties",
     "dependencies": [],
-    "devDependencies": [
-      "ava"
-    ],
+    "devDependencies": ["ava"],
     "numDependencies": 1
   },
   {
     "packageName": "to-regex-range",
-    "dependencies": [
-      "is-number"
-    ],
-    "devDependencies": [
-      "fill-range",
-      "gulp-format-md",
-      "mocha",
-      "text-table",
-      "time-diff"
-    ],
+    "dependencies": ["is-number"],
+    "devDependencies": ["fill-range", "gulp-format-md", "mocha", "text-table", "time-diff"],
     "numDependencies": 6
   },
   {
@@ -6521,13 +4975,7 @@
   },
   {
     "packageName": "ts-loader",
-    "dependencies": [
-      "chalk",
-      "enhanced-resolve",
-      "micromatch",
-      "semver",
-      "source-map"
-    ],
+    "dependencies": ["chalk", "enhanced-resolve", "micromatch", "semver", "source-map"],
     "devDependencies": [
       "@types/micromatch",
       "@types/node",
@@ -6628,10 +5076,7 @@
   },
   {
     "packageName": "type-is",
-    "dependencies": [
-      "media-typer",
-      "mime-types"
-    ],
+    "dependencies": ["media-typer", "mime-types"],
     "devDependencies": [
       "eslint",
       "eslint-config-standard",
@@ -6702,27 +5147,18 @@
   {
     "packageName": "unpipe",
     "dependencies": [],
-    "devDependencies": [
-      "istanbul",
-      "mocha",
-      "readable-stream"
-    ],
+    "devDependencies": ["istanbul", "mocha", "readable-stream"],
     "numDependencies": 3
   },
   {
     "packageName": "update-browserslist-db",
-    "dependencies": [
-      "escalade",
-      "picocolors"
-    ],
+    "dependencies": ["escalade", "picocolors"],
     "devDependencies": [],
     "numDependencies": 2
   },
   {
     "packageName": "uri-js",
-    "dependencies": [
-      "punycode"
-    ],
+    "dependencies": ["punycode"],
     "devDependencies": [
       "babel-cli",
       "babel-plugin-external-helpers",
@@ -6747,20 +5183,13 @@
   {
     "packageName": "utila",
     "dependencies": [],
-    "devDependencies": [
-      "coffee-script",
-      "little-popo"
-    ],
+    "devDependencies": ["coffee-script", "little-popo"],
     "numDependencies": 2
   },
   {
     "packageName": "utils-merge",
     "dependencies": [],
-    "devDependencies": [
-      "make-node",
-      "mocha",
-      "chai"
-    ],
+    "devDependencies": ["make-node", "mocha", "chai"],
     "numDependencies": 3
   },
   {
@@ -6800,17 +5229,7 @@
   {
     "packageName": "v8-compile-cache-lib",
     "dependencies": [],
-    "devDependencies": [
-      "babel-core",
-      "eslint",
-      "flow-parser",
-      "rimraf",
-      "rxjs",
-      "semver",
-      "tap",
-      "temp",
-      "yarn"
-    ],
+    "devDependencies": ["babel-core", "eslint", "flow-parser", "rimraf", "rxjs", "semver", "tap", "temp", "yarn"],
     "numDependencies": 9
   },
   {
@@ -6834,10 +5253,7 @@
   },
   {
     "packageName": "watchpack",
-    "dependencies": [
-      "glob-to-regexp",
-      "graceful-fs"
-    ],
+    "dependencies": ["glob-to-regexp", "graceful-fs"],
     "devDependencies": [
       "coveralls",
       "eslint",
@@ -6854,12 +5270,8 @@
   },
   {
     "packageName": "wbuf",
-    "dependencies": [
-      "minimalistic-assert"
-    ],
-    "devDependencies": [
-      "mocha"
-    ],
+    "dependencies": ["minimalistic-assert"],
+    "devDependencies": ["mocha"],
     "numDependencies": 2
   },
   {
@@ -6983,20 +5395,12 @@
       "rechoir",
       "webpack-merge"
     ],
-    "devDependencies": [
-      "@types/envinfo"
-    ],
+    "devDependencies": ["@types/envinfo"],
     "numDependencies": 14
   },
   {
     "packageName": "webpack-dev-middleware",
-    "dependencies": [
-      "colorette",
-      "memfs",
-      "mime-types",
-      "range-parser",
-      "schema-utils"
-    ],
+    "dependencies": ["colorette", "memfs", "mime-types", "range-parser", "schema-utils"],
     "devDependencies": [
       "@babel/cli",
       "@babel/core",
@@ -7130,21 +5534,8 @@
   },
   {
     "packageName": "webpack-merge",
-    "dependencies": [
-      "clone-deep",
-      "flat",
-      "wildcard"
-    ],
-    "devDependencies": [
-      "@types/estree",
-      "@types/flat",
-      "husky",
-      "prettier",
-      "tsdx",
-      "tslib",
-      "typescript",
-      "webpack"
-    ],
+    "dependencies": ["clone-deep", "flat", "wildcard"],
+    "devDependencies": ["@types/estree", "@types/flat", "husky", "prettier", "tsdx", "tslib", "typescript", "webpack"],
     "numDependencies": 11
   },
   {
@@ -7169,52 +5560,32 @@
   },
   {
     "packageName": "websocket-driver",
-    "dependencies": [
-      "http-parser-js",
-      "safe-buffer",
-      "websocket-extensions"
-    ],
-    "devDependencies": [
-      "jstest",
-      "permessage-deflate"
-    ],
+    "dependencies": ["http-parser-js", "safe-buffer", "websocket-extensions"],
+    "devDependencies": ["jstest", "permessage-deflate"],
     "numDependencies": 5
   },
   {
     "packageName": "websocket-extensions",
     "dependencies": [],
-    "devDependencies": [
-      "jstest"
-    ],
+    "devDependencies": ["jstest"],
     "numDependencies": 1
   },
   {
     "packageName": "which",
-    "dependencies": [
-      "isexe"
-    ],
-    "devDependencies": [
-      "mkdirp",
-      "rimraf",
-      "tap"
-    ],
+    "dependencies": ["isexe"],
+    "devDependencies": ["mkdirp", "rimraf", "tap"],
     "numDependencies": 4
   },
   {
     "packageName": "wildcard",
     "dependencies": [],
-    "devDependencies": [
-      "embellish-readme",
-      "tape"
-    ],
+    "devDependencies": ["embellish-readme", "tape"],
     "numDependencies": 2
   },
   {
     "packageName": "wrappy",
     "dependencies": [],
-    "devDependencies": [
-      "tap"
-    ],
+    "devDependencies": ["tap"],
     "numDependencies": 1
   },
   {
@@ -7236,29 +5607,19 @@
   {
     "packageName": "yallist",
     "dependencies": [],
-    "devDependencies": [
-      "tap"
-    ],
+    "devDependencies": ["tap"],
     "numDependencies": 1
   },
   {
     "packageName": "yn",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 3
   },
   {
     "packageName": "yocto-queue",
     "dependencies": [],
-    "devDependencies": [
-      "ava",
-      "tsd",
-      "xo"
-    ],
+    "devDependencies": ["ava", "tsd", "xo"],
     "numDependencies": 3
   }
 ]
