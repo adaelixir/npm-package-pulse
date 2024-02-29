@@ -5,9 +5,10 @@ import dependenciesList from '../../bin/dependenciesList.json'
 interface GraphProps {
   filteredData: {
     packageName: string
-    dependencies: string[]
-    devDependencies: string[]
+    dependencies: object
+    devDependencies: object
     numDependencies?: number
+    version: string
   }[]
 }
 

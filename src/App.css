@@ -10,21 +10,36 @@ body {
 h1 {
   font-size: xx-large;
 }
+h2 {
+  font-family: monospace;
+}
+
 #MainView {
   display: flex;
-  height: 3000vh;
+  flex-direction: row;
   justify-content: space-between;
 }
+
+#LeftView {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #Graph {
-  width: 66%;
-  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border: solid 1px #000;
+}
+
+#Control {
+  font-size: small;
   background-color: #fff;
   border: solid 1px #000;
 }
 #Result {
   background-color: #fff;
-  width: 33%;
-  height: 100%;
   font-size: small;
   border: solid 1px #000;
   overflow: scroll;

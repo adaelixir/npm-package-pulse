@@ -1,17 +1,24 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import dependenciesList from '../../bin/dependenciesList.json'
+import cycleList from '../../bin/cyclePackageDependencies.json'
+import duplicateList from '../../bin/duplicatePackageVersions.json'
 
 interface ResultProps {
   onDataFiltered: (filteredData: any) => void
+}
+
+interface CycleListProps {
+  calculateCycle: [packageName: string]
 }
 
 export default function Result({ onDataFiltered }: ResultProps) {
   const [data, setData] = useState<
     {
       packageName: string
-      dependencies: string[]
-      devDependencies: string[]
+      dependencies: object
+      devDependencies: object
       numDependencies: number
+      version: string
     }[]
   >([])
 

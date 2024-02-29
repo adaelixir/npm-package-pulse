@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Result from '@/components/Result'
 import Graph from '@/components/Graph'
+import Control from '@/components/Control'
 import '@/App.css'
 
 function App() {
@@ -12,7 +13,10 @@ function App() {
   return (
     <>
       <div id='MainView'>
-        <Result onDataFiltered={handleDataFiltered} />
+        <div id='LeftView'>
+          <Control />
+          <Result onDataFiltered={handleDataFiltered} />
+        </div>
         <Graph filteredData={filteredData} />
       </div>
     </>
