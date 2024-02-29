@@ -1,46 +1,39 @@
-import React, { useEffect, useState, useCallback } from 'react'
+import React, { useEffect, useState } from 'react'
 import dependenciesList from '../../bin/dependenciesList.json'
 import cycleList from '../../bin/cyclePackageDependencies.json'
 import duplicateList from '../../bin/duplicatePackageVersions.json'
 
-interface ResultProps {
-  onDataFiltered: (filteredData: any) => void
+interface Dependency {
+  [dependencyName: string]: string
 }
-
-interface CycleListProps {
-  calculateCycle: [packageName: string]
+interface PackageData {
+  packageName: string
+  dependencies: Dependency
+  devDependencies: Dependency
+  numDependencies: number
+  version: string
+}
+interface ResultProps {
+  onDataFiltered: (filteredData: PackageData[]) => void
 }
 
 export default function Result({ onDataFiltered }: ResultProps) {
-  const [data, setData] = useState<
-    {
-      packageName: string
-      dependencies: object
-      devDependencies: object
-      numDependencies: number
-      version: string
-    }[]
-  >([])
+  const [data, setData] = useState<PackageData[]>([])
 
   const [searchTerm, setSearchTerm] = useState<string>('')
-
-  useEffect(() => {
-    setData(dependenciesList)
-  }, [])
 
   const filteredData = data.filter((item) => item.packageName.toLowerCase().includes(searchTerm.toLowerCase()))
 
   useEffect(() => {
+    setData(dependenciesList as PackageData[])
+  }, [])
+
+  useEffect(() => {
     const fetchData = async () => {
-      // 异步操作，例如从服务器获取数据
-      // ...
-      // 在异步操作完成后调用 onDataFiltered
-      if (onDataFiltered) {
-        onDataFiltered(filteredData)
-      }
+      if (onDataFiltered) onDataFiltered(filteredData)
     }
     fetchData()
-  }, [searchTerm]) // 此处应该根据实际需要设置依赖项
+  }, [searchTerm])
 
   return (
     <div id='Result'>
