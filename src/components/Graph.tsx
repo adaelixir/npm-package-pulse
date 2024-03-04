@@ -79,7 +79,16 @@ export default function Graph({ filteredData }: GraphProps) {
         .style('overflow', 'auto')
         .append('xhtml:div')
         .text(function (d: any) {
-          return d.data.packageName
+          return (
+            d.data.packageName +
+            ' ' +
+            d.data.version +
+            `(${d.data.numDependencies})` +
+            '\n' +
+            JSON.stringify(d.data.dependencies) +
+            '\n' +
+            JSON.stringify(d.data.devDependencies)
+          )
         })
         .style('font-size', '10px')
         .style('color', 'black')

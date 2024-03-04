@@ -19,26 +19,24 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
 }
-
 #LeftView {
-  width: 30%;
+  width: 33%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
-
 #Graph {
-  width: 100%;
+  width: 65%;
   background-color: #fff;
   border: solid 1px #000;
 }
-
 #Control {
+  width: 100%;
   font-size: small;
   background-color: #fff;
   border: solid 1px #000;
 }
 #Result {
+  width: 100%;
   background-color: #fff;
   font-size: small;
   border: solid 1px #000;
