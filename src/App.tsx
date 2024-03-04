@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Result from '@/components/Result'
-import Graph from '@/components/Graph'
+import TreeGraph from '@/components/TreeGraph/TreeGraph'
 import Control from '@/components/Control'
 import '@/App.css'
 
@@ -12,12 +12,12 @@ function App() {
 
   return (
     <>
-      <div id='MainView'>
-        <div id='LeftView'>
+      <div id="MainView">
+        <div id="LeftView">
           <Control />
           <Result onDataFiltered={handleDataFiltered} />
         </div>
-        <Graph filteredData={filteredData} />
+        <TreeGraph filteredData={filteredData} />
       </div>
     </>
   )
