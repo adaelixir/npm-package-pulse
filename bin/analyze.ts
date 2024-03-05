@@ -20,7 +20,7 @@ async function getPackageList(directory: string): Promise<string[]> {
     const files = await fs.readdir(directory) //读取目录 返回文件名的数组
     const packageDirs = await Promise.all(
       //Promise.all()方法用于将多个 Promise 实例，包装成一个新的 Promise 实例，返回一个promise
-      files.map(async (file) => {
+      files.map(async file => {
         //files指的是目录下的文件名数组
 
         const filePath = path.resolve(directory, file) //获取绝对路径
@@ -32,13 +32,13 @@ async function getPackageList(directory: string): Promise<string[]> {
             return file
           } else {
             const subPackageDirs = await getPackageList(filePath)
-            return subPackageDirs.map((subDir) => path.join(file, subDir)) //path.join()方法用于连接路径，将子目录和父目录连接起来
+            return subPackageDirs.map(subDir => path.join(file, subDir)) //path.join()方法用于连接路径，将子目录和父目录连接起来
           }
         }
         return null
       })
     )
-    return packageDirs.flat().filter((packageDir) => packageDir !== null) as string[]
+    return packageDirs.flat().filter(packageDir => packageDir !== null) as string[]
   } catch (error) {
     console.error(`Error in getPackageList for directory: ${directory}`, error)
     throw error
@@ -52,7 +52,7 @@ export async function analyze() {
     const packages = await getPackageList(nodeModulesPath)
 
     const dependenciesList = await Promise.all(
-      packages.map(async (packageName) => {
+      packages.map(async packageName => {
         const packageJsonPath = path.resolve(nodeModulesPath, packageName, 'package.json')
         const packageData = await fs.readFile(packageJsonPath, 'utf-8')
         const packageObj = JSON.parse(packageData)
@@ -60,15 +60,14 @@ export async function analyze() {
         const dependencies = packageObj.dependencies ? packageObj.dependencies : {}
         const devDependencies = packageObj.devDependencies ? packageObj.devDependencies : {}
         const version = packageObj.version
-        const numDependencies =
-          Object.keys(packageObj.dependencies || {}).length + Object.keys(packageObj.devDependencies || {}).length
+        const numDependencies = Object.keys(packageObj.dependencies || {}).length + Object.keys(packageObj.devDependencies || {}).length
 
         return {
           packageName,
           dependencies,
           devDependencies,
           version,
-          numDependencies,
+          numDependencies
         }
       })
     )

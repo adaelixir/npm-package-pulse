@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Result from '@/components/Result'
-import TreeGraph from '@/components/TreeGraph/TreeGraph'
-import Control from '@/components/Control'
+import Control from '@/components/Control/Control'
+import InfoList from '@/components/InfoList/InfoList'
+import TreeMap from '@/components/TreeMap/TreeMap'
 import '@/App.css'
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
       <div id="MainView">
         <div id="LeftView">
           <Control />
-          <Result onDataFiltered={handleDataFiltered} />
+          <InfoList onDataFiltered={handleDataFiltered} />
         </div>
-        <TreeGraph filteredData={filteredData} />
+        <TreeMap filteredData={filteredData} />
       </div>
     </>
   )

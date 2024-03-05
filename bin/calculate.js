@@ -95,6 +95,7 @@ function detectDuplicatePackageVersions(packages) {
 
   return duplicates;
 }
+
 function updatePackageVersionMap(packageVersionsMap, packageName, version) {
   // 检查软件包是否已经在 Map 中存在
   if (!packageVersionsMap.has(packageName)) {

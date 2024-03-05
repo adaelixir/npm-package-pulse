@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import * as d3 from 'd3'
+import './TreeMap.css'
 import dependenciesList from '../../../bin/dependenciesList.json'
-import './TreeGraph.css'
 
 interface GraphProps {
   filteredData: {
@@ -95,13 +95,13 @@ function drawDEP(rectSvg: any, clickRect: any) {
 
   depRect
     .transition()
-    .duration(1500)
+    .duration(800)
     .delay((_d: any, i: number) => i * 20)
-    .style('opacity', 1)
+    .style('opacity', 0.5)
 
   depText
     .transition()
-    .duration(1500)
+    .duration(800)
     .delay((_d: any, i: number) => i * 20)
     .style('opacity', 1)
 }
@@ -109,6 +109,7 @@ function drawDEP(rectSvg: any, clickRect: any) {
 function TreeMap({ filteredData }: GraphProps) {
   const svgRef = useRef<SVGSVGElement | null>(null)
   const [visibleRects, setVisibleRects] = useState<any[]>([])
+  const previousVisibleRects = useRef<any[]>([])
 
   useEffect(() => {
     if (filteredData && svgRef.current) {
@@ -130,18 +131,31 @@ function TreeMap({ filteredData }: GraphProps) {
 
       const windowHeight = window.innerHeight || document.documentElement.clientHeight
 
+      const newVisibleRects = []
       for (const child of svg.children) {
         const childRect = child.getBoundingClientRect()
         if (childRect.top < windowHeight && childRect.bottom > 0) {
-          const data: any = d3.select(child).datum()
-          if (!visibleRects.some(rect => rect.data.packageName === data.data.packageName)) {
-            d3.select(child).selectAll('.PKG_LABEL').remove()
-            const rectSvg = d3.select(child).append('g').classed('DEP-INFO', true)
-            drawDEP(rectSvg, data)
-            setVisibleRects([...visibleRects, data])
-          }
+          newVisibleRects.push(d3.select(child).datum())
         }
       }
+
+      const newRectsToDraw: any[] = newVisibleRects.filter(
+        (rect: any) => !previousVisibleRects.current.some((vRect: any) => vRect.data.packageName === rect.data.packageName)
+      )
+
+      for (const rectNew of newRectsToDraw) {
+        d3.select(svg).selectAll('.PKG_LABEL').remove()
+        const rectSvg = d3
+          .select(svg)
+          .select(`g[transform="translate(${rectNew.x0 - 2},${rectNew.y0})"]`)
+          .append('g')
+          .classed('DEP-INFO', true)
+
+        drawDEP(rectSvg, rectNew)
+      }
+
+      setVisibleRects(newVisibleRects)
+      previousVisibleRects.current = newVisibleRects
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -149,7 +163,7 @@ function TreeMap({ filteredData }: GraphProps) {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [visibleRects])
+  }, [visibleRects, previousVisibleRects])
 
   return <svg id="Graph" ref={svgRef}></svg>
 }
