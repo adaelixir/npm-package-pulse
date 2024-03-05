@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import dependenciesList from '../../../bin/packagesLists.json'
-import cycleList from '../../../bin/cycleDeps.json'
-import duplicateList from '../../../bin/duplicateDeps.json'
 
 interface Dependency {
   [dependencyName: string]: string
@@ -15,9 +13,10 @@ interface PackageData {
 }
 interface ResultProps {
   onDataFiltered: (filteredData: PackageData[]) => void
+  selectedType: string
 }
 
-export default function IndoList({ onDataFiltered }: ResultProps) {
+export default function PKGList({ onDataFiltered, selectedType }: ResultProps) {
   const [data, setData] = useState<PackageData[]>([])
 
   const [searchTerm, setSearchTerm] = useState<string>('')

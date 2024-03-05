@@ -32,13 +32,18 @@ async function readFile(filePath: string) {
     throw err
   }
 }
-async function detectCycleDeps(pkgData: Package[]) {
+async function detectCycleDeps(pkgData: Package[]): Promise<string[][]> {
   const graph: Record<string, string[]> = {}
   const visited = new Set<string>()
   const cyclePaths: string[][] = []
 
-  for (const pkg of pkgData) graph[pkg.packageName] = Object.keys(pkg.dependencies || {}).concat(Object.keys(pkg.devDependencies || {}) || [])
-  for (const pkg of Object.keys(graph)) dfs(pkg, new Set(), [])
+  for (const pkg of pkgData) {
+    graph[pkg.packageName] = Object.keys(pkg.dependencies || {}).concat(Object.keys(pkg.devDependencies || {}) || [])
+  }
+
+  for (const pkg of Object.keys(graph)) {
+    dfs(pkg, new Set(), [])
+  }
 
   function dfs(pkg: string, ancestors: Set<string>, currentPath: string[]) {
     if (visited.has(pkg)) return
@@ -49,16 +54,20 @@ async function detectCycleDeps(pkgData: Package[]) {
     for (const dep of graph[pkg] || []) {
       if (ancestors.has(dep)) {
         const startIndex = currentPath.indexOf(dep)
-        const cyclePath = currentPath.slice(startIndex)
-        cyclePaths.push([`${pkg} -> ${dep} -> ${pkg}`])
 
+        if (startIndex !== -1) {
+          const cyclePath = currentPath.slice(startIndex).concat(dep) // 将循环路径连接起来
+          cyclePaths.push(cyclePath)
+        }
         return
       }
       dfs(dep, new Set(ancestors), [...currentPath])
     }
   }
+
   return cyclePaths
 }
+
 async function detectDuplicateDeps(pkgData: Package[]) {
   const depVersionsMap = new Map<string, Set<string>>()
 

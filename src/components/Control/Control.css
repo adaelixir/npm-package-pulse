@@ -1,7 +1,7 @@
-.pkgList {
+.controlList {
   cursor: pointer;
 }
-.pkgList:hover {
+.controlList:hover {
   background-color: #f0f0f0;
   font-weight: bold;
 }
