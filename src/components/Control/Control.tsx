@@ -1,12 +1,29 @@
 import React from 'react'
+import dependenciesList from '../../../bin/packagesLists.json'
+import cycleList from '../../../bin/cycleDeps.json'
+import duplicateList from '../../../bin/duplicateDeps.json'
+import './Control.css'
 
 export default function Control() {
+  const pkgNum = dependenciesList.length
+  const cycleNum = cycleList.length
+  const duplicateNum = duplicateList.length
+
   return (
     <div id="Control">
       <h2>PackagePulse-v2</h2>
-      <p>获取当前项目的全部依赖信息</p>
-      <p>检测循环依赖</p>
-      <p>检测重复版本的依赖</p>
+      <div className="pkgList">
+        =={'>'}当前项目依赖数量:
+        <span style={{ color: 'red', fontWeight: 'bold' }}>{pkgNum}</span>
+      </div>
+      <div className="pkgList">
+        =={'>'}出现循环的依赖链路:
+        <span style={{ color: 'red', fontWeight: 'bold' }}>{cycleNum}</span>
+      </div>
+      <div className="pkgList">
+        =={'>'}存在多个版本的依赖:
+        <span style={{ color: 'red', fontWeight: 'bold' }}>{duplicateNum}</span>
+      </div>
     </div>
   )
 }

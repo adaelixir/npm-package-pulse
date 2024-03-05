@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import dependenciesList from '../../../bin/dependenciesList.json'
-import cycleList from '../../../bin/cyclePackageDependencies.json'
-import duplicateList from '../../../bin/duplicatePackageVersions.json'
+import dependenciesList from '../../../bin/packagesLists.json'
+import cycleList from '../../../bin/cycleDeps.json'
+import duplicateList from '../../../bin/duplicateDeps.json'
 
 interface Dependency {
   [dependencyName: string]: string

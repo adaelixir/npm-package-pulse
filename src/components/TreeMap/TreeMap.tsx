@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import * as d3 from 'd3'
 import './TreeMap.css'
-import dependenciesList from '../../../bin/dependenciesList.json'
+import dependenciesList from '../../../bin/packagesLists.json'
 
 interface GraphProps {
   filteredData: {

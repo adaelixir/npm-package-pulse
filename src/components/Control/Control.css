@@ -1,0 +1,7 @@
+.pkgList {
+  cursor: pointer;
+}
+.pkgList:hover {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
