@@ -61,7 +61,7 @@ function cleanVersionSymbols(dependencies: Record<string, string>): Record<strin
 
 export async function analyze() {
   try {
-    console.time('analyze') // 开始计时
+    console.time('Search') // 开始计时
     const nodeModulesPath = path.resolve(__dirname, '../node_modules')
     const packages = await getPackageList(nodeModulesPath)
 
@@ -92,8 +92,8 @@ export async function analyze() {
     const outputFilePath = path.resolve(__dirname, 'packagesLists.json')
     await fs.writeFile(outputFilePath, JSON.stringify(dependenciesList, null, 2), 'utf-8')
 
-    console.log(`Dependencies list written to: ${outputFilePath}`)
-    console.timeEnd('analyze') // 结束计时
+    console.log(`Dependencies list written successfully!`)
+    console.timeEnd('Search') // 结束计时
     return dependenciesList
   } catch (err) {
     console.log(err)
