@@ -1,0 +1,158 @@
+[
+  [
+    "color-convert -> chalk -> color-convert"
+  ],
+  [
+    "@babel/core -> @ampproject/remapping -> @babel/core"
+  ],
+  [
+    "@xtuc/long -> webpack -> @xtuc/long"
+  ],
+  [
+    "@babel/highlight -> chalk -> @babel/highlight"
+  ],
+  [
+    "@babel/code-frame -> chalk -> @babel/code-frame"
+  ],
+  [
+    "@babel/types -> @babel/generator -> @babel/types"
+  ],
+  [
+    "@babel/generator -> @jridgewell/gen-mapping -> @babel/generator"
+  ],
+  [
+    "@babel/traverse -> @babel/helper-environment-visitor -> @babel/traverse"
+  ],
+  [
+    "@webassemblyjs/wasm-parser -> @webassemblyjs/helper-buffer -> @webassemblyjs/wasm-parser"
+  ],
+  [
+    "chrome-trace-event -> typescript -> chrome-trace-event"
+  ],
+  [
+    "graceful-fs -> rimraf -> graceful-fs"
+  ],
+  [
+    "enhanced-resolve -> memfs -> enhanced-resolve"
+  ],
+  [
+    "@jridgewell/source-map -> @jridgewell/gen-mapping -> @jridgewell/source-map"
+  ],
+  [
+    "@jridgewell/resolve-uri -> typescript -> @jridgewell/resolve-uri"
+  ],
+  [
+    "@jridgewell/sourcemap-codec -> source-map -> @jridgewell/sourcemap-codec"
+  ],
+  [
+    "@jridgewell/trace-mapping -> typescript -> @jridgewell/trace-mapping"
+  ],
+  [
+    "@cspotcode/source-map-support -> source-map -> @cspotcode/source-map-support"
+  ],
+  [
+    "fast-deep-equal -> typescript -> fast-deep-equal"
+  ],
+  [
+    "uri-js -> typescript -> uri-js"
+  ],
+  [
+    "ajv -> glob -> ajv"
+  ],
+  [
+    "ajv-keywords -> glob -> ajv-keywords"
+  ],
+  [
+    "schema-utils -> typescript -> schema-utils"
+  ],
+  [
+    "babel-loader -> rimraf -> babel-loader"
+  ],
+  [
+    "diff -> webpack -> diff"
+  ],
+  [
+    "v8-compile-cache-lib -> rimraf -> v8-compile-cache-lib"
+  ],
+  [
+    "csstype -> chalk -> csstype"
+  ],
+  [
+    "ts-node -> rimraf -> ts-node"
+  ],
+  [
+    "commander -> typescript -> commander"
+  ],
+  [
+    "terser -> source-map-support -> terser"
+  ],
+  [
+    "es-module-lexer -> typescript -> es-module-lexer"
+  ],
+  [
+    "eslint-scope -> typescript -> eslint-scope"
+  ],
+  [
+    "statuses -> raw-body -> statuses"
+  ],
+  [
+    "readable-stream -> glob -> readable-stream"
+  ],
+  [
+    "terser-webpack-plugin -> memfs -> terser-webpack-plugin"
+  ],
+  [
+    "watchpack -> rimraf -> watchpack"
+  ],
+  [
+    "webpack-sources -> source-map -> webpack-sources"
+  ],
+  [
+    "source-map-js -> webpack -> source-map-js"
+  ],
+  [
+    "postcss-selector-parser -> glob -> postcss-selector-parser"
+  ],
+  [
+    "css-loader -> memfs -> css-loader"
+  ],
+  [
+    "webpack -> memfs -> webpack"
+  ],
+  [
+    "memfs -> rimraf -> memfs"
+  ],
+  [
+    "glob -> rimraf -> glob"
+  ],
+  [
+    "to-regex-range -> fill-range -> to-regex-range"
+  ],
+  [
+    "readdirp -> typescript -> readdirp"
+  ],
+  [
+    "chokidar -> typescript -> chokidar"
+  ],
+  [
+    "typescript -> typescript -> typescript"
+  ],
+  [
+    "envinfo -> webpack-cli -> envinfo"
+  ],
+  [
+    "get-intrinsic -> call-bind -> get-intrinsic"
+  ],
+  [
+    "set-function-length -> call-bind -> set-function-length"
+  ],
+  [
+    "htmlparser2 -> domhandler -> htmlparser2"
+  ],
+  [
+    "style-loader -> webpack-dev-server -> style-loader"
+  ],
+  [
+    "d3-random -> d3-array -> d3-random"
+  ]
+]

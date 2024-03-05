@@ -36,7 +36,7 @@ export default function IndoList({ onDataFiltered }: ResultProps) {
   }, [searchTerm])
 
   return (
-    <div id="Result">
+    <div id="InfoList">
       <input id="searchBox" type="text" placeholder="输入要搜索的依赖名称" value={searchTerm} onChange={e => setSearchTerm(e.target.value)}></input>
       <pre>
         {filteredData.map((item, index) => (

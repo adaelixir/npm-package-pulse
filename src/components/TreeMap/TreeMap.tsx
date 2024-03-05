@@ -165,7 +165,7 @@ function TreeMap({ filteredData }: GraphProps) {
     }
   }, [visibleRects, previousVisibleRects])
 
-  return <svg id="Graph" ref={svgRef}></svg>
+  return <svg id="TreeMap" ref={svgRef}></svg>
 }
 
 export default TreeMap
