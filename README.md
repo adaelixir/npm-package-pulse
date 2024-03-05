@@ -54,18 +54,18 @@ TreeMap 组件是一个基于 React 和 D3.js 实现的可视化工具，用于�
 
 - **模式设置：** 开发模式 `development` 以启用相应的优化和工具
 - **入口和输出设置：** 指定了应用程序的入口文件路径和打包后文件的输出路径、文件名与公共路径
-- **开发工具：** 使用了 `eval-cheap-module-source-map` 以提供更快的构建速度和较小的输出文件大小
+- **开发工具：** 使用 `eval-cheap-module-source-map` 提供更快的构建速度和较小的输出文件大小
 - **加载器规则：** 针对 `.ts` 和 `.tsx` 文件使用 `babel-loader` 进行转译，并设置了 React 和 TypeScript 的预设
-- **样式加载器规则：** 针对 `.css` 文件使用了 `style-loader` 和 `css-loader` 进行处理。
-- **解析设置：** 指定了 Webpack 解析文件时应该查找的扩展名。
-- **别名设置:** 通过别名设置将 '@' 指定为 src 目录的路径别名。
-- **HtmlWebPackPlugin：** 用于生成 HTML 文件，并将打包后的 JS 文件注入到 HTML 文件中。
-- **ReactRefreshWebpackPlugin：** 用于支持 React 的热重载功能。
+- **样式加载器规则：** 针对 `.css` 文件使用了 `style-loader` 和 `css-loader` 进行处理
+- **解析设置：** 指定了 Webpack 解析文件时应该查找的扩展名
+- **别名设置:** 通过别名设置将 '@' 指定为 src 目录的路径别名
+- **HtmlWebPackPlugin：** 用于生成 HTML 文件，并将打包后的 JS 文件注入到 HTML 文件中
+- **ReactRefreshWebpackPlugin：** 用于支持 React 的热重载功能
 
 #### 开发服务器设置
 
-- **端口设置：** 将开发服务器的端口设置为 3000。
-- **热重载：** 启用了开发服务器的热模块替换 `Hot Module Replacement` 功能。
+- **端口设置：** 将开发服务器的端口设置为 3000
+- **热重载：** 启用了开发服务器的热模块替换 `Hot Module Replacement` 功能
 - **自动打开：** 设置开发服务器在启动时自动打开浏览器。
-- **历史 API 回退：** 开启了 `HTML5 History API` 的回退，用于处理单页应用的路由问题。
-- **静态文件目录：** 将 public 目录设置为静态文件目录，用于存放不需要经过 Webpack 处理的静态文件。
+- **历史 API 回退：** 开启了 `HTML5 History API` 的回退，用于处理单页应用的路由问题
+- **静态文件目录：** 将 public 目录设置为静态文件目录，存放不需经过 Webpack 处理的静态文件
