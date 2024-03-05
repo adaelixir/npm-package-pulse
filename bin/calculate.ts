@@ -10,11 +10,13 @@ interface Package {
 }
 
 export async function calculate() {
-  const pkgData = await readFile(path.resolve(__dirname, './dependenciesList.json'))
+  const pkgData = await readFile(path.resolve(__dirname, './packagesLists.json'))
   try {
     const packages = JSON.parse(pkgData)
-    const cycleDependencies = await detectCycleDependencies(packages)
-    await writeFile(path.resolve(__dirname, './cycleDependencies.json'), cycleDependencies)
+    const cycleDeps = await detectCycleDeps(packages)
+    await writeFile(path.resolve(__dirname, './cycleDeps.json'), cycleDeps)
+    const duplicateDeps = await detectDuplicateDeps(packages)
+    await writeFile(path.resolve(__dirname, './duplicateDeps.json'), duplicateDeps)
   } catch (err) {
     console.error('Error parsing JSON:', err)
     throw err
@@ -30,7 +32,7 @@ async function readFile(filePath: string) {
     throw err
   }
 }
-async function detectCycleDependencies(pkgData: Package[]) {
+async function detectCycleDeps(pkgData: Package[]) {
   const graph: Record<string, string[]> = {}
   const visited = new Set<string>()
   const cyclePaths: string[][] = []
@@ -56,6 +58,38 @@ async function detectCycleDependencies(pkgData: Package[]) {
     }
   }
   return cyclePaths
+}
+async function detectDuplicateDeps(pkgData: Package[]) {
+  const depVersionsMap = new Map<string, Set<string>>()
+
+  for (const pkg of pkgData) {
+    const pkgName = pkg.packageName
+    for (const dependency of Object.keys(pkg.dependencies || {})) {
+      const version = pkg.dependencies[dependency]
+      await updateDepVersions(depVersionsMap, dependency, version)
+    }
+    for (const devDependency of Object.keys(pkg.devDependencies || {})) {
+      const version = pkg.devDependencies[devDependency]
+      await updateDepVersions(depVersionsMap, devDependency, version)
+    }
+  }
+  const duplicateDeps: { packageName: string; versions: string[] }[] = []
+  for (const [pkgName, versions] of depVersionsMap.entries()) {
+    if (versions.size > 1) {
+      duplicateDeps.push({
+        packageName: pkgName,
+        versions: Array.from(versions)
+      })
+    }
+  }
+  return duplicateDeps
+}
+async function updateDepVersions(depVersions: Map<string, Set<string>>, dep: string, version: string) {
+  if (!depVersions.has(dep)) {
+    depVersions.set(dep, new Set<string>())
+  }
+  const versions = depVersions.get(dep)
+  versions!.add(version)
 }
 
 async function writeFile(filePath: string, data: any) {

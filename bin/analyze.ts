@@ -44,6 +44,20 @@ async function getPackageList(directory: string): Promise<string[]> {
     throw error
   }
 }
+// 清理版本号中的特殊符号的辅助函数
+function cleanVersionSymbol(version: string): string {
+  return version.replace(/[~^><=]/g, '') // 删除特殊符号
+}
+// 清理依赖关系中的版本号特殊符号的辅助函数
+function cleanVersionSymbols(dependencies: Record<string, string>): Record<string, string> {
+  const cleanedDependencies: Record<string, string> = {}
+  for (const dependency in dependencies) {
+    if (dependencies.hasOwnProperty(dependency)) {
+      cleanedDependencies[dependency] = cleanVersionSymbol(dependencies[dependency])
+    }
+  }
+  return cleanedDependencies
+}
 
 export async function analyze() {
   try {
@@ -57,21 +71,25 @@ export async function analyze() {
         const packageData = await fs.readFile(packageJsonPath, 'utf-8')
         const packageObj = JSON.parse(packageData)
 
-        const dependencies = packageObj.dependencies ? packageObj.dependencies : {}
-        const devDependencies = packageObj.devDependencies ? packageObj.devDependencies : {}
-        const version = packageObj.version
-        const numDependencies = Object.keys(packageObj.dependencies || {}).length + Object.keys(packageObj.devDependencies || {}).length
+        // 清理 dependencies 中的版本号特殊符号
+        const cleanedDependencies = cleanVersionSymbols(packageObj.dependencies)
+        // 清理 devDependencies 中的版本号特殊符号
+        const cleanedDevDependencies = cleanVersionSymbols(packageObj.devDependencies)
+        // 清理版本号中的特殊符号
+        const cleanedVersion = cleanVersionSymbol(packageObj.version)
+
+        const numDependencies = Object.keys(cleanedDependencies).length + Object.keys(cleanedDevDependencies).length
 
         return {
           packageName,
-          dependencies,
-          devDependencies,
-          version,
+          dependencies: cleanedDependencies,
+          devDependencies: cleanedDevDependencies,
+          version: cleanedVersion,
           numDependencies
         }
       })
     )
-    const outputFilePath = path.resolve(__dirname, 'dependenciesList.json')
+    const outputFilePath = path.resolve(__dirname, 'packagesLists.json')
     await fs.writeFile(outputFilePath, JSON.stringify(dependenciesList, null, 2), 'utf-8')
 
     console.log(`Dependencies list written to: ${outputFilePath}`)
