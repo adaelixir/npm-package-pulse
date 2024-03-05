@@ -6,3 +6,4 @@
 <br />
 
 "循环加载"（circular dependency）指的是，a 脚本的执行依赖 b 脚本，而 b 脚本的执行又依赖 a 脚本 <br />
+![查看当前项目的依赖信息](./img/dashboard.png '查看当前项目的依赖信息'))
