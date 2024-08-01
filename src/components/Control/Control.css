@@ -1,7 +1,0 @@
-.controlList {
-  cursor: pointer;
-}
-.controlList:hover {
-  background-color: #f0f0f0;
-  font-weight: bold;
-}
