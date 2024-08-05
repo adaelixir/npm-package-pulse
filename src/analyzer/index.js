@@ -1,14 +1,39 @@
 const fs = require('fs')
 const path = require('path')
 
-function getDependencies(filePath) {
+function getDependencies(dir) {
     const dependencies = {}
 
-    const packageJsonPath = path.join(directory, 'package.json');
+    function traverse(currentDir, parentPkg) {
+        const nodeModulesDir = path.join(currentDir, 'node_modules');
+        if (!fs.esistsSync(nodeModulesDir)) return;
 
-    if(fs.existsSync(packageJsonPath)) {
-        const packageJson = JSON.parse(fs.readFileSync(packageJsonPath,'utf-8'))
+        fs.readdirSync(nodeModulesDir).forEach(pkgName => {
+            const pkgDir = path.join(nodeModulesDir, pkgName);
+            const pkgJsonPath = path.join(pkgDir, 'package.json');
 
-        dependencies[packageJson.name] = packageJson.version
+            if (fs.existsSync(pkgJsonPath)) {
+                const pkgJson = JSON.parse(fs.readFileSync(pkgJsonPath, 'utf-8'));
+                const version = pkgJson.version;
+
+                if (!dependencies[pkgName]) {
+                    dependencies[pkgName] = [];
+                }
+
+                dependencies[pkgName].push({
+                    version,
+                    parent:parentPkg,
+                    path: pkgDir
+                })
+
+                traverse(pkgDir, `${pkgName}@${version}`);
+            }
+        });
     }
+    traverse(dir, null);
+    return dependencies;
+}
+
+function detectCircularDependencies(dependencies) {
+    
 }
