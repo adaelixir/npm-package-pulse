@@ -1,5 +1,4 @@
-**npm-package-pulse** 是一个 npm 包依赖分析工具，专注于不同类型依赖的分析脚本 <br/>
-命令行启动后，递归遍历项目 node_modules 分析依赖结构，检测循环依赖、菱形依赖和多版本依赖，输出JSON格式结果
+**npm-package-pulse** 是一个 npm 包依赖分析工具，专注于不同类型依赖的分析脚本。命令行启动后，递归遍历项目 node_modules 分析依赖结构，检测循环依赖、菱形依赖和多版本依赖，输出JSON格式结果
 ```bash
 npm install -g npm-package-pulse
 ```
