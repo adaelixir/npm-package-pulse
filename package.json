@@ -1,15 +1,15 @@
 {
   "name": "npm-package-pulse",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "bin": {
-    "npm-package-pulse": "./index.js"
+    "dep-analyzer": "./bin/dep-analyzer.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin/dep-analyzer.js"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
 }
