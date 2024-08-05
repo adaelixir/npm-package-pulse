@@ -1,4 +1,4 @@
-const { Queue } = require('queue');
+import Queue from 'queue';
 
 function detectCircularDeps_Kahn(dependencies) {
     const circularDeps = []
@@ -36,7 +36,11 @@ function detectCircularDeps_Kahn(dependencies) {
 function buildGraph(dependencies) {
     const graph = {};
     for (const pkg in dependencies) {
-      graph[pkg] = dependencies[pkg].map(dep => dep.parent.split('@')[0]);
+      graph[pkg] = dependencies[pkg].map(dep => {
+        if (dep && dep.parent) {
+          return dep.parent.split('@')[0];
+        }
+      });
     }
     return graph;
 }
@@ -56,4 +60,4 @@ function ComputeInDegrees(graph) {
     return inDegree;
 }
 
-module.exports = { detectCircularDeps_Kahn };
+export { detectCircularDeps_Kahn };

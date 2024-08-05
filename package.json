@@ -1,15 +1,30 @@
 {
-  "name": "npm-package-pulse",
-  "version": "1.0.0",
+  "name": "@adaelixir/npm-package-pulse",
+  "version": "1.0.1",
   "main": "src/index.js",
   "bin": {
-    "dep-analyzer": "./bin/dep-analyzer.js"
+    "npm-package-pulse": "src/utils/cli.js"
   },
   "scripts": {
-    "start": "node bin/dep-analyzer.js"
+    "start": "node src/utils/cli.js"
   },
   "license": "ISC",
   "dependencies": {
-    "commander": "^12.1.0"
-  }
+    "commander": "^12.1.0",
+    "queue": "^7.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaelixir/npm-package-pulse.git"
+  },
+  "author": "huanxi",
+  "bugs": {
+    "url": "https://github.com/adaelixir/npm-package-pulse/issues"
+  },
+  "homepage": "https://github.com/adaelixir/npm-package-pulse#readme",
+  "description": ""
 }

@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 function readPackageJson(dir) {
   const pkgPath = path.join(dir, 'package.json');
@@ -15,4 +15,5 @@ function getSubDirectories(dir) {
     .map(dirent => dirent.name);
 }
 
-module.exports = { readPackageJson, getSubDirectories };
+
+export { readPackageJson, getSubDirectories };

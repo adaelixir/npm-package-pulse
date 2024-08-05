@@ -22,10 +22,10 @@ function DFS(pkg,version,dependencies,circularDeps,visited = new Set()) {
     for (const dep of deps) {
         if (dep.parent) {
             const [parentPkg, parentVersion] = dep.parent.split('@');
-            DFS(parentPkg, parentVersion, dependencies, circular, new Set(visited));
+            DFS(parentPkg, parentVersion, dependencies, circularDeps, new Set(visited));
         }
     }
     visited.delete(key);
 }
 
-module.exports = { detectCircularDeps_DFS };
+export { detectCircularDeps_DFS };

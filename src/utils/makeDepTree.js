@@ -1,10 +1,13 @@
-const path = require('path');
-const { readPackageJson, getSubDirectories } = require('./fileSystem');
+import fs from 'fs';
+import path from 'path';
+import { readPackageJson, getSubDirectories } from './fileSystem.js'
 
 function makeDepTree(dir) {
-  const nodeModulesPath = path.join(dir, 'node_modules');
   const dependencies = {};
+
+  const nodeModulesPath = path.join(dir, 'node_modules');
   traverseDeps(nodeModulesPath, null,dependencies);
+
   return dependencies;
 }
 
@@ -34,4 +37,4 @@ function traverseDeps(currentDir, parentPkg,dependencies) {
     });
   }
 
-module.exports = { makeDepTree };
+export { makeDepTree };
