@@ -6,11 +6,11 @@ npm install -g npm-package-pulse
 
 ```json
 {
-  //循环依赖检测：基于DFS的图遍历
+// 循环依赖检测：基于DFS的图遍历
   "cyclicDependencies": [
     ["packageA@1.0.0", "packageB@2.0.0", "packageC@1.5.0", "packageA@1.0.0"]
   ],
-  //菱形依赖检测：广度优先搜索（BFS）
+// 菱形依赖检测：广度优先搜索（BFS）
   "diamondDependencies": [
     {
       "start": "packageA@1.0.0",
@@ -21,7 +21,7 @@ npm install -g npm-package-pulse
       ]
     }
   ],
-  //多版本依赖检测：哈希表版本统计
+// 多版本依赖检测：哈希表版本统计
   "multipleVersions": [
     {
       "name": "packageD",
@@ -36,5 +36,5 @@ npm install -g npm-package-pulse
 a. **分页懒加载渲染**：采用分页懒加载技术，将依赖包数据分页加载到页面中，以优化页面性能和加载速度。<br/>
 b. **交互式可视化**：用户可以通过与页面交互（如滚动浏览器窗口和搜索依赖名称）来浏览包的依赖关系，使得依赖关系的探索更加直观和交互性。
 
-![查看当前项目的依赖信息](docs/渲染.gif '查看当前项目的依赖信息')
-![搜索特定包的依赖信息](docs/搜索.gif '搜索特定包的依赖信息') 
+![查看当前项目的依赖信息](docs/render.gif '查看当前项目的依赖信息')
+![搜索特定包的依赖信息](docs/search.gif '搜索特定包的依赖信息') 
