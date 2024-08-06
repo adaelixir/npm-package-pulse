@@ -1,3 +1,5 @@
+## Npm-Package-Pulse
+
 **npm-package-pulse** 是一个 npm 包依赖分析工具，专注于不同类型依赖的分析脚本。命令行启动后，递归遍历项目 node_modules 分析依赖结构，检测循环依赖、菱形依赖和多版本依赖，输出JSON格式结果<br/>
 依赖图使用**邻接表**表示，即 `dependencies` 对象<br/>
 a. **循环依赖**：包A依赖包B，包B又直接或间接依赖包A的情况(**DFS**) <br/>
